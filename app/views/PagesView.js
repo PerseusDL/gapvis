@@ -53,10 +53,10 @@ define(['gv', 'views/BookView', 'views/PageView', 'views/ChangeLinkView'],
             
             // make a new page view if necessary
             
-            if (!page.view) {
-                view.$el.addClass('loading');
-                page.on('change', function() {
-                    view.$el.removeClass('loading');
+            if ( ! page.view ) {
+                view.$el.addClass( 'loading' );
+                page.on( 'change', function() {
+                    view.$el.removeClass( 'loading' );
                     view.render();
                 });
                 new PageView({ model: page });
@@ -81,6 +81,7 @@ define(['gv', 'views/BookView', 'views/PageView', 'views/ChangeLinkView'],
                     oldPage && pages.indexOf(oldPage) > pages.indexOf(page)
                 );
             }
+						console.log( view );
             return view;
         },
         

@@ -20,10 +20,13 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages'],
         
         initialize: function() {
             var book = this,
-                // create collections
-                places = book.places = new Places(),
-                pages = book.pages = new Pages();
+					
+            // create collections
+            places = book.places = new Places(),
+            pages = book.pages = new Pages();
+								
             // set backreferences
+								
             places.book = book;
             pages.book = book;
         },
@@ -34,19 +37,24 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages'],
         },
         
         // reset collections with current data
-        initCollections: function(placeData, pageData) {
+				
+        initCollections: function( placeData, pageData ) {
             if (DEBUG) console.log('Initializing book ' + this.id + ': ' +
                 pageData.length + ' pages and ' +
                 placeData.length + ' places');
             var places = this.places,
                 pages = this.pages;
             places.reset(placeData);
+						
             // convert page ids to strings
+						
             pages.reset(pageData.map(function(p) {
                 p.id = String(p.id);
                 return p;
             }));
+						
             // calculate frequencies of place in all pages
+						
             pages.each(function(page) {
                 page.get('places').forEach(function(placeId) {
                     var place = places.get(placeId),
@@ -62,11 +70,12 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages'],
         },
         
         // array of page labels for timemap
+				
         labels: function() {
-			// if(this.supportsSections()){
-			// 	var book = this;
-			// 	return this.pages.map(function(p) { return book.pageIdToRef(p.id).label });
-			// }
+				// if(this.supportsSections()){
+				// 	var book = this;
+				// 	return this.pages.map(function(p) { return book.pageIdToRef(p.id).label });
+				// }
             return this.pages.map(function(p) { return p.id });
         },
         

@@ -8,7 +8,9 @@ REPORT_URL = 'tests/api/flags/';
 // REPORT_BAD_TOKEN_URL = null;
 // //if present and not null, makes a direct link isntead of a form. Looks for {place-id}
 //REPORT_PROBLEM_PLACE_URL = 'http://gap2.alexandriaarchive.org/report/place-issues/{place-id}';
-API_ROOT = 'http://localhost/gapvis';
+
+API_ROOT = 'http://gap2.alexandriaarchive.org';
+// API_ROOT = 'http://localhost/gapvis';
 // REPORT_URL = 'http://gap2.alexandriaarchive.org/flags/';
 API_DATA_TYPE = 'json';
 DEBUG = true;
