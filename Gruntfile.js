@@ -14,7 +14,7 @@ module.exports = function( grunt ) {
 		// Watch for changes and then rebuild
 		
 		watch: {
-			files: ['app/**/*.js'],
+			files: ['app/**/*.js','css/**/*.css'],
 		  tasks: ['shell' ]
 		}
 		

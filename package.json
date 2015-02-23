@@ -2,9 +2,6 @@
   "name": "joth-gapvis",
   "version": "0.0.1",
   "private": "true",
-  "authors": [
-    "Adam Tavares <adamtavares@gmail.com>"
-  ],
   "description": "GapVis extended to support 'Journeys of the Hero'",
   "dependencies": {
     "grunt": "^0.4.5",

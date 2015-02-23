@@ -29,14 +29,25 @@ define({
             }
         },
 				'social-network-view': {
-						layout: '#social-network-view',
+            layout:  '#layout-book-2panel',
 						className: 'social-network-view',
 						router: 'social-network/:bookid',
 						slots: {
 								'.navigation-view': 'views/NavigationView',
 								'.book-title-view': 'views/BookTitleView',
-              	'.left-panel': 'views/SocialNetworkView',
-								'.right-panel': 'views/PlaceFrequencyBarsView'
+              	'.left-panel': {
+              	    layout: '#layout-full-top',
+              	    slots: {
+              	        '.top-slot': 'views/PagesView',
+              	        '.bottom-slot': 'views/PageControlView'
+              	    }
+              	},
+              	'.right-panel': {
+              	    layout: '#layout-full-top',
+              	    slots: {
+              	        '.top-slot': 'views/SocialNetworkView'
+              	    }
+              	}
 						}
 				},
         'reading-view': {
