@@ -333,6 +333,7 @@ define(['gv', 'views/BookView', 'views/InfoWindowView'], function(gv, BookView, 
         },
         
         // go to a specific page
+				// 
         scrollTo: function(pageId, animate) {
             var view = this,
                 labelUtils = view.getLabeller(), 

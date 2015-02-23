@@ -28,6 +28,17 @@ define({
                 '.right-panel': 'views/PlaceFrequencyBarsView'
             }
         },
+				'social-network-view': {
+						layout: '#social-network-view',
+						className: 'social-network-view',
+						router: 'social-network/:bookid',
+						slots: {
+								'.navigation-view': 'views/NavigationView',
+								'.book-title-view': 'views/BookTitleView',
+              	'.left-panel': 'views/SocialNetworkView',
+								'.right-panel': 'views/PlaceFrequencyBarsView'
+						}
+				},
         'reading-view': {
             layout:  '#layout-book-2panel',
             className: 'reading-view',

@@ -10,7 +10,7 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     
-    <link rel="stylesheet" href="./styles-gv-152342124240.css">
+    <link rel="stylesheet" href="./styles-gv-152349014946.css">
     
     <script type="text/javascript" src="config/settings.dev.js"></script><script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script type="text/javascript" src="lib/timeline-2.3.0.js"></script><script type="text/javascript" src="app/util/shim.js"></script><script type="text/javascript" src="lib/augment-0.3.1.min.js"></script><script type="text/javascript" src="lib/requirejs/require.js"></script><script type="text/javascript" src="lib/underscore/underscore.js"></script><script type="text/javascript" src="lib/bootstrap3/js/transition.js"></script><script type="text/javascript" src="lib/bootstrap3/js/button.js"></script><script type="text/javascript" src="lib/bootstrap3/js/modal.js"></script><script type="text/javascript" src="lib/bootstrap3/js/tooltip.js"></script><script type="text/javascript" src="lib/mxn/mxn.js"></script><script type="text/javascript" src="lib/mxn/mxn.core.js"></script><script type="text/javascript" src="lib/mxn/mxn.googlev3.core.js"></script><script type="text/javascript" src="lib/timemap/src/timemap.js"></script><script type="text/javascript" src="lib/timemap/src/param.js"></script><script type="text/javascript" src="lib/timemap/src/state.js"></script><script type="text/javascript" src="lib/timemap/src/loaders/progressive.js"></script><script type="text/javascript" src="lib/backbone/backbone.js"></script><script type="text/javascript" src="lib/backbone-spf/spf.js"></script><script type="text/javascript" src="lib/d3/d3.js"></script><script type="text/javascript" src="lib/timemap/src/ext/circle_icons.js"></script><script type="text/javascript" src="lib/label_utils.js"></script><script type="text/javascript" src="app/util/patches.js"></script><script type="text/javascript" src="app/app.js"></script>
     
@@ -137,11 +137,46 @@
         <span class="control next">next &gt;&gt;</span>
     </span>
 </p></script><script type="text/template" id="navigation-view-template"><nav class="btn-group" data-toggle="buttons-radio">
-  <button class="btn btn-small btn-primary" title="Summary View" data-view-id="book-summary"><i class="glyphicon glyphicon-star glyphicon-white"></i> Summary View</button>
-  <button class="btn btn-small btn-primary" title="Reading View" data-view-id="reading-view"><i class="glyphicon glyphicon-book glyphicon-white"></i> Reading View</button>
-  <button class="btn btn-small btn-primary" title="Place Detail" data-view-id="place-view"><i class="glyphicon glyphicon-globe glyphicon-white"></i> Place Detail</button>
+	
+  <button 
+		class="btn btn-small btn-primary" 
+		title="Summary View" 
+		data-view-id="book-summary">
+		<i class="glyphicon glyphicon-star glyphicon-white"></i> 
+		Summary View
+	</button>
+	
+  <button 
+		class="btn btn-small btn-primary" 
+		title="Reading View" 
+		data-view-id="reading-view">
+		<i class="glyphicon glyphicon-book glyphicon-white"></i> 
+		Reading View
+	</button>
+	
+  <button 
+		class="btn btn-small btn-primary" 
+		title="Place Detail" 
+		data-view-id="place-view">
+		<i class="glyphicon glyphicon-globe glyphicon-white"></i> 
+		Place Detail
+	</button>
+	
+	<button 
+		class="btn btn-small btn-primary" 
+		title="Social Network" 
+		data-view-id="social-network-view">
+		<i class="glyphicon glyphicon-globe glyphicon-white"></i> 
+		Social Network
+	</button>
+	
 </nav>
-<a class="permalink btn btn-primary" title="Permalink" href="#"><i class="glyphicon glyphicon-bookmark glyphicon-white"></i></a></script><script type="text/template" id="page-control-template"><div class="nextprev">
+
+<a 
+	class="permalink btn btn-primary" 
+	title="Permalink" href="#">
+	<i class="glyphicon glyphicon-bookmark glyphicon-white"></i>
+</a></script><script type="text/template" id="page-control-template"><div class="nextprev">
     <span class="prev control">&lt;&lt; previous</span>
     <input class="page-id" maxlength="8">
     <span class="next control">next &gt;&gt;</span>
@@ -169,7 +204,7 @@
     <li><a href="http://pelagios.dme.ait.ac.at/api/places/http%3A%2F%2Fpleiades.stoa.org%2Fplaces%2F<%= id %>" target="_blank">References in Pelagios</a>
     </li>
 </ul> -->
-<div class="place-references"></div></script><script type="text/template" id="timemap-legend-template"><span class="timemap-legend-by-frequency">Least referenced <span class="images"></span> Most referenced</span>
+<div class="place-references"></div></script><script type="text/template" id="social-network-template"><div>Social Network Magic</div></script><script type="text/template" id="timemap-legend-template"><span class="timemap-legend-by-frequency">Least referenced <span class="images"></span> Most referenced</span>
 <span class="timemap-legend-by-feature"><span class="place-types"></span></span></script><script type="text/template" id="timemap-template"><div class="map-container">
     <div class="map"></div>
 </div>
