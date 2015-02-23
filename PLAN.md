@@ -11,6 +11,7 @@ Built on-top of backbone.js
 Uses ant to build app
 
 You have to install ant to build the app.
+
 Running OSX?
 
 	brew install ant
@@ -24,7 +25,7 @@ Otherwise install ant and modify path to ant-contrib in `build.xml`
         </classpath>
     </taskdef>
 
-If node and grunt is installed you can run...
+If node.js and grunt is installed you can run...
 
 	grunt watch
 
@@ -39,7 +40,7 @@ JSON Index of all JOTH annotation links.  Like this one.
 
 	http://sosol.perseids.org/sosol/publications/7922/oa_cite_identifiers/10122/convert?resource=https%3A%2F%2Fhypothes.is%2Fa%2FNlP4CyExRfS1gUR_hgTqXg&format=json
 
-Index and annotation JSON must be accessible without login credentials for conversion scripts to build data that drives GapVis display.
+Index and annotation JSON must be accessible without login credentials for conversion scripts to build data that drives GapVis display, unless there is a way to pass credentials from a node.js script running in the shell.
 
 
 ## Data Conversion
@@ -49,6 +50,10 @@ Adam
 node.js conversion scripts.
 Run from terminal window as shell scripts currently,
 but could potentially be used in browser.
+
+Running from shell currently for speed issues... 
+many requests to Pleiades...
+GapVis display data doesn't need to be built dynamically.
 
 	/scripts
 
@@ -62,10 +67,23 @@ Massage data into structure that drives GapVis.
 Thibault
 
 Social Network View
-Visualize character relationships.
 
-Selecting character node will return that character id and ids of immediately adjacent nodes...
-used for filtering rest of display.
+Selecting character node will return that character id and ids of immediately adjacent nodes... used for filtering rest of display.
+
+Thibault's social network selector could use it's own data structure.
+Changes emit event.
+Returns selected character ids.
+Could be...
+
+	[ 'alcathoe-1', 'penelope-1', 'helena-1' ]
+
+or
+
+	[
+		'http://data.perseus.org/people/smith:alcathoe-1#this',
+		'http://data.perseus.org/people/smith:penelope-1#this',
+		'http://data.perseus.org/people/smith:helena-1#this'
+	]
 
 Room has been made for the Social Network View.
 
@@ -185,37 +203,19 @@ If the id value is the page that gets passed along to the perseus hopper to retr
 	            ]
 	        },
 
-shouldn't require too much code wrangling to successfully pull in the text from Smith's.
+or this even... 
 
-	        {
-	            "id": "alcathoe-1",
-	            "places": [
-	                "462",
-	                "336",
-	                "665",
-	                "336",
-	                "604"
-	            ]
-	        },
+	{
+      "id": "1",
+			"perseus_id": "alcathoe-1",
+      "places": [
+          "462",
+          "336",
+          "665",
+          "336",
+          "604"
+      ]
+		},
 
-Just replace entry of this URL...
-
-	http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0104:entry=penelope-bio-1
-
-Thibault's social network selector could use it's own data structure.
-Changes emit event.
-Returns selected character ids.
-Could be...
-
-	[ 'alcathoe-1', 'penelope-1', 'helena-1' ]
-
-or
-
-	[
-		'http://data.perseus.org/people/smith:alcathoe-1#this',
-		'http://data.perseus.org/people/smith:penelope-1#this',
-		'http://data.perseus.org/people/smith:helena-1#this'
-	]
-
-Used to filter the pages objects.
-
+It shouldn't require too much code wrangling to successfully pull in the text from Smith's...
+if our only use for the perseus_id is to use it as a key for filtering, and for retrieving the correct entry from the Perseus hopper.
