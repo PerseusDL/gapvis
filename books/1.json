@@ -1,0 +1,6022 @@
+{
+    "author": "William Smith",
+    "id": "1",
+    "pages": [
+        {
+            "id": "penelope-bio-1",
+            "places": [
+                "462",
+                "336",
+                "665",
+                "336",
+                "604"
+            ]
+        },
+        {
+            "id": "iphigeneia-bio-1",
+            "places": [
+                "604",
+                "522",
+                "519",
+                "617",
+                "582"
+            ]
+        },
+        {
+            "id": "oedipus-bio-1",
+            "places": [
+                "665"
+            ]
+        },
+        {
+            "id": "polyxena-bio-1",
+            "places": [
+                "618",
+                "721",
+                "683",
+                "683",
+                "683",
+                "721"
+            ]
+        },
+        {
+            "id": "helena-bio-1",
+            "places": [
+                "293",
+                "604",
+                "336"
+            ]
+        },
+        {
+            "id": "antigone-bio-1",
+            "places": [
+                "616",
+                "518",
+                "578",
+                "5",
+                "683",
+                "294"
+            ]
+        },
+        {
+            "id": "turnus-bio-1",
+            "places": [
+                "316",
+                "316"
+            ]
+        },
+        {
+            "id": "memnon-bio-1",
+            "places": []
+        },
+        {
+            "id": "hector-bio-1",
+            "places": []
+        },
+        {
+            "id": "endymion-bio-1",
+            "places": []
+        },
+        {
+            "id": "andromache-bio-1",
+            "places": [
+                "303"
+            ]
+        },
+        {
+            "id": "ajax-bio-1",
+            "places": [
+                "612"
+            ]
+        },
+        {
+            "id": "cassandra-bio-1",
+            "places": []
+        },
+        {
+            "id": "romulus-bio-1",
+            "places": [
+                "227",
+                "227",
+                "502"
+            ]
+        },
+        {
+            "id": "agamemnon-bio-1",
+            "places": [
+                "478",
+                "307",
+                "456",
+                "488",
+                "478",
+                "316",
+                "683",
+                "316"
+            ]
+        },
+        {
+            "id": "europa-bio-1",
+            "places": [
+                "683",
+                "307",
+                "456",
+                "297"
+            ]
+        },
+        {
+            "id": "scylla-bio-1",
+            "places": [
+                "478"
+            ]
+        }
+    ],
+    "places": [
+        {
+            "id": "462",
+            "ll": [
+                37.0382205,
+                27.423765
+            ],
+            "title": "Halicarnassus/Halikarnassos",
+            "uri": "http://pleiades.stoa.org/places/599636"
+        },
+        {
+            "id": "336",
+            "ll": [
+                37.631561,
+                22.719464
+            ],
+            "title": "Argos",
+            "uri": "http://pleiades.stoa.org/places/570106"
+        },
+        {
+            "id": "665",
+            "ll": [
+                37.5,
+                22.5
+            ],
+            "title": "Hellas",
+            "uri": "http://pleiades.stoa.org/places/1001896"
+        },
+        {
+            "id": "604",
+            "ll": [
+                27.5,
+                27.5
+            ],
+            "title": "Aegyptus",
+            "uri": "http://pleiades.stoa.org/places/981503"
+        },
+        {
+            "id": "522",
+            "ll": [
+                33.268071,
+                35.209358
+            ],
+            "title": "Tyrus/Col. Septimia Severa",
+            "uri": "http://pleiades.stoa.org/places/678437"
+        },
+        {
+            "id": "519",
+            "ll": [
+                33.25,
+                35.25
+            ],
+            "title": "Phoenice",
+            "uri": "http://pleiades.stoa.org/places/678334"
+        },
+        {
+            "id": "617",
+            "ll": [
+                42.5,
+                42.5
+            ],
+            "title": "Colchis/Lazike",
+            "uri": "http://pleiades.stoa.org/places/863770"
+        },
+        {
+            "id": "582",
+            "ll": [
+                42.5,
+                42.5
+            ],
+            "title": "Phasis/Rheon fl.",
+            "uri": "http://pleiades.stoa.org/places/863867"
+        },
+        {
+            "id": "618",
+            "ll": [
+                37.5,
+                27.5
+            ],
+            "title": "Asia",
+            "uri": "http://pleiades.stoa.org/places/981509"
+        },
+        {
+            "id": "721",
+            "ll": [
+                42.5,
+                27.5
+            ],
+            "title": "Europa",
+            "uri": "http://pleiades.stoa.org/places/991376"
+        },
+        {
+            "id": "683",
+            "ll": [
+                39.4662108179,
+                30.6215109744
+            ],
+            "title": "Asia Minor",
+            "uri": "http://pleiades.stoa.org/places/837"
+        },
+        {
+            "id": "293",
+            "ll": [
+                39.9575,
+                26.238889
+            ],
+            "title": "Ilium/Troia",
+            "uri": "http://pleiades.stoa.org/places/550595"
+        },
+        {
+            "id": "518",
+            "ll": [
+                33.75,
+                36.75
+            ],
+            "title": "Coele Syria",
+            "uri": "http://pleiades.stoa.org/places/678096"
+        },
+        {
+            "id": "578",
+            "ll": [
+                41.4407791,
+                33.2550389333
+            ],
+            "title": "Paphlagonia (region)",
+            "uri": "http://pleiades.stoa.org/places/845034"
+        },
+        {
+            "id": "5",
+            "ll": [
+                43.0786852,
+                34.7425505
+            ],
+            "title": "Pontus Euxinus",
+            "uri": "http://pleiades.stoa.org/places/1224"
+        },
+        {
+            "id": "294",
+            "ll": [
+                38.0909935,
+                26.9890005
+            ],
+            "title": "Ionia (region)",
+            "uri": "http://pleiades.stoa.org/places/550597"
+        },
+        {
+            "id": "316",
+            "ll": [
+                38.488314,
+                28.040286
+            ],
+            "title": "Sardis/Hyde?",
+            "uri": "http://pleiades.stoa.org/places/550867"
+        },
+        {
+            "id": "303",
+            "ll": [
+                38.63043625,
+                27.961504875
+            ],
+            "title": "Lydia/Maionia",
+            "uri": "http://pleiades.stoa.org/places/550701"
+        },
+        {
+            "id": "227",
+            "ll": [
+                38.4821195825,
+                22.5011794317
+            ],
+            "title": "Delphi",
+            "uri": "http://pleiades.stoa.org/places/540726"
+        },
+        {
+            "id": "502",
+            "ll": [
+                38.75,
+                29.75
+            ],
+            "title": "Phrygia",
+            "uri": "http://pleiades.stoa.org/places/609502"
+        },
+        {
+            "id": "478",
+            "ll": [
+                37.5292362,
+                27.2774885
+            ],
+            "title": "Miletus",
+            "uri": "http://pleiades.stoa.org/places/599799"
+        },
+        {
+            "id": "307",
+            "ll": [
+                38.440912,
+                27.14781
+            ],
+            "title": "Naulochon/Smyrna/Palaia Smyrna",
+            "uri": "http://pleiades.stoa.org/places/550771"
+        },
+        {
+            "id": "456",
+            "ll": [
+                37.9928,
+                27.1975
+            ],
+            "title": "Colophon/Colophon ad Mare/Notion",
+            "uri": "http://pleiades.stoa.org/places/599578"
+        },
+        {
+            "id": "488",
+            "ll": [
+                37.6597246526,
+                27.2975660841
+            ],
+            "title": "Priene/\u2018Lince\u2019?",
+            "uri": "http://pleiades.stoa.org/places/599905"
+        },
+        {
+            "id": "297",
+            "ll": [
+                38.3614625,
+                26.7705581
+            ],
+            "title": "Klazomenai?",
+            "uri": "http://pleiades.stoa.org/places/550650"
+        },
+        {
+            "id": "476",
+            "ll": [
+                37.6220196,
+                27.4713446
+            ],
+            "title": "Maeander fl.",
+            "uri": "http://pleiades.stoa.org/places/599777"
+        },
+        {
+            "id": "340",
+            "ll": [
+                37.906033,
+                22.879189
+            ],
+            "title": "Corinthus/Korinthos",
+            "uri": "http://pleiades.stoa.org/places/570182"
+        },
+        {
+            "id": "396",
+            "ll": [
+                36.387567,
+                22.482064
+            ],
+            "title": "Tainaron (settlement)",
+            "uri": "http://pleiades.stoa.org/places/570702"
+        },
+        {
+            "id": "302",
+            "ll": [
+                39.2074811,
+                26.1342123
+            ],
+            "title": "Lesbos Ins.",
+            "uri": "http://pleiades.stoa.org/places/550696"
+        },
+        {
+            "id": "54",
+            "ll": [
+                40.476034,
+                17.228553
+            ],
+            "title": "Taras/Tarentum/Neptunia",
+            "uri": "http://pleiades.stoa.org/places/442810"
+        },
+        {
+            "id": "306",
+            "ll": [
+                39.110475,
+                26.547048
+            ],
+            "title": "Mytilene",
+            "uri": "http://pleiades.stoa.org/places/550763"
+        },
+        {
+            "id": "415",
+            "ll": [
+                38.041101,
+                23.537401
+            ],
+            "title": "Eleusis",
+            "uri": "http://pleiades.stoa.org/places/579920"
+        },
+        {
+            "id": "182",
+            "ll": [
+                40.2842303,
+                28.6821937
+            ],
+            "title": "Olympus M.",
+            "uri": "http://pleiades.stoa.org/places/511343"
+        },
+        {
+            "id": "210",
+            "ll": [
+                38.583333,
+                22.933333
+            ],
+            "title": "Abai",
+            "uri": "http://pleiades.stoa.org/places/540582"
+        },
+        {
+            "id": "259",
+            "ll": [
+                38.25,
+                22.25
+            ],
+            "title": "Phocis",
+            "uri": "http://pleiades.stoa.org/places/541048"
+        },
+        {
+            "id": "201",
+            "ll": [
+                39.546432,
+                20.787767
+            ],
+            "title": "Dodona",
+            "uri": "http://pleiades.stoa.org/places/530843"
+        },
+        {
+            "id": "459",
+            "ll": [
+                37.384829,
+                27.256115
+            ],
+            "title": "Didyma/Branchidai/Ioustinianopolis",
+            "uri": "http://pleiades.stoa.org/places/599593"
+        },
+        {
+            "id": "607",
+            "ll": [
+                28.9188417513,
+                22.0840920328
+            ],
+            "title": "Libya Superior",
+            "uri": "http://pleiades.stoa.org/places/991375"
+        },
+        {
+            "id": "323",
+            "ll": [
+                39.75,
+                26.75
+            ],
+            "title": "Thebes Pedion",
+            "uri": "http://pleiades.stoa.org/places/550920"
+        },
+        {
+            "id": "291",
+            "ll": [
+                38.5178164,
+                28.1112899
+            ],
+            "title": "Hermus fl.",
+            "uri": "http://pleiades.stoa.org/places/550575"
+        },
+        {
+            "id": "261",
+            "ll": [
+                38.8678937,
+                22.6337672
+            ],
+            "title": "Phthiotis",
+            "uri": "http://pleiades.stoa.org/places/541052"
+        },
+        {
+            "id": "249",
+            "ll": [
+                39.796944,
+                22.686944
+            ],
+            "title": "Ossa M.",
+            "uri": "http://pleiades.stoa.org/places/540993"
+        },
+        {
+            "id": "100",
+            "ll": [
+                40.25,
+                22.25
+            ],
+            "title": "Olympus M.",
+            "uri": "http://pleiades.stoa.org/places/491677"
+        },
+        {
+            "id": "262",
+            "ll": [
+                40,
+                20.75
+            ],
+            "title": "Pindus M.",
+            "uri": "http://pleiades.stoa.org/places/541062"
+        },
+        {
+            "id": "202",
+            "ll": [
+                39.25,
+                20.75
+            ],
+            "title": "Dryopis",
+            "uri": "http://pleiades.stoa.org/places/530849"
+        },
+        {
+            "id": "380",
+            "ll": [
+                37.3398807143,
+                22.6717191429
+            ],
+            "title": "Peloponnesus/Peloponnesos/Peloponnese",
+            "uri": "http://pleiades.stoa.org/places/570577"
+        },
+        {
+            "id": "642",
+            "ll": [
+                40.75,
+                22.75
+            ],
+            "title": "Krestonia",
+            "uri": "http://pleiades.stoa.org/places/491643"
+        },
+        {
+            "id": "185",
+            "ll": [
+                40.397648,
+                28.27741
+            ],
+            "title": "Plakia",
+            "uri": "http://pleiades.stoa.org/places/511366"
+        },
+        {
+            "id": "190",
+            "ll": [
+                40.387037,
+                28.388808
+            ],
+            "title": "Skylake",
+            "uri": "http://pleiades.stoa.org/places/511419"
+        },
+        {
+            "id": "621",
+            "ll": [
+                40.2,
+                26.4
+            ],
+            "title": "Hellespontus",
+            "uri": "http://pleiades.stoa.org/places/501434"
+        },
+        {
+            "id": "373",
+            "ll": [
+                37.6381535,
+                21.629337
+            ],
+            "title": "Olympia",
+            "uri": "http://pleiades.stoa.org/places/570531"
+        },
+        {
+            "id": "370",
+            "ll": [
+                37.974359,
+                23.362766
+            ],
+            "title": "Nisaia",
+            "uri": "http://pleiades.stoa.org/places/570508"
+        },
+        {
+            "id": "416",
+            "ll": [
+                38.398169,
+                23.790535
+            ],
+            "title": "Eretria",
+            "uri": "http://pleiades.stoa.org/places/579925"
+        },
+        {
+            "id": "483",
+            "ll": [
+                37.103871,
+                25.377595
+            ],
+            "title": "Naxos",
+            "uri": "http://pleiades.stoa.org/places/599821"
+        },
+        {
+            "id": "413",
+            "ll": [
+                38.0378413682,
+                23.8041199404
+            ],
+            "title": "Attica",
+            "uri": "http://pleiades.stoa.org/places/579888"
+        },
+        {
+            "id": "165",
+            "ll": [
+                40.785833,
+                23.848889
+            ],
+            "title": "Strymon fl.",
+            "uri": "http://pleiades.stoa.org/places/501629"
+        },
+        {
+            "id": "458",
+            "ll": [
+                37.400439,
+                25.267471
+            ],
+            "title": "Delos (settlement)",
+            "uri": "http://pleiades.stoa.org/places/599587"
+        },
+        {
+            "id": "393",
+            "ll": [
+                37.0827165,
+                22.4295575
+            ],
+            "title": "Sparta",
+            "uri": "http://pleiades.stoa.org/places/570685"
+        },
+        {
+            "id": "434",
+            "ll": [
+                35.2165703538,
+                24.965566077
+            ],
+            "title": "Creta Ins.",
+            "uri": "http://pleiades.stoa.org/places/589748"
+        },
+        {
+            "id": "334",
+            "ll": [
+                37.61674514,
+                22.1669367
+            ],
+            "title": "Arcadia",
+            "uri": "http://pleiades.stoa.org/places/570102"
+        },
+        {
+            "id": "397",
+            "ll": [
+                37.455301,
+                22.420672
+            ],
+            "title": "Tegea",
+            "uri": "http://pleiades.stoa.org/places/570707"
+        },
+        {
+            "id": "360",
+            "ll": [
+                37.0659267333,
+                22.3710022
+            ],
+            "title": "Lacedaemon/Laconia",
+            "uri": "http://pleiades.stoa.org/places/570406"
+        },
+        {
+            "id": "391",
+            "ll": [
+                37.166485,
+                22.416414
+            ],
+            "title": "Sellasia",
+            "uri": "http://pleiades.stoa.org/places/570662"
+        },
+        {
+            "id": "614",
+            "ll": [
+                37.73,
+                26.84
+            ],
+            "title": "Samos Ins.",
+            "uri": "http://pleiades.stoa.org/places/599926"
+        },
+        {
+            "id": "504",
+            "ll": [
+                39.25,
+                35.75
+            ],
+            "title": "Cappadocia",
+            "uri": "http://pleiades.stoa.org/places/628949"
+        },
+        {
+            "id": "514",
+            "ll": [
+                36.25,
+                33.25
+            ],
+            "title": "Cilicia",
+            "uri": "http://pleiades.stoa.org/places/658440"
+        },
+        {
+            "id": "503",
+            "ll": [
+                39.748697,
+                35.071521
+            ],
+            "title": "Pteria",
+            "uri": "http://pleiades.stoa.org/places/619244"
+        },
+        {
+            "id": "651",
+            "ll": [
+                42.025776,
+                35.143037
+            ],
+            "title": "Sinope",
+            "uri": "http://pleiades.stoa.org/places/857321"
+        },
+        {
+            "id": "501",
+            "ll": [
+                38.75,
+                29.25
+            ],
+            "title": "Hyllos fl.",
+            "uri": "http://pleiades.stoa.org/places/609409"
+        },
+        {
+            "id": "312",
+            "ll": [
+                38.670353,
+                26.753208
+            ],
+            "title": "Phocaea",
+            "uri": "http://pleiades.stoa.org/places/550823"
+        },
+        {
+            "id": "399",
+            "ll": [
+                37.25,
+                22.75
+            ],
+            "title": "Thyrea(tis)",
+            "uri": "http://pleiades.stoa.org/places/570736"
+        },
+        {
+            "id": "363",
+            "ll": [
+                36.25,
+                23.25
+            ],
+            "title": "Malea Pr.",
+            "uri": "http://pleiades.stoa.org/places/570455"
+        },
+        {
+            "id": "341",
+            "ll": [
+                36.25,
+                23
+            ],
+            "title": "Cythera Ins.",
+            "uri": "http://pleiades.stoa.org/places/570186"
+        },
+        {
+            "id": "324",
+            "ll": [
+                38.476241,
+                27.877777
+            ],
+            "title": "Tmolos/Aureliopolis",
+            "uri": "http://pleiades.stoa.org/places/550936"
+        },
+        {
+            "id": "221",
+            "ll": [
+                38.3768288333,
+                23.15508525
+            ],
+            "title": "Boeotia",
+            "uri": "http://pleiades.stoa.org/places/540689"
+        },
+        {
+            "id": "460",
+            "ll": [
+                37.94583755,
+                27.3517645
+            ],
+            "title": "Ephesus/Arsinoe(ia)",
+            "uri": "http://pleiades.stoa.org/places/599612"
+        },
+        {
+            "id": "691",
+            "ll": [
+                38.614377,
+                27.983474
+            ],
+            "title": "Gygaia/Koloe/Talaimenis L.",
+            "uri": "http://pleiades.stoa.org/places/550556"
+        },
+        {
+            "id": "49",
+            "ll": [
+                42.4209403733,
+                11.75456094
+            ],
+            "title": "Etruria/Tuscia",
+            "uri": "http://pleiades.stoa.org/places/413122"
+        },
+        {
+            "id": "591",
+            "ll": [
+                34.799294,
+                48.512209
+            ],
+            "title": "Ecbatana/Hagmatana/Achmeta/Epiphaneia/Ahmadan",
+            "uri": "http://pleiades.stoa.org/places/903021"
+        },
+        {
+            "id": "584",
+            "ll": [
+                36.366841,
+                43.155403
+            ],
+            "title": "Nineveh/Ninos",
+            "uri": "http://pleiades.stoa.org/places/874621"
+        },
+        {
+            "id": "656",
+            "ll": [
+                45.814417,
+                35.862586
+            ],
+            "title": "Maeotis",
+            "uri": "http://pleiades.stoa.org/places/825318"
+        },
+        {
+            "id": "585",
+            "ll": [
+                39.5,
+                41.5
+            ],
+            "title": "Phasis fl.",
+            "uri": "http://pleiades.stoa.org/places/874645"
+        },
+        {
+            "id": "581",
+            "ll": [
+                42.5,
+                43.5
+            ],
+            "title": "Caucasus M.",
+            "uri": "http://pleiades.stoa.org/places/863766"
+        },
+        {
+            "id": "521",
+            "ll": [
+                32.5004665,
+                34.897258
+            ],
+            "title": "Stratonos Pyrgos/Caesarea",
+            "uri": "http://pleiades.stoa.org/places/678401"
+        },
+        {
+            "id": "524",
+            "ll": [
+                31.661963,
+                34.546334
+            ],
+            "title": "Ashqelon/Ascalon",
+            "uri": "http://pleiades.stoa.org/places/687839"
+        },
+        {
+            "id": "529",
+            "ll": [
+                35.0437280093,
+                33.1496950176
+            ],
+            "title": "Cyprus (island)",
+            "uri": "http://pleiades.stoa.org/places/707498"
+        },
+        {
+            "id": "576",
+            "ll": [
+                41.5,
+                34.5
+            ],
+            "title": "Assyria",
+            "uri": "http://pleiades.stoa.org/places/844869"
+        },
+        {
+            "id": "601",
+            "ll": [
+                29.935945,
+                52.88841
+            ],
+            "title": "Persepolis/Parsa/Persai/Sat Setun",
+            "uri": "http://pleiades.stoa.org/places/922695"
+        },
+        {
+            "id": "616",
+            "ll": [
+                39.03125,
+                34.34375
+            ],
+            "title": "Halys fl.",
+            "uri": "http://pleiades.stoa.org/places/857148"
+        },
+        {
+            "id": "485",
+            "ll": [
+                37.703924,
+                27.329993
+            ],
+            "title": "Panionion",
+            "uri": "http://pleiades.stoa.org/places/599855"
+        },
+        {
+            "id": "482",
+            "ll": [
+                37.595252,
+                27.433117
+            ],
+            "title": "Myous",
+            "uri": "http://pleiades.stoa.org/places/599813"
+        },
+        {
+            "id": "454",
+            "ll": [
+                37.038339,
+                27.423639
+            ],
+            "title": "Caria",
+            "uri": "http://pleiades.stoa.org/places/599564"
+        },
+        {
+            "id": "473",
+            "ll": [
+                38.077883,
+                26.964722
+            ],
+            "title": "Lebedos/Ptolemais",
+            "uri": "http://pleiades.stoa.org/places/599754"
+        },
+        {
+            "id": "321",
+            "ll": [
+                38.177262,
+                26.785014
+            ],
+            "title": "Teos",
+            "uri": "http://pleiades.stoa.org/places/550913"
+        },
+        {
+            "id": "287",
+            "ll": [
+                38.37641,
+                26.1342335
+            ],
+            "title": "Chios",
+            "uri": "http://pleiades.stoa.org/places/550496"
+        },
+        {
+            "id": "289",
+            "ll": [
+                38.382778,
+                26.480833
+            ],
+            "title": "Erythrai",
+            "uri": "http://pleiades.stoa.org/places/550535"
+        },
+        {
+            "id": "666",
+            "ll": [
+                36.0913239,
+                28.0881777
+            ],
+            "title": "Lindos",
+            "uri": "http://pleiades.stoa.org/places/589913"
+        },
+        {
+            "id": "667",
+            "ll": [
+                36.41451,
+                28.15629
+            ],
+            "title": "Ialysos",
+            "uri": "http://pleiades.stoa.org/places/589815"
+        },
+        {
+            "id": "668",
+            "ll": [
+                36.336185,
+                27.921195
+            ],
+            "title": "Kamiros",
+            "uri": "http://pleiades.stoa.org/places/589836"
+        },
+        {
+            "id": "669",
+            "ll": [
+                36.844,
+                27.17
+            ],
+            "title": "Kos/Cos (island)",
+            "uri": "http://pleiades.stoa.org/places/599581"
+        },
+        {
+            "id": "455",
+            "ll": [
+                36.686188,
+                27.37404
+            ],
+            "title": "Cnidus",
+            "uri": "http://pleiades.stoa.org/places/599575"
+        },
+        {
+            "id": "379",
+            "ll": [
+                38.043207,
+                22.548344
+            ],
+            "title": "Pellene",
+            "uri": "http://pleiades.stoa.org/places/570576"
+        },
+        {
+            "id": "392",
+            "ll": [
+                37.984123,
+                22.711059
+            ],
+            "title": "Sicyon/Demetrias",
+            "uri": "http://pleiades.stoa.org/places/570668"
+        },
+        {
+            "id": "332",
+            "ll": [
+                38.12855,
+                22.3782
+            ],
+            "title": "Aigeira",
+            "uri": "http://pleiades.stoa.org/places/570043"
+        },
+        {
+            "id": "330",
+            "ll": [
+                38.154879,
+                22.314637
+            ],
+            "title": "Aigai",
+            "uri": "http://pleiades.stoa.org/places/570040"
+        },
+        {
+            "id": "358",
+            "ll": [
+                37.75,
+                22.25
+            ],
+            "title": "Krathis M.",
+            "uri": "http://pleiades.stoa.org/places/570382"
+        },
+        {
+            "id": "339",
+            "ll": [
+                38.142006,
+                22.231166
+            ],
+            "title": "Boura",
+            "uri": "http://pleiades.stoa.org/places/570166"
+        },
+        {
+            "id": "350",
+            "ll": [
+                38.220538,
+                22.144303
+            ],
+            "title": "Helike",
+            "uri": "http://pleiades.stoa.org/places/570281"
+        },
+        {
+            "id": "333",
+            "ll": [
+                38.252707,
+                22.081952
+            ],
+            "title": "Aigion",
+            "uri": "http://pleiades.stoa.org/places/570049"
+        },
+        {
+            "id": "390",
+            "ll": [
+                38.213931,
+                22.018942
+            ],
+            "title": "Rhypes",
+            "uri": "http://pleiades.stoa.org/places/570647"
+        },
+        {
+            "id": "377",
+            "ll": [
+                38.243265,
+                21.738518
+            ],
+            "title": "Patra(e)",
+            "uri": "http://pleiades.stoa.org/places/570567"
+        },
+        {
+            "id": "381",
+            "ll": [
+                38.093144,
+                21.717095
+            ],
+            "title": "Phara(i)",
+            "uri": "http://pleiades.stoa.org/places/570590"
+        },
+        {
+            "id": "372",
+            "ll": [
+                38.153707,
+                21.640599
+            ],
+            "title": "Olenos",
+            "uri": "http://pleiades.stoa.org/places/570528"
+        },
+        {
+            "id": "378",
+            "ll": [
+                38.25,
+                21.75
+            ],
+            "title": "Peiros fl.",
+            "uri": "http://pleiades.stoa.org/places/570572"
+        },
+        {
+            "id": "343",
+            "ll": [
+                38.144625,
+                21.551425
+            ],
+            "title": "Dyme",
+            "uri": "http://pleiades.stoa.org/places/570205"
+        },
+        {
+            "id": "402",
+            "ll": [
+                37.9527,
+                21.711021
+            ],
+            "title": "Trit(a)ia",
+            "uri": "http://pleiades.stoa.org/places/570755"
+        },
+        {
+            "id": "234",
+            "ll": [
+                38.53,
+                23.87
+            ],
+            "title": "Euboea Ins.",
+            "uri": "http://pleiades.stoa.org/places/540775"
+        },
+        {
+            "id": "248",
+            "ll": [
+                38.493319,
+                22.974702
+            ],
+            "title": "Orchomenus",
+            "uri": "http://pleiades.stoa.org/places/540987"
+        },
+        {
+            "id": "346",
+            "ll": [
+                37.633645,
+                23.1602457
+            ],
+            "title": "Epidauros",
+            "uri": "http://pleiades.stoa.org/places/570228"
+        },
+        {
+            "id": "387",
+            "ll": [
+                36.9723335,
+                21.6975
+            ],
+            "title": "Pylos",
+            "uri": "http://pleiades.stoa.org/places/570639"
+        },
+        {
+            "id": "615",
+            "ll": [
+                37.666667,
+                27.083333
+            ],
+            "title": "Mycale M.",
+            "uri": "http://pleiades.stoa.org/places/599805"
+        },
+        {
+            "id": "288",
+            "ll": [
+                38.75953,
+                26.936283
+            ],
+            "title": "Cyme",
+            "uri": "http://pleiades.stoa.org/places/550506"
+        },
+        {
+            "id": "299",
+            "ll": [
+                38.689068,
+                27.033411
+            ],
+            "title": "Laris(s)a?",
+            "uri": "http://pleiades.stoa.org/places/550683"
+        },
+        {
+            "id": "308",
+            "ll": [
+                38.654427,
+                27.032015
+            ],
+            "title": "Neonteichos",
+            "uri": "http://pleiades.stoa.org/places/550773"
+        },
+        {
+            "id": "319",
+            "ll": [
+                38.671912,
+                27.196998
+            ],
+            "title": "Temnos",
+            "uri": "http://pleiades.stoa.org/places/550908"
+        },
+        {
+            "id": "313",
+            "ll": [
+                38.928297,
+                26.937453
+            ],
+            "title": "Pitane",
+            "uri": "http://pleiades.stoa.org/places/550833"
+        },
+        {
+            "id": "305",
+            "ll": [
+                38.840097,
+                26.985537
+            ],
+            "title": "Myrina/Sebastopolis",
+            "uri": "http://pleiades.stoa.org/places/550756"
+        },
+        {
+            "id": "290",
+            "ll": [
+                38.874665,
+                27.069173
+            ],
+            "title": "Gryneion",
+            "uri": "http://pleiades.stoa.org/places/550555"
+        },
+        {
+            "id": "292",
+            "ll": [
+                39.6922234,
+                26.84234605
+            ],
+            "title": "Ida M.",
+            "uri": "http://pleiades.stoa.org/places/550592"
+        },
+        {
+            "id": "320",
+            "ll": [
+                39.816667,
+                26.05
+            ],
+            "title": "Tenedos Ins.",
+            "uri": "http://pleiades.stoa.org/places/550912"
+        },
+        {
+            "id": "690",
+            "ll": [
+                39.383342,
+                26.602404
+            ],
+            "title": "Hekatonnesoi Inss.",
+            "uri": "http://pleiades.stoa.org/places/550567"
+        },
+        {
+            "id": "486",
+            "ll": [
+                37.25,
+                27.25
+            ],
+            "title": "Panormos",
+            "uri": "http://pleiades.stoa.org/places/599863"
+        },
+        {
+            "id": "285",
+            "ll": [
+                39.093987,
+                26.927974
+            ],
+            "title": "Atarneus",
+            "uri": "http://pleiades.stoa.org/places/550469"
+        },
+        {
+            "id": "368",
+            "ll": [
+                37.725449,
+                22.726959
+            ],
+            "title": "Mysia",
+            "uri": "http://pleiades.stoa.org/places/570498"
+        },
+        {
+            "id": "477",
+            "ll": [
+                37.848006,
+                27.518987
+            ],
+            "title": "Magnesia ad Maeandrum/Leukophrys",
+            "uri": "http://pleiades.stoa.org/places/599778"
+        },
+        {
+            "id": "707",
+            "ll": [
+                42.7752864,
+                15.885196
+            ],
+            "title": "(H)Adriaticum/Superum Mare",
+            "uri": "http://pleiades.stoa.org/places/1004"
+        },
+        {
+            "id": "726",
+            "ll": [
+                41.5,
+                0.5
+            ],
+            "title": "Iberi",
+            "uri": "http://pleiades.stoa.org/places/246423"
+        },
+        {
+            "id": "34",
+            "ll": [
+                37.5,
+                -6.5
+            ],
+            "title": "Tartessos",
+            "uri": "http://pleiades.stoa.org/places/256468"
+        },
+        {
+            "id": "309",
+            "ll": [
+                38.75,
+                26.25
+            ],
+            "title": "Oinous(s)ai Inss.",
+            "uri": "http://pleiades.stoa.org/places/550781"
+        },
+        {
+            "id": "623",
+            "ll": [
+                42.102338,
+                9.511253
+            ],
+            "title": "Alalie/Aleria",
+            "uri": "http://pleiades.stoa.org/places/472048"
+        },
+        {
+            "id": "646",
+            "ll": [
+                41.5763202867,
+                9.9085303
+            ],
+            "title": "Corsica/Kyrnos (island)",
+            "uri": "http://pleiades.stoa.org/places/472063"
+        },
+        {
+            "id": "59",
+            "ll": [
+                38.109279,
+                15.64393
+            ],
+            "title": "Rhegion/Regium",
+            "uri": "http://pleiades.stoa.org/places/452416"
+        },
+        {
+            "id": "725",
+            "ll": [
+                42.006132,
+                12.100184
+            ],
+            "title": "Caere",
+            "uri": "http://pleiades.stoa.org/places/422859"
+        },
+        {
+            "id": "63",
+            "ll": [
+                40.1616915,
+                15.1568265
+            ],
+            "title": "Velia/Elea",
+            "uri": "http://pleiades.stoa.org/places/452488"
+        },
+        {
+            "id": "53",
+            "ll": [
+                40.42096825,
+                15.00498525
+            ],
+            "title": "Poseidonia/Paestum",
+            "uri": "http://pleiades.stoa.org/places/442733"
+        },
+        {
+            "id": "3",
+            "ll": [
+                42.5,
+                27.5
+            ],
+            "title": "Thrake",
+            "uri": "http://pleiades.stoa.org/places/1001889"
+        },
+        {
+            "id": "670",
+            "ll": [
+                40.95,
+                24.983333
+            ],
+            "title": "Abdera",
+            "uri": "http://pleiades.stoa.org/places/501323"
+        },
+        {
+            "id": "80",
+            "ll": [
+                40.0753715988,
+                8.84850026023
+            ],
+            "title": "Sardinia Ins.",
+            "uri": "http://pleiades.stoa.org/places/472014"
+        },
+        {
+            "id": "480",
+            "ll": [
+                37.316871,
+                27.789697
+            ],
+            "title": "Mylasa",
+            "uri": "http://pleiades.stoa.org/places/599809"
+        },
+        {
+            "id": "509",
+            "ll": [
+                36.750652,
+                28.835859
+            ],
+            "title": "Kalynda",
+            "uri": "http://pleiades.stoa.org/places/638891"
+        },
+        {
+            "id": "613",
+            "ll": [
+                37.9727465455,
+                23.7239851818
+            ],
+            "title": "Athenae",
+            "uri": "http://pleiades.stoa.org/places/579885"
+        },
+        {
+            "id": "675",
+            "ll": [
+                36.684805,
+                27.493021
+            ],
+            "title": "Triopion",
+            "uri": "http://pleiades.stoa.org/places/599988"
+        },
+        {
+            "id": "453",
+            "ll": [
+                36.75,
+                28.25
+            ],
+            "title": "Bubasius Sinus",
+            "uri": "http://pleiades.stoa.org/places/599561"
+        },
+        {
+            "id": "468",
+            "ll": [
+                36.9358039,
+                27.8785015
+            ],
+            "title": "Kerameios/Doridis Sinus",
+            "uri": "http://pleiades.stoa.org/places/599706"
+        },
+        {
+            "id": "491",
+            "ll": [
+                36.566308,
+                27.813674
+            ],
+            "title": "Syme Ins.",
+            "uri": "http://pleiades.stoa.org/places/599951"
+        },
+        {
+            "id": "672",
+            "ll": [
+                36.195597,
+                27.964125
+            ],
+            "title": "Rhodos Ins.",
+            "uri": "http://pleiades.stoa.org/places/590031"
+        },
+        {
+            "id": "475",
+            "ll": [
+                37.25,
+                27.75
+            ],
+            "title": "Lide M.",
+            "uri": "http://pleiades.stoa.org/places/599768"
+        },
+        {
+            "id": "512",
+            "ll": [
+                36.3090579,
+                29.3042606
+            ],
+            "title": "Xanthos/Sirbis fl.",
+            "uri": "http://pleiades.stoa.org/places/639167"
+        },
+        {
+            "id": "507",
+            "ll": [
+                36.825909,
+                28.621536
+            ],
+            "title": "Caunus",
+            "uri": "http://pleiades.stoa.org/places/638796"
+        },
+        {
+            "id": "588",
+            "ll": [
+                33.6436,
+                42.8215
+            ],
+            "title": "Idu/Diacira/Hit",
+            "uri": "http://pleiades.stoa.org/places/894008"
+        },
+        {
+            "id": "595",
+            "ll": [
+                33.8227198,
+                42.2782205167
+            ],
+            "title": "Euphrates fl.",
+            "uri": "http://pleiades.stoa.org/places/912849"
+        },
+        {
+            "id": "583",
+            "ll": [
+                39.5,
+                40.5
+            ],
+            "title": "Armenia",
+            "uri": "http://pleiades.stoa.org/places/874350"
+        },
+        {
+            "id": "568",
+            "ll": [
+                25.68502752,
+                32.6355911
+            ],
+            "title": "Diospolis Magna/Thebai",
+            "uri": "http://pleiades.stoa.org/places/786017"
+        },
+        {
+            "id": "511",
+            "ll": [
+                36.2466518,
+                29.3593733
+            ],
+            "title": "Patara M.",
+            "uri": "http://pleiades.stoa.org/places/639041"
+        },
+        {
+            "id": "510",
+            "ll": [
+                36.512941,
+                29.1282355
+            ],
+            "title": "Lycia",
+            "uri": "http://pleiades.stoa.org/places/638965"
+        },
+        {
+            "id": "596",
+            "ll": [
+                32.1887935,
+                48.2537285
+            ],
+            "title": "Shusha(n)/Susa/Seleucia ad Eulaeum/Shush-i er-Kar",
+            "uri": "http://pleiades.stoa.org/places/912936"
+        },
+        {
+            "id": "682",
+            "ll": [
+                33.0958458,
+                47.5259884
+            ],
+            "title": "Shaur/Choaspes?/Eulaeus?/Uknu? fl.",
+            "uri": "http://pleiades.stoa.org/places/912935"
+        },
+        {
+            "id": "597",
+            "ll": [
+                34.5137010875,
+                44.6381741958
+            ],
+            "title": "Tigris/Diglitus fl.",
+            "uri": "http://pleiades.stoa.org/places/912964"
+        },
+        {
+            "id": "589",
+            "ll": [
+                33.185613,
+                44.702767
+            ],
+            "title": "Opis",
+            "uri": "http://pleiades.stoa.org/places/894056"
+        },
+        {
+            "id": "708",
+            "ll": [
+                27.0000001,
+                50.9999999
+            ],
+            "title": "Persicus Sinus/Erythr(ae)um Mare",
+            "uri": "http://pleiades.stoa.org/places/29713"
+        },
+        {
+            "id": "587",
+            "ll": [
+                32.542956,
+                44.4260235
+            ],
+            "title": "Babylon",
+            "uri": "http://pleiades.stoa.org/places/893951"
+        },
+        {
+            "id": "594",
+            "ll": [
+                32.5,
+                44.5
+            ],
+            "title": "Babylonia",
+            "uri": "http://pleiades.stoa.org/places/912816"
+        },
+        {
+            "id": "81",
+            "ll": [
+                41.5,
+                19.5
+            ],
+            "title": "Illyrii",
+            "uri": "http://pleiades.stoa.org/places/481866"
+        },
+        {
+            "id": "593",
+            "ll": [
+                29.5,
+                45.5
+            ],
+            "title": "Arabia",
+            "uri": "http://pleiades.stoa.org/places/912809"
+        },
+        {
+            "id": "586",
+            "ll": [
+                38.5,
+                46.5
+            ],
+            "title": "Araxes (river)",
+            "uri": "http://pleiades.stoa.org/places/884118"
+        },
+        {
+            "id": "627",
+            "ll": [
+                43.2749529941,
+                -4.54228267549
+            ],
+            "title": "Atlanticus Oceanus",
+            "uri": "http://pleiades.stoa.org/places/845"
+        },
+        {
+            "id": "709",
+            "ll": [
+                -20,
+                80
+            ],
+            "title": "Indicum Mare",
+            "uri": "http://pleiades.stoa.org/places/39352"
+        },
+        {
+            "id": "638",
+            "ll": [
+                39.589117825,
+                53.39012345
+            ],
+            "title": "Caspium/Hyrcanium Mare",
+            "uri": "http://pleiades.stoa.org/places/884130"
+        },
+        {
+            "id": "565",
+            "ll": [
+                29.849491,
+                31.255061
+            ],
+            "title": "Memphis",
+            "uri": "http://pleiades.stoa.org/places/736963"
+        },
+        {
+            "id": "544",
+            "ll": [
+                30.131757,
+                31.284786
+            ],
+            "title": "Heliopolis",
+            "uri": "http://pleiades.stoa.org/places/727117"
+        },
+        {
+            "id": "566",
+            "ll": [
+                29.453611,
+                30.580833
+            ],
+            "title": "Moeris L.",
+            "uri": "http://pleiades.stoa.org/places/736967"
+        },
+        {
+            "id": "527",
+            "ll": [
+                31.25,
+                33.25
+            ],
+            "title": "Serbonitis L.",
+            "uri": "http://pleiades.stoa.org/places/688025"
+        },
+        {
+            "id": "689",
+            "ll": [
+                31.2116,
+                33.0779
+            ],
+            "title": "Casius Mons",
+            "uri": "http://pleiades.stoa.org/places/687872"
+        },
+        {
+            "id": "699",
+            "ll": [
+                28.75,
+                31.25
+            ],
+            "title": "Arabikon Oros",
+            "uri": "http://pleiades.stoa.org/places/736891"
+        },
+        {
+            "id": "569",
+            "ll": [
+                24.09,
+                32.889
+            ],
+            "title": "Elephantine",
+            "uri": "http://pleiades.stoa.org/places/786021"
+        },
+        {
+            "id": "322",
+            "ll": [
+                39.035223,
+                27.054771
+            ],
+            "title": "Teuthrania",
+            "uri": "http://pleiades.stoa.org/places/550916"
+        },
+        {
+            "id": "620",
+            "ll": [
+                19.2114087667,
+                30.5673296333
+            ],
+            "title": "Nilus (river)",
+            "uri": "http://pleiades.stoa.org/places/727172"
+        },
+        {
+            "id": "197",
+            "ll": [
+                38.3388321,
+                21.1067111
+            ],
+            "title": "Achelous (river)",
+            "uri": "http://pleiades.stoa.org/places/530768"
+        },
+        {
+            "id": "196",
+            "ll": [
+                38.6719117,
+                21.31951465
+            ],
+            "title": "Acarnania",
+            "uri": "http://pleiades.stoa.org/places/530767"
+        },
+        {
+            "id": "203",
+            "ll": [
+                38.25,
+                21.25
+            ],
+            "title": "Echinades Inss.",
+            "uri": "http://pleiades.stoa.org/places/530852"
+        },
+        {
+            "id": "47",
+            "ll": [
+                14.125005,
+                38.721522
+            ],
+            "title": "Aethiopia",
+            "uri": "http://pleiades.stoa.org/places/39274"
+        },
+        {
+            "id": "685",
+            "ll": [
+                31.465968,
+                30.410712
+            ],
+            "title": "Perseos Skope",
+            "uri": "http://pleiades.stoa.org/places/727193"
+        },
+        {
+            "id": "553",
+            "ll": [
+                31.049917,
+                32.600128
+            ],
+            "title": "Pelusium",
+            "uri": "http://pleiades.stoa.org/places/727192"
+        },
+        {
+            "id": "545",
+            "ll": [
+                30.084523,
+                31.21826
+            ],
+            "title": "Kerkasoros",
+            "uri": "http://pleiades.stoa.org/places/727142"
+        },
+        {
+            "id": "541",
+            "ll": [
+                31.320896,
+                30.063645
+            ],
+            "title": "Canopus",
+            "uri": "http://pleiades.stoa.org/places/727097"
+        },
+        {
+            "id": "716",
+            "ll": [
+                31.25,
+                29.75
+            ],
+            "title": "Kanopische M\u00fcndung",
+            "uri": "http://pleiades.stoa.org/places/211425281"
+        },
+        {
+            "id": "715",
+            "ll": [
+                27.1057061333,
+                25.2836626667
+            ],
+            "title": "Sebennytikon Stoma",
+            "uri": "http://pleiades.stoa.org/places/727224"
+        },
+        {
+            "id": "718",
+            "ll": [
+                31,
+                31.25
+            ],
+            "title": "Sebennytikos fl.",
+            "uri": "http://pleiades.stoa.org/places/727225"
+        },
+        {
+            "id": "557",
+            "ll": [
+                27.1057061333,
+                25.2836626667
+            ],
+            "title": "Tanitikon/Saitikon Stoma",
+            "uri": "http://pleiades.stoa.org/places/727239"
+        },
+        {
+            "id": "697",
+            "ll": [
+                31.25,
+                31.5
+            ],
+            "title": "Mendesios fl.",
+            "uri": "http://pleiades.stoa.org/places/727158"
+        },
+        {
+            "id": "538",
+            "ll": [
+                31.400949,
+                30.414682
+            ],
+            "title": "Bolbitine",
+            "uri": "http://pleiades.stoa.org/places/727085"
+        },
+        {
+            "id": "547",
+            "ll": [
+                30.99482,
+                29.656394
+            ],
+            "title": "Mareia",
+            "uri": "http://pleiades.stoa.org/places/727153"
+        },
+        {
+            "id": "533",
+            "ll": [
+                31.398216,
+                27.042137
+            ],
+            "title": "Apis",
+            "uri": "http://pleiades.stoa.org/places/716526"
+        },
+        {
+            "id": "608",
+            "ll": [
+                42.5,
+                27.5
+            ],
+            "title": "Scythia",
+            "uri": "http://pleiades.stoa.org/places/991379"
+        },
+        {
+            "id": "655",
+            "ll": [
+                30.964722,
+                30.768333
+            ],
+            "title": "Sais",
+            "uri": "http://pleiades.stoa.org/places/727217"
+        },
+        {
+            "id": "570",
+            "ll": [
+                24.081158,
+                32.89804
+            ],
+            "title": "Syene",
+            "uri": "http://pleiades.stoa.org/places/786123"
+        },
+        {
+            "id": "571",
+            "ll": [
+                26.25,
+                32.75
+            ],
+            "title": "Thebais",
+            "uri": "http://pleiades.stoa.org/places/786131"
+        },
+        {
+            "id": "572",
+            "ll": [
+                23.079712,
+                32.69612
+            ],
+            "title": "Tachompso",
+            "uri": "http://pleiades.stoa.org/places/795866"
+        },
+        {
+            "id": "573",
+            "ll": [
+                16.911636,
+                33.70098
+            ],
+            "title": "Meroe",
+            "uri": "http://pleiades.stoa.org/places/805630"
+        },
+        {
+            "id": "543",
+            "ll": [
+                30.860655,
+                32.171531
+            ],
+            "title": "Daphnai",
+            "uri": "http://pleiades.stoa.org/places/727103"
+        },
+        {
+            "id": "44",
+            "ll": [
+                32.8218756667,
+                21.856333
+            ],
+            "title": "Cyrene",
+            "uri": "http://pleiades.stoa.org/places/373778"
+        },
+        {
+            "id": "39",
+            "ll": [
+                34,
+                10.416667
+            ],
+            "title": "Syrtis Minor",
+            "uri": "http://pleiades.stoa.org/places/344492"
+        },
+        {
+            "id": "36",
+            "ll": [
+                35.75,
+                -5.75
+            ],
+            "title": "Soloeis/Ampelusia Pr.",
+            "uri": "http://pleiades.stoa.org/places/275724"
+        },
+        {
+            "id": "31",
+            "ll": [
+                42.468926,
+                2.866662
+            ],
+            "title": "Ad Pyrenaeum/Summus Pyrenaeus",
+            "uri": "http://pleiades.stoa.org/places/246139"
+        },
+        {
+            "id": "724",
+            "ll": [
+                47.1149830333,
+                15.0772312333
+            ],
+            "title": "Danuvius/Istros/Hister fl.",
+            "uri": "http://pleiades.stoa.org/places/226577"
+        },
+        {
+            "id": "14",
+            "ll": [
+                44.5476,
+                28.7748
+            ],
+            "title": "Histria",
+            "uri": "http://pleiades.stoa.org/places/216839"
+        },
+        {
+            "id": "555",
+            "ll": [
+                30.25,
+                30.75
+            ],
+            "title": "Prosopites Nomos",
+            "uri": "http://pleiades.stoa.org/places/727206"
+        },
+        {
+            "id": "537",
+            "ll": [
+                30.713606,
+                30.828784
+            ],
+            "title": "Atarbechis",
+            "uri": "http://pleiades.stoa.org/places/727077"
+        },
+        {
+            "id": "548",
+            "ll": [
+                30.956115,
+                31.51741
+            ],
+            "title": "Mendes",
+            "uri": "http://pleiades.stoa.org/places/727156"
+        },
+        {
+            "id": "166",
+            "ll": [
+                40.78201,
+                24.717535
+            ],
+            "title": "Thasos",
+            "uri": "http://pleiades.stoa.org/places/501634"
+        },
+        {
+            "id": "155",
+            "ll": [
+                40.453,
+                25.582
+            ],
+            "title": "Samothrace Ins.",
+            "uri": "http://pleiades.stoa.org/places/501597"
+        },
+        {
+            "id": "207",
+            "ll": [
+                39.75,
+                20.25
+            ],
+            "title": "Thesprotia",
+            "uri": "http://pleiades.stoa.org/places/531117"
+        },
+        {
+            "id": "539",
+            "ll": [
+                30.572563,
+                31.511468
+            ],
+            "title": "Boubastis",
+            "uri": "http://pleiades.stoa.org/places/727088"
+        },
+        {
+            "id": "647",
+            "ll": [
+                31.25,
+                30.25
+            ],
+            "title": "Nildelta",
+            "uri": "http://pleiades.stoa.org/places/619096567"
+        },
+        {
+            "id": "540",
+            "ll": [
+                31.195135,
+                30.742535
+            ],
+            "title": "Bouto",
+            "uri": "http://pleiades.stoa.org/places/727094"
+        },
+        {
+            "id": "552",
+            "ll": [
+                30.75,
+                30.75
+            ],
+            "title": "Papremis",
+            "uri": "http://pleiades.stoa.org/places/727185"
+        },
+        {
+            "id": "542",
+            "ll": [
+                31.25,
+                30.75
+            ],
+            "title": "Chemmis",
+            "uri": "http://pleiades.stoa.org/places/727099"
+        },
+        {
+            "id": "526",
+            "ll": [
+                31.530845,
+                34.433158
+            ],
+            "title": "Gazaion Limen/Constantia/Neapolis",
+            "uri": "http://pleiades.stoa.org/places/687903"
+        },
+        {
+            "id": "671",
+            "ll": [
+                30.900306,
+                30.592078
+            ],
+            "title": "Naucratis",
+            "uri": "http://pleiades.stoa.org/places/727169"
+        },
+        {
+            "id": "536",
+            "ll": [
+                31.168066,
+                30.205127
+            ],
+            "title": "Anthylla",
+            "uri": "http://pleiades.stoa.org/places/727073"
+        },
+        {
+            "id": "48",
+            "ll": [
+                19,
+                39.5
+            ],
+            "title": "Arabicus Sinus/Erythr(ae)um/Rubrum Mare",
+            "uri": "http://pleiades.stoa.org/places/39290"
+        },
+        {
+            "id": "662",
+            "ll": [
+                41.5,
+                32.5
+            ],
+            "title": "Parthenios fl.",
+            "uri": "http://pleiades.stoa.org/places/845036"
+        },
+        {
+            "id": "619",
+            "ll": [
+                37.3669078532,
+                25.2267380113
+            ],
+            "title": "Aegaeum Mare",
+            "uri": "http://pleiades.stoa.org/places/560221"
+        },
+        {
+            "id": "710",
+            "ll": [
+                31.15802,
+                32.68554
+            ],
+            "title": "Aegyptium Mare",
+            "uri": "http://pleiades.stoa.org/places/727067"
+        },
+        {
+            "id": "520",
+            "ll": [
+                33.560243,
+                35.371208
+            ],
+            "title": "Sidon/Col. Aurelia Pia",
+            "uri": "http://pleiades.stoa.org/places/678393"
+        },
+        {
+            "id": "564",
+            "ll": [
+                29.320878,
+                30.835832
+            ],
+            "title": "Krokodilopolis/Ptolemais Euergetis",
+            "uri": "http://pleiades.stoa.org/places/736948"
+        },
+        {
+            "id": "523",
+            "ll": [
+                31.756038,
+                34.656061
+            ],
+            "title": "Ashdod/Azotos (Mesogeios)",
+            "uri": "http://pleiades.stoa.org/places/687838"
+        },
+        {
+            "id": "702",
+            "ll": [
+                30.553048,
+                32.099207
+            ],
+            "title": "Heroonpolis",
+            "uri": "http://pleiades.stoa.org/places/727124"
+        },
+        {
+            "id": "546",
+            "ll": [
+                30.9716055,
+                32.468749
+            ],
+            "title": "Magdolos",
+            "uri": "http://pleiades.stoa.org/places/727152"
+        },
+        {
+            "id": "525",
+            "ll": [
+                31.529444,
+                34.445392
+            ],
+            "title": "Gaza",
+            "uri": "http://pleiades.stoa.org/places/687902"
+        },
+        {
+            "id": "344",
+            "ll": [
+                37.891781,
+                21.375091
+            ],
+            "title": "Elis",
+            "uri": "http://pleiades.stoa.org/places/570220"
+        },
+        {
+            "id": "549",
+            "ll": [
+                30.795055,
+                30.600505
+            ],
+            "title": "Momemphis",
+            "uri": "http://pleiades.stoa.org/places/727165"
+        },
+        {
+            "id": "550",
+            "ll": [
+                30.713246,
+                31.266677
+            ],
+            "title": "Natho",
+            "uri": "http://pleiades.stoa.org/places/727168"
+        },
+        {
+            "id": "556",
+            "ll": [
+                30.75,
+                31.75
+            ],
+            "title": "Tanites Nomos",
+            "uri": "http://pleiades.stoa.org/places/727237"
+        },
+        {
+            "id": "717",
+            "ll": [
+                30.962841,
+                31.239569
+            ],
+            "title": "Sebennytos",
+            "uri": "http://pleiades.stoa.org/places/727227"
+        },
+        {
+            "id": "567",
+            "ll": [
+                26.511376,
+                31.665497
+            ],
+            "title": "Athribis/Triph(i)eion",
+            "uri": "http://pleiades.stoa.org/places/756538"
+        },
+        {
+            "id": "554",
+            "ll": [
+                30.75,
+                31.75
+            ],
+            "title": "Pharbaithites Nomos",
+            "uri": "http://pleiades.stoa.org/places/727195"
+        },
+        {
+            "id": "558",
+            "ll": [
+                30.937937,
+                31.517046
+            ],
+            "title": "Thmouis",
+            "uri": "http://pleiades.stoa.org/places/727249"
+        },
+        {
+            "id": "551",
+            "ll": [
+                31.25,
+                30.75
+            ],
+            "title": "Onouphites? Nomos",
+            "uri": "http://pleiades.stoa.org/places/727181"
+        },
+        {
+            "id": "680",
+            "ll": [
+                36.524579,
+                30.551573
+            ],
+            "title": "Phaselis",
+            "uri": "http://pleiades.stoa.org/places/639051"
+        },
+        {
+            "id": "43",
+            "ll": [
+                32.498333,
+                20.892778
+            ],
+            "title": "Barke",
+            "uri": "http://pleiades.stoa.org/places/373750"
+        },
+        {
+            "id": "37",
+            "ll": [
+                36.85387525,
+                10.32722045
+            ],
+            "title": "Carthago",
+            "uri": "http://pleiades.stoa.org/places/314921"
+        },
+        {
+            "id": "630",
+            "ll": [
+                25.6676117977,
+                28.8706203539
+            ],
+            "title": "Esotero (Oasis)",
+            "uri": "http://pleiades.stoa.org/places/776172"
+        },
+        {
+            "id": "439",
+            "ll": [
+                35.515775,
+                24.01869
+            ],
+            "title": "Kydonia",
+            "uri": "http://pleiades.stoa.org/places/589886"
+        },
+        {
+            "id": "437",
+            "ll": [
+                35.583333,
+                27.133333
+            ],
+            "title": "Karpathos Ins.",
+            "uri": "http://pleiades.stoa.org/places/589841"
+        },
+        {
+            "id": "366",
+            "ll": [
+                37.08882575,
+                21.91732425
+            ],
+            "title": "Messenia",
+            "uri": "http://pleiades.stoa.org/places/570480"
+        },
+        {
+            "id": "200",
+            "ll": [
+                39.666667,
+                19.75
+            ],
+            "title": "Corcyra Ins.",
+            "uri": "http://pleiades.stoa.org/places/530835"
+        },
+        {
+            "id": "443",
+            "ll": [
+                35.208535,
+                26.108246
+            ],
+            "title": "*Setaea/Etis",
+            "uri": "http://pleiades.stoa.org/places/590045"
+        },
+        {
+            "id": "351",
+            "ll": [
+                37.385218,
+                23.243591
+            ],
+            "title": "Hermion(e)",
+            "uri": "http://pleiades.stoa.org/places/570292"
+        },
+        {
+            "id": "352",
+            "ll": [
+                37.339,
+                23.484
+            ],
+            "title": "Hydroussa/Hydrea Ins.",
+            "uri": "http://pleiades.stoa.org/places/570299"
+        },
+        {
+            "id": "403",
+            "ll": [
+                37.496395,
+                23.362444
+            ],
+            "title": "Troizen",
+            "uri": "http://pleiades.stoa.org/places/570756"
+        },
+        {
+            "id": "517",
+            "ll": [
+                35.847777,
+                35.824785
+            ],
+            "title": "Posideion",
+            "uri": "http://pleiades.stoa.org/places/668340"
+        },
+        {
+            "id": "6",
+            "ll": [
+                39.6,
+                22.2
+            ],
+            "title": "Thessalia",
+            "uri": "http://pleiades.stoa.org/places/1332"
+        },
+        {
+            "id": "113",
+            "ll": [
+                22.5,
+                77.5
+            ],
+            "title": "India",
+            "uri": "http://pleiades.stoa.org/places/50004"
+        },
+        {
+            "id": "489",
+            "ll": [
+                34.143959,
+                71.616854
+            ],
+            "title": "Peukelaotis/Kaspatyros?",
+            "uri": "http://pleiades.stoa.org/places/59993"
+        },
+        {
+            "id": "180",
+            "ll": [
+                40.377645,
+                28.674196
+            ],
+            "title": "Daskyleion",
+            "uri": "http://pleiades.stoa.org/places/511226"
+        },
+        {
+            "id": "438",
+            "ll": [
+                35.2977445,
+                25.163289
+            ],
+            "title": "Knosos/Col. Iulia Nobilis Cnosos",
+            "uri": "http://pleiades.stoa.org/places/589872"
+        },
+        {
+            "id": "684",
+            "ll": [
+                37.67175,
+                26.885663
+            ],
+            "title": "Heraion",
+            "uri": "http://pleiades.stoa.org/places/599641"
+        },
+        {
+            "id": "57",
+            "ll": [
+                39.081572,
+                17.128852
+            ],
+            "title": "Croto(n)",
+            "uri": "http://pleiades.stoa.org/places/452317"
+        },
+        {
+            "id": "624",
+            "ll": [
+                37.0712886667,
+                15.2823273333
+            ],
+            "title": "Syracusae/Syrakousai",
+            "uri": "http://pleiades.stoa.org/places/462503"
+        },
+        {
+            "id": "52",
+            "ll": [
+                40.75,
+                17.75
+            ],
+            "title": "Calabria",
+            "uri": "http://pleiades.stoa.org/places/442518"
+        },
+        {
+            "id": "21",
+            "ll": [
+                51.8027156667,
+                32.0136165333
+            ],
+            "title": "Borysthenes fl.",
+            "uri": "http://pleiades.stoa.org/places/226544"
+        },
+        {
+            "id": "32",
+            "ll": [
+                36.5,
+                -6.5
+            ],
+            "title": "Aphrodisias/Erythea/Iunonis Ins.",
+            "uri": "http://pleiades.stoa.org/places/255978"
+        },
+        {
+            "id": "33",
+            "ll": [
+                36.528381,
+                -6.294444
+            ],
+            "title": "Gadeira/Gades/Col. Augusta Gaditana",
+            "uri": "http://pleiades.stoa.org/places/256177"
+        },
+        {
+            "id": "29",
+            "ll": [
+                46.200563,
+                30.349729
+            ],
+            "title": "Tyras/Ophioussa",
+            "uri": "http://pleiades.stoa.org/places/226800"
+        },
+        {
+            "id": "186",
+            "ll": [
+                40.591686,
+                27.55568
+            ],
+            "title": "Proconnesus",
+            "uri": "http://pleiades.stoa.org/places/511378"
+        },
+        {
+            "id": "179",
+            "ll": [
+                40.389806,
+                27.874127
+            ],
+            "title": "Cyzicus",
+            "uri": "http://pleiades.stoa.org/places/511218"
+        },
+        {
+            "id": "177",
+            "ll": [
+                40.402952,
+                27.796268
+            ],
+            "title": "Artace",
+            "uri": "http://pleiades.stoa.org/places/511158"
+        },
+        {
+            "id": "678",
+            "ll": [
+                40.38362725,
+                16.82523365
+            ],
+            "title": "Metapontum",
+            "uri": "http://pleiades.stoa.org/places/442658"
+        },
+        {
+            "id": "25",
+            "ll": [
+                47.5,
+                31.5
+            ],
+            "title": "Hypanis fl.",
+            "uri": "http://pleiades.stoa.org/places/226630"
+        },
+        {
+            "id": "27",
+            "ll": [
+                46.5,
+                32.5
+            ],
+            "title": "Panticapes? fl.",
+            "uri": "http://pleiades.stoa.org/places/226712"
+        },
+        {
+            "id": "24",
+            "ll": [
+                47.5,
+                35.5
+            ],
+            "title": "Gerros fl.",
+            "uri": "http://pleiades.stoa.org/places/226603"
+        },
+        {
+            "id": "574",
+            "ll": [
+                46.672101,
+                35.841144
+            ],
+            "title": "Kremnoi",
+            "uri": "http://pleiades.stoa.org/places/825307"
+        },
+        {
+            "id": "625",
+            "ll": [
+                47.5437096,
+                40.7291755
+            ],
+            "title": "Tanais fl.",
+            "uri": "http://pleiades.stoa.org/places/825398"
+        },
+        {
+            "id": "633",
+            "ll": [
+                45.35,
+                36.65
+            ],
+            "title": "Cimmerius Bosp(h)orus",
+            "uri": "http://pleiades.stoa.org/places/854675"
+        },
+        {
+            "id": "681",
+            "ll": [
+                45.25,
+                36.75
+            ],
+            "title": "Sindike",
+            "uri": "http://pleiades.stoa.org/places/854735"
+        },
+        {
+            "id": "356",
+            "ll": [
+                38.016541,
+                24.420381
+            ],
+            "title": "Karystos",
+            "uri": "http://pleiades.stoa.org/places/570336"
+        },
+        {
+            "id": "433",
+            "ll": [
+                37.85,
+                24.86
+            ],
+            "title": "Andros Ins.",
+            "uri": "http://pleiades.stoa.org/places/589693"
+        },
+        {
+            "id": "444",
+            "ll": [
+                37.607,
+                25.114
+            ],
+            "title": "Tenos Ins.",
+            "uri": "http://pleiades.stoa.org/places/590074"
+        },
+        {
+            "id": "357",
+            "ll": [
+                37.616667,
+                24.333333
+            ],
+            "title": "Keos Ins.",
+            "uri": "http://pleiades.stoa.org/places/570348"
+        },
+        {
+            "id": "318",
+            "ll": [
+                39.97336,
+                26.177454
+            ],
+            "title": "Sigeion",
+            "uri": "http://pleiades.stoa.org/places/550877"
+        },
+        {
+            "id": "284",
+            "ll": [
+                39.751667,
+                26.156944
+            ],
+            "title": "Antigoneia/(Col. Augusta) Alexandria Troas",
+            "uri": "http://pleiades.stoa.org/places/550434"
+        },
+        {
+            "id": "515",
+            "ll": [
+                36.579722,
+                35.83
+            ],
+            "title": "Issicus Sinus",
+            "uri": "http://pleiades.stoa.org/places/658489"
+        },
+        {
+            "id": "449",
+            "ll": [
+                29.0592303,
+                70.12808435
+            ],
+            "title": "Indus/Sinthos/Phison fl.",
+            "uri": "http://pleiades.stoa.org/places/59851"
+        },
+        {
+            "id": "467",
+            "ll": [
+                37.126299,
+                27.377983
+            ],
+            "title": "Karyanda (Neapolis)",
+            "uri": "http://pleiades.stoa.org/places/599694"
+        },
+        {
+            "id": "688",
+            "ll": [
+                46.5,
+                33.5
+            ],
+            "title": "Karkinites/Hypakyris? fl.",
+            "uri": "http://pleiades.stoa.org/places/226653"
+        },
+        {
+            "id": "18",
+            "ll": [
+                46.5,
+                28.5
+            ],
+            "title": "Pyretos fl.",
+            "uri": "http://pleiades.stoa.org/places/216947"
+        },
+        {
+            "id": "13",
+            "ll": [
+                46.847661,
+                20.2732883
+            ],
+            "title": "Hierasos/Gerasus/Tiarantos? fl.",
+            "uri": "http://pleiades.stoa.org/places/216837"
+        },
+        {
+            "id": "16",
+            "ll": [
+                44.5,
+                27.5
+            ],
+            "title": "Naparis? fl.",
+            "uri": "http://pleiades.stoa.org/places/216891"
+        },
+        {
+            "id": "9",
+            "ll": [
+                46.5,
+                20.5
+            ],
+            "title": "Maris(os) fl.",
+            "uri": "http://pleiades.stoa.org/places/207269"
+        },
+        {
+            "id": "20",
+            "ll": [
+                47.5,
+                27.5
+            ],
+            "title": "Agathyrsoi",
+            "uri": "http://pleiades.stoa.org/places/226511"
+        },
+        {
+            "id": "10",
+            "ll": [
+                45.5,
+                21.5
+            ],
+            "title": "Tibiskos fl.",
+            "uri": "http://pleiades.stoa.org/places/207496"
+        },
+        {
+            "id": "22",
+            "ll": [
+                47.5,
+                30.5
+            ],
+            "title": "Crobyzi",
+            "uri": "http://pleiades.stoa.org/places/226574"
+        },
+        {
+            "id": "12",
+            "ll": [
+                43.5,
+                25.5
+            ],
+            "title": "Athrys/Iatros/Ieterus fl.",
+            "uri": "http://pleiades.stoa.org/places/216717"
+        },
+        {
+            "id": "17",
+            "ll": [
+                43.710514,
+                24.465476
+            ],
+            "title": "Oescus",
+            "uri": "http://pleiades.stoa.org/places/216907"
+        },
+        {
+            "id": "154",
+            "ll": [
+                41.75,
+                24.25
+            ],
+            "title": "Rhodope M.",
+            "uri": "http://pleiades.stoa.org/places/501592"
+        },
+        {
+            "id": "83",
+            "ll": [
+                42.5,
+                21.5
+            ],
+            "title": "Triballoi",
+            "uri": "http://pleiades.stoa.org/places/482023"
+        },
+        {
+            "id": "635",
+            "ll": [
+                44.5,
+                21.5
+            ],
+            "title": "Margus fl.",
+            "uri": "http://pleiades.stoa.org/places/207268"
+        },
+        {
+            "id": "26",
+            "ll": [
+                46.25451,
+                33.290274
+            ],
+            "title": "Karkine?",
+            "uri": "http://pleiades.stoa.org/places/226652"
+        },
+        {
+            "id": "628",
+            "ll": [
+                46.5,
+                31.5
+            ],
+            "title": "Achilleios Dromos",
+            "uri": "http://pleiades.stoa.org/places/226506"
+        },
+        {
+            "id": "722",
+            "ll": [
+                46.691895,
+                31.901597
+            ],
+            "title": "Borysthenes/Olbia",
+            "uri": "http://pleiades.stoa.org/places/226546"
+        },
+        {
+            "id": "193",
+            "ll": [
+                41.119444,
+                29.075278
+            ],
+            "title": "Bosphorus",
+            "uri": "http://pleiades.stoa.org/places/520977"
+        },
+        {
+            "id": "195",
+            "ll": [
+                40.983393,
+                29.025789
+            ],
+            "title": "Chalcedon",
+            "uri": "http://pleiades.stoa.org/places/520988"
+        },
+        {
+            "id": "187",
+            "ll": [
+                40.6666672,
+                28.2499999
+            ],
+            "title": "Propontis",
+            "uri": "http://pleiades.stoa.org/places/511381"
+        },
+        {
+            "id": "657",
+            "ll": [
+                41.215176,
+                36.967737
+            ],
+            "title": "Themiskyra",
+            "uri": "http://pleiades.stoa.org/places/857350"
+        },
+        {
+            "id": "194",
+            "ll": [
+                41.005902,
+                28.9738815
+            ],
+            "title": "Byzantium",
+            "uri": "http://pleiades.stoa.org/places/520985"
+        },
+        {
+            "id": "661",
+            "ll": [
+                41.125,
+                29.125
+            ],
+            "title": "Symplegades/Kyaneai Inss.",
+            "uri": "http://pleiades.stoa.org/places/521160"
+        },
+        {
+            "id": "191",
+            "ll": [
+                41.75,
+                27.75
+            ],
+            "title": "Tearos fl.",
+            "uri": "http://pleiades.stoa.org/places/511432"
+        },
+        {
+            "id": "664",
+            "ll": [
+                41.023945,
+                27.742027
+            ],
+            "title": "Heraion (Teichos)",
+            "uri": "http://pleiades.stoa.org/places/511271"
+        },
+        {
+            "id": "184",
+            "ll": [
+                40.971013,
+                27.952973
+            ],
+            "title": "Perinthus/Heraclea",
+            "uri": "http://pleiades.stoa.org/places/511357"
+        },
+        {
+            "id": "11",
+            "ll": [
+                42.420355,
+                27.694272
+            ],
+            "title": "Apollonia Pontica/Sozopolis",
+            "uri": "http://pleiades.stoa.org/places/216706"
+        },
+        {
+            "id": "181",
+            "ll": [
+                41.75,
+                27.25
+            ],
+            "title": "Kontadesdos fl.",
+            "uri": "http://pleiades.stoa.org/places/511294"
+        },
+        {
+            "id": "133",
+            "ll": [
+                40.738634,
+                26.029778
+            ],
+            "title": "Hebros fl.",
+            "uri": "http://pleiades.stoa.org/places/501432"
+        },
+        {
+            "id": "117",
+            "ll": [
+                40.7248985,
+                26.085729
+            ],
+            "title": "Ainos",
+            "uri": "http://pleiades.stoa.org/places/501337"
+        },
+        {
+            "id": "658",
+            "ll": [
+                41.637244,
+                28.091144
+            ],
+            "title": "Salmydessos",
+            "uri": "http://pleiades.stoa.org/places/511404"
+        },
+        {
+            "id": "15",
+            "ll": [
+                42.658743,
+                27.730787
+            ],
+            "title": "Mesembria",
+            "uri": "http://pleiades.stoa.org/places/216882"
+        },
+        {
+            "id": "663",
+            "ll": [
+                45.203672,
+                33.361389
+            ],
+            "title": "Kerkinitis?",
+            "uri": "http://pleiades.stoa.org/places/226658"
+        },
+        {
+            "id": "704",
+            "ll": [
+                44.5,
+                33.5
+            ],
+            "title": "Tracheia Chersonesos",
+            "uri": "http://pleiades.stoa.org/places/226793"
+        },
+        {
+            "id": "706",
+            "ll": [
+                37.6491,
+                24.0296
+            ],
+            "title": "Sounion Pr.",
+            "uri": "http://pleiades.stoa.org/places/599943"
+        },
+        {
+            "id": "428",
+            "ll": [
+                37.7375236,
+                24.0534914
+            ],
+            "title": "Thorikos",
+            "uri": "http://pleiades.stoa.org/places/580119"
+        },
+        {
+            "id": "410",
+            "ll": [
+                37.625,
+                23.875
+            ],
+            "title": "Anaphlystos Limen",
+            "uri": "http://pleiades.stoa.org/places/579865"
+        },
+        {
+            "id": "51",
+            "ll": [
+                40.641136,
+                17.946867
+            ],
+            "title": "Brundisium/Brentesion",
+            "uri": "http://pleiades.stoa.org/places/442509"
+        },
+        {
+            "id": "28",
+            "ll": [
+                45.5,
+                33.5
+            ],
+            "title": "Taurike Chersonesos",
+            "uri": "http://pleiades.stoa.org/places/226778"
+        },
+        {
+            "id": "659",
+            "ll": [
+                41.1939559,
+                36.9424975
+            ],
+            "title": "Thermodon fl.",
+            "uri": "http://pleiades.stoa.org/places/857352"
+        },
+        {
+            "id": "575",
+            "ll": [
+                47.5,
+                37.5
+            ],
+            "title": "Lykos? fl.",
+            "uri": "http://pleiades.stoa.org/places/825316"
+        },
+        {
+            "id": "114",
+            "ll": [
+                40.194214,
+                26.411298
+            ],
+            "title": "Abydos",
+            "uri": "http://pleiades.stoa.org/places/501325"
+        },
+        {
+            "id": "153",
+            "ll": [
+                40.346685,
+                26.699162
+            ],
+            "title": "Pityoussa/Lampsacus",
+            "uri": "http://pleiades.stoa.org/places/501570"
+        },
+        {
+            "id": "183",
+            "ll": [
+                40.420499,
+                27.069096
+            ],
+            "title": "Parium/Col. Gemella Iulia *Hadriana",
+            "uri": "http://pleiades.stoa.org/places/511354"
+        },
+        {
+            "id": "159",
+            "ll": [
+                40.228356,
+                26.417225
+            ],
+            "title": "Sestos",
+            "uri": "http://pleiades.stoa.org/places/501609"
+        },
+        {
+            "id": "125",
+            "ll": [
+                40.33333,
+                26.5
+            ],
+            "title": "Chersonesus",
+            "uri": "http://pleiades.stoa.org/places/501386"
+        },
+        {
+            "id": "634",
+            "ll": [
+                37.926212,
+                23.993749
+            ],
+            "title": "Artemis Brauronia, T.",
+            "uri": "http://pleiades.stoa.org/places/579879"
+        },
+        {
+            "id": "301",
+            "ll": [
+                39.916667,
+                25.25
+            ],
+            "title": "Lemnos Ins.",
+            "uri": "http://pleiades.stoa.org/places/550693"
+        },
+        {
+            "id": "712",
+            "ll": [
+                36.953544,
+                22.349956
+            ],
+            "title": "Taygetos M.",
+            "uri": "http://pleiades.stoa.org/places/570706"
+        },
+        {
+            "id": "493",
+            "ll": [
+                36.416667,
+                25.433333
+            ],
+            "title": "Thera Ins.",
+            "uri": "http://pleiades.stoa.org/places/599973"
+        },
+        {
+            "id": "361",
+            "ll": [
+                37.432321,
+                21.726002
+            ],
+            "title": "Lepreon",
+            "uri": "http://pleiades.stoa.org/places/570423"
+        },
+        {
+            "id": "362",
+            "ll": [
+                37.60974,
+                21.698461
+            ],
+            "title": "Makistos",
+            "uri": "http://pleiades.stoa.org/places/570453"
+        },
+        {
+            "id": "385",
+            "ll": [
+                37.635009,
+                21.71145
+            ],
+            "title": "Phrixa(i)",
+            "uri": "http://pleiades.stoa.org/places/570609"
+        },
+        {
+            "id": "389",
+            "ll": [
+                37.25,
+                21.75
+            ],
+            "title": "Pyrgoi",
+            "uri": "http://pleiades.stoa.org/places/570641"
+        },
+        {
+            "id": "345",
+            "ll": [
+                37.56585,
+                21.784671
+            ],
+            "title": "Ep(e)ion",
+            "uri": "http://pleiades.stoa.org/places/570226"
+        },
+        {
+            "id": "436",
+            "ll": [
+                35.263286,
+                26.263095
+            ],
+            "title": "Itanos",
+            "uri": "http://pleiades.stoa.org/places/589824"
+        },
+        {
+            "id": "328",
+            "ll": [
+                35.5,
+                26.5
+            ],
+            "title": "Platea? Ins.",
+            "uri": "http://pleiades.stoa.org/places/560720"
+        },
+        {
+            "id": "445",
+            "ll": [
+                35.302424,
+                24.840106
+            ],
+            "title": "(W)Axos",
+            "uri": "http://pleiades.stoa.org/places/590095"
+        },
+        {
+            "id": "42",
+            "ll": [
+                32.683784,
+                22.880611
+            ],
+            "title": "Aziris",
+            "uri": "http://pleiades.stoa.org/places/373746"
+        },
+        {
+            "id": "45",
+            "ll": [
+                32.541066,
+                23.004063
+            ],
+            "title": "Errazen",
+            "uri": "http://pleiades.stoa.org/places/373784"
+        },
+        {
+            "id": "364",
+            "ll": [
+                37.618138,
+                22.393259
+            ],
+            "title": "Mantineia/Antigoneia",
+            "uri": "http://pleiades.stoa.org/places/570459"
+        },
+        {
+            "id": "532",
+            "ll": [
+                35.1848,
+                33.902516
+            ],
+            "title": "Salamis/Konstantia",
+            "uri": "http://pleiades.stoa.org/places/707617"
+        },
+        {
+            "id": "600",
+            "ll": [
+                30.1914385,
+                53.1727335
+            ],
+            "title": "Pasargadae/Batrakatash",
+            "uri": "http://pleiades.stoa.org/places/922693"
+        },
+        {
+            "id": "534",
+            "ll": [
+                31.552706,
+                25.152644
+            ],
+            "title": "Catabathmus Maior/Plynos Limen/Tetrapyrgia",
+            "uri": "http://pleiades.stoa.org/places/716540"
+        },
+        {
+            "id": "452",
+            "ll": [
+                36.75,
+                27.75
+            ],
+            "title": "Aphrodisias Pr.",
+            "uri": "http://pleiades.stoa.org/places/599500"
+        },
+        {
+            "id": "535",
+            "ll": [
+                31.967385,
+                24.892773
+            ],
+            "title": "Menelaos",
+            "uri": "http://pleiades.stoa.org/places/716599"
+        },
+        {
+            "id": "46",
+            "ll": [
+                32.109789,
+                20.091198
+            ],
+            "title": "Euesperides",
+            "uri": "http://pleiades.stoa.org/places/373786"
+        },
+        {
+            "id": "40",
+            "ll": [
+                32.537142,
+                20.565847
+            ],
+            "title": "Arsinoe/Taucheira",
+            "uri": "http://pleiades.stoa.org/places/373736"
+        },
+        {
+            "id": "41",
+            "ll": [
+                29.127566,
+                21.290963
+            ],
+            "title": "Augila",
+            "uri": "http://pleiades.stoa.org/places/373742"
+        },
+        {
+            "id": "38",
+            "ll": [
+                32.5,
+                14.5
+            ],
+            "title": "Kinyps fl.",
+            "uri": "http://pleiades.stoa.org/places/344414"
+        },
+        {
+            "id": "257",
+            "ll": [
+                39.25,
+                23.25
+            ],
+            "title": "Pelion M.",
+            "uri": "http://pleiades.stoa.org/places/541021"
+        },
+        {
+            "id": "696",
+            "ll": [
+                33.5,
+                8.5
+            ],
+            "title": "Salinarum L./Tritonis Palus",
+            "uri": "http://pleiades.stoa.org/places/334616"
+        },
+        {
+            "id": "645",
+            "ll": [
+                34.7865653,
+                11.2342661
+            ],
+            "title": "Cercina Ins.",
+            "uri": "http://pleiades.stoa.org/places/324690"
+        },
+        {
+            "id": "209",
+            "ll": [
+                37.77,
+                20.76
+            ],
+            "title": "Zacynthus Ins.",
+            "uri": "http://pleiades.stoa.org/places/531155"
+        },
+        {
+            "id": "105",
+            "ll": [
+                40.177012,
+                22.491299
+            ],
+            "title": "Pieria",
+            "uri": "http://pleiades.stoa.org/places/491696"
+        },
+        {
+            "id": "603",
+            "ll": [
+                37.5,
+                67.5
+            ],
+            "title": "Bactria",
+            "uri": "http://pleiades.stoa.org/places/971705"
+        },
+        {
+            "id": "7",
+            "ll": [
+                43.296854,
+                5.382499
+            ],
+            "title": "Massalia/Massilia",
+            "uri": "http://pleiades.stoa.org/places/148127"
+        },
+        {
+            "id": "142",
+            "ll": [
+                40.90722,
+                23.819454
+            ],
+            "title": "Myrkinos",
+            "uri": "http://pleiades.stoa.org/places/501520"
+        },
+        {
+            "id": "102",
+            "ll": [
+                41.75,
+                21.75
+            ],
+            "title": "Paionia",
+            "uri": "http://pleiades.stoa.org/places/491680"
+        },
+        {
+            "id": "145",
+            "ll": [
+                41.016667,
+                24.5
+            ],
+            "title": "Orbelos M.",
+            "uri": "http://pleiades.stoa.org/places/501539"
+        },
+        {
+            "id": "98",
+            "ll": [
+                41.25,
+                21.75
+            ],
+            "title": "Macedonia",
+            "uri": "http://pleiades.stoa.org/places/491656"
+        },
+        {
+            "id": "695",
+            "ll": [
+                40.75,
+                23.75
+            ],
+            "title": "Prasias L.",
+            "uri": "http://pleiades.stoa.org/places/501579"
+        },
+        {
+            "id": "90",
+            "ll": [
+                41.25,
+                22.75
+            ],
+            "title": "Dysoron M.",
+            "uri": "http://pleiades.stoa.org/places/491582"
+        },
+        {
+            "id": "283",
+            "ll": [
+                39.5785,
+                26.791496
+            ],
+            "title": "Antandros",
+            "uri": "http://pleiades.stoa.org/places/550433"
+        },
+        {
+            "id": "298",
+            "ll": [
+                39.538105,
+                26.421229
+            ],
+            "title": "Lamponia",
+            "uri": "http://pleiades.stoa.org/places/550678"
+        },
+        {
+            "id": "134",
+            "ll": [
+                40.233058,
+                25.903047
+            ],
+            "title": "Imbros",
+            "uri": "http://pleiades.stoa.org/places/501438"
+        },
+        {
+            "id": "327",
+            "ll": [
+                37.1086525474,
+                25.0593466053
+            ],
+            "title": "Cyclades Inss.",
+            "uri": "http://pleiades.stoa.org/places/560353"
+        },
+        {
+            "id": "612",
+            "ll": [
+                37.05,
+                25.19
+            ],
+            "title": "Paros Ins.",
+            "uri": "http://pleiades.stoa.org/places/599868"
+        },
+        {
+            "id": "481",
+            "ll": [
+                37.073691,
+                27.242415
+            ],
+            "title": "Myndos",
+            "uri": "http://pleiades.stoa.org/places/599811"
+        },
+        {
+            "id": "492",
+            "ll": [
+                36.995872,
+                27.298363
+            ],
+            "title": "Termera",
+            "uri": "http://pleiades.stoa.org/places/599965"
+        },
+        {
+            "id": "69",
+            "ll": [
+                37.394042,
+                13.280904
+            ],
+            "title": "Heraclea Minoa",
+            "uri": "http://pleiades.stoa.org/places/462237"
+        },
+        {
+            "id": "652",
+            "ll": [
+                37.5311784507,
+                14.2270394649
+            ],
+            "title": "Sicilia (island)",
+            "uri": "http://pleiades.stoa.org/places/462492"
+        },
+        {
+            "id": "66",
+            "ll": [
+                38.036517,
+                12.583607
+            ],
+            "title": "Eryx",
+            "uri": "http://pleiades.stoa.org/places/462201"
+        },
+        {
+            "id": "653",
+            "ll": [
+                42.5,
+                12.5
+            ],
+            "title": "Italia",
+            "uri": "http://pleiades.stoa.org/places/1052"
+        },
+        {
+            "id": "62",
+            "ll": [
+                39.715622,
+                16.490517
+            ],
+            "title": "Sybaris/Thurii/Copia",
+            "uri": "http://pleiades.stoa.org/places/452457"
+        },
+        {
+            "id": "654",
+            "ll": [
+                37.584802,
+                12.820997
+            ],
+            "title": "Selinus",
+            "uri": "http://pleiades.stoa.org/places/462489"
+        },
+        {
+            "id": "427",
+            "ll": [
+                38.3001983333,
+                23.581173
+            ],
+            "title": "Tanagra",
+            "uri": "http://pleiades.stoa.org/places/580114"
+        },
+        {
+            "id": "8",
+            "ll": [
+                42.5,
+                18.5
+            ],
+            "title": "Enchelei",
+            "uri": "http://pleiades.stoa.org/places/197260"
+        },
+        {
+            "id": "421",
+            "ll": [
+                38.12719,
+                23.724333
+            ],
+            "title": "Leipsydrion",
+            "uri": "http://pleiades.stoa.org/places/580011"
+        },
+        {
+            "id": "424",
+            "ll": [
+                37.875,
+                23.625
+            ],
+            "title": "Phaleron Limen",
+            "uri": "http://pleiades.stoa.org/places/580071"
+        },
+        {
+            "id": "408",
+            "ll": [
+                37.95,
+                23.749997
+            ],
+            "title": "Alopeke",
+            "uri": "http://pleiades.stoa.org/places/579858"
+        },
+        {
+            "id": "317",
+            "ll": [
+                39.75,
+                26.25
+            ],
+            "title": "Scamander fl.",
+            "uri": "http://pleiades.stoa.org/places/550871"
+        },
+        {
+            "id": "422",
+            "ll": [
+                38.125,
+                23.375
+            ],
+            "title": "Oinoe",
+            "uri": "http://pleiades.stoa.org/places/580040"
+        },
+        {
+            "id": "353",
+            "ll": [
+                37.510211,
+                22.578143
+            ],
+            "title": "Hysiai",
+            "uri": "http://pleiades.stoa.org/places/570306"
+        },
+        {
+            "id": "365",
+            "ll": [
+                37.985078,
+                23.340163
+            ],
+            "title": "Megara",
+            "uri": "http://pleiades.stoa.org/places/570468"
+        },
+        {
+            "id": "648",
+            "ll": [
+                38.471651,
+                23.60756
+            ],
+            "title": "Euripos",
+            "uri": "http://pleiades.stoa.org/places/540783"
+        },
+        {
+            "id": "223",
+            "ll": [
+                38.549423,
+                23.6431715
+            ],
+            "title": "Chalcis",
+            "uri": "http://pleiades.stoa.org/places/540703"
+        },
+        {
+            "id": "226",
+            "ll": [
+                38.391204,
+                22.957112
+            ],
+            "title": "Coronea",
+            "uri": "http://pleiades.stoa.org/places/540717"
+        },
+        {
+            "id": "273",
+            "ll": [
+                38.295831,
+                23.1528615
+            ],
+            "title": "Thespiai",
+            "uri": "http://pleiades.stoa.org/places/541141"
+        },
+        {
+            "id": "407",
+            "ll": [
+                37.754475,
+                23.53304
+            ],
+            "title": "Aegina Ins.",
+            "uri": "http://pleiades.stoa.org/places/579844"
+        },
+        {
+            "id": "441",
+            "ll": [
+                35.25,
+                26.25
+            ],
+            "title": "*Petra?",
+            "uri": "http://pleiades.stoa.org/places/589985"
+        },
+        {
+            "id": "198",
+            "ll": [
+                39.2348296,
+                20.4831346
+            ],
+            "title": "Acheron fl.",
+            "uri": "http://pleiades.stoa.org/places/530769"
+        },
+        {
+            "id": "280",
+            "ll": [
+                39.915,
+                26.1525
+            ],
+            "title": "Achilleion",
+            "uri": "http://pleiades.stoa.org/places/550401"
+        },
+        {
+            "id": "129",
+            "ll": [
+                40.873623,
+                26.164008
+            ],
+            "title": "Doriskos",
+            "uri": "http://pleiades.stoa.org/places/501402"
+        },
+        {
+            "id": "470",
+            "ll": [
+                37.75,
+                27.25
+            ],
+            "title": "Kores(s)os/Tracheia M.",
+            "uri": "http://pleiades.stoa.org/places/599725"
+        },
+        {
+            "id": "286",
+            "ll": [
+                38.9471678,
+                27.0057354
+            ],
+            "title": "Caicus fl.",
+            "uri": "http://pleiades.stoa.org/places/550491"
+        },
+        {
+            "id": "311",
+            "ll": [
+                38.4803822,
+                28.0627776
+            ],
+            "title": "Pactolus fl.",
+            "uri": "http://pleiades.stoa.org/places/550794"
+        },
+        {
+            "id": "528",
+            "ll": [
+                34.712174,
+                33.1438299
+            ],
+            "title": "Amathous",
+            "uri": "http://pleiades.stoa.org/places/707462"
+        },
+        {
+            "id": "530",
+            "ll": [
+                34.6642,
+                32.8877
+            ],
+            "title": "Kourion",
+            "uri": "http://pleiades.stoa.org/places/707549"
+        },
+        {
+            "id": "513",
+            "ll": [
+                36.744896,
+                34.542284
+            ],
+            "title": "Soloi/Pompeiopolis",
+            "uri": "http://pleiades.stoa.org/places/648781"
+        },
+        {
+            "id": "126",
+            "ll": [
+                40.079727,
+                26.37442
+            ],
+            "title": "Dardanos",
+            "uri": "http://pleiades.stoa.org/places/501393"
+        },
+        {
+            "id": "149",
+            "ll": [
+                40.273913,
+                26.588806
+            ],
+            "title": "Perkote",
+            "uri": "http://pleiades.stoa.org/places/501556"
+        },
+        {
+            "id": "146",
+            "ll": [
+                40.400225,
+                26.787097
+            ],
+            "title": "Paisos",
+            "uri": "http://pleiades.stoa.org/places/501544"
+        },
+        {
+            "id": "464",
+            "ll": [
+                37.25,
+                28.25
+            ],
+            "title": "Idrias",
+            "uri": "http://pleiades.stoa.org/places/599665"
+        },
+        {
+            "id": "469",
+            "ll": [
+                37.191684,
+                27.650052
+            ],
+            "title": "Kindye",
+            "uri": "http://pleiades.stoa.org/places/599716"
+        },
+        {
+            "id": "471",
+            "ll": [
+                37.418971,
+                27.819967
+            ],
+            "title": "Labraunda",
+            "uri": "http://pleiades.stoa.org/places/599745"
+        },
+        {
+            "id": "487",
+            "ll": [
+                37.054602,
+                27.412789
+            ],
+            "title": "Pedasa",
+            "uri": "http://pleiades.stoa.org/places/599873"
+        },
+        {
+            "id": "188",
+            "ll": [
+                40.432469,
+                29.15639
+            ],
+            "title": "Prusias ad Mare/Kios",
+            "uri": "http://pleiades.stoa.org/places/511385"
+        },
+        {
+            "id": "282",
+            "ll": [
+                38.8506693333,
+                26.869287
+            ],
+            "title": "Aeolis",
+            "uri": "http://pleiades.stoa.org/places/550406"
+        },
+        {
+            "id": "130",
+            "ll": [
+                40.75,
+                23.75
+            ],
+            "title": "Edones",
+            "uri": "http://pleiades.stoa.org/places/501409"
+        },
+        {
+            "id": "474",
+            "ll": [
+                37.158037,
+                26.854663
+            ],
+            "title": "Leros Ins.",
+            "uri": "http://pleiades.stoa.org/places/599764"
+        },
+        {
+            "id": "472",
+            "ll": [
+                37.75,
+                27.25
+            ],
+            "title": "Lade Ins.",
+            "uri": "http://pleiades.stoa.org/places/599746"
+        },
+        {
+            "id": "602",
+            "ll": [
+                36.7615135,
+                66.9006005
+            ],
+            "title": "Bactra/Zariaspa",
+            "uri": "http://pleiades.stoa.org/places/961886"
+        },
+        {
+            "id": "58",
+            "ll": [
+                39.75,
+                15.75
+            ],
+            "title": "Laos fl.",
+            "uri": "http://pleiades.stoa.org/places/452362"
+        },
+        {
+            "id": "61",
+            "ll": [
+                40.076278,
+                15.63048
+            ],
+            "title": "Skidros",
+            "uri": "http://pleiades.stoa.org/places/452452"
+        },
+        {
+            "id": "77",
+            "ll": [
+                38.192251,
+                15.556634
+            ],
+            "title": "Zancle/Messana",
+            "uri": "http://pleiades.stoa.org/places/462538"
+        },
+        {
+            "id": "641",
+            "ll": [
+                38.033091,
+                14.45267
+            ],
+            "title": "Kale Akte",
+            "uri": "http://pleiades.stoa.org/places/462267"
+        },
+        {
+            "id": "67",
+            "ll": [
+                37.063029,
+                14.258722
+            ],
+            "title": "Gela",
+            "uri": "http://pleiades.stoa.org/places/462214"
+        },
+        {
+            "id": "70",
+            "ll": [
+                37.970797,
+                13.822496
+            ],
+            "title": "Himera",
+            "uri": "http://pleiades.stoa.org/places/462244"
+        },
+        {
+            "id": "304",
+            "ll": [
+                39.200303,
+                26.804206
+            ],
+            "title": "Malene",
+            "uri": "http://pleiades.stoa.org/places/550714"
+        },
+        {
+            "id": "189",
+            "ll": [
+                41.078496,
+                28.247677
+            ],
+            "title": "Sely(m)bria/Eudoxiopolis",
+            "uri": "http://pleiades.stoa.org/places/511414"
+        },
+        {
+            "id": "136",
+            "ll": [
+                40.548232,
+                26.75081
+            ],
+            "title": "Kardia/Lysimacheia",
+            "uri": "http://pleiades.stoa.org/places/501458"
+        },
+        {
+            "id": "463",
+            "ll": [
+                36.25,
+                25.25
+            ],
+            "title": "Hiera/Automate Ins.",
+            "uri": "http://pleiades.stoa.org/places/599645"
+        },
+        {
+            "id": "147",
+            "ll": [
+                40.485384,
+                26.780688
+            ],
+            "title": "Paktye",
+            "uri": "http://pleiades.stoa.org/places/501546"
+        },
+        {
+            "id": "631",
+            "ll": [
+                40.55,
+                26.46
+            ],
+            "title": "Melas Kolpos",
+            "uri": "http://pleiades.stoa.org/places/501513"
+        },
+        {
+            "id": "119",
+            "ll": [
+                40.39975,
+                23.880112
+            ],
+            "title": "Akanthos",
+            "uri": "http://pleiades.stoa.org/places/501339"
+        },
+        {
+            "id": "124",
+            "ll": [
+                40.2468341818,
+                24.2951477273
+            ],
+            "title": "Athos/Akte (peninsula)",
+            "uri": "http://pleiades.stoa.org/places/501365"
+        },
+        {
+            "id": "118",
+            "ll": [
+                40.683333,
+                24.65
+            ],
+            "title": "Ainyra",
+            "uri": "http://pleiades.stoa.org/places/501338"
+        },
+        {
+            "id": "138",
+            "ll": [
+                40.6711405,
+                24.761705
+            ],
+            "title": "Koinyra",
+            "uri": "http://pleiades.stoa.org/places/501473"
+        },
+        {
+            "id": "398",
+            "ll": [
+                37.066091,
+                22.454127
+            ],
+            "title": "Therapne",
+            "uri": "http://pleiades.stoa.org/places/570723"
+        },
+        {
+            "id": "371",
+            "ll": [
+                38.014421,
+                22.241203
+            ],
+            "title": "Nonakris",
+            "uri": "http://pleiades.stoa.org/places/570510"
+        },
+        {
+            "id": "395",
+            "ll": [
+                38.25,
+                22.25
+            ],
+            "title": "Styx fl.",
+            "uri": "http://pleiades.stoa.org/places/570698"
+        },
+        {
+            "id": "382",
+            "ll": [
+                37.919454,
+                22.295238
+            ],
+            "title": "Pheneos",
+            "uri": "http://pleiades.stoa.org/places/570595"
+        },
+        {
+            "id": "347",
+            "ll": [
+                37.75,
+                22.75
+            ],
+            "title": "Erasinos fl.",
+            "uri": "http://pleiades.stoa.org/places/570233"
+        },
+        {
+            "id": "400",
+            "ll": [
+                37.599444,
+                22.799722
+            ],
+            "title": "Tiryns",
+            "uri": "http://pleiades.stoa.org/places/570740"
+        },
+        {
+            "id": "369",
+            "ll": [
+                37.568123,
+                22.808706
+            ],
+            "title": "Nauplia",
+            "uri": "http://pleiades.stoa.org/places/570501"
+        },
+        {
+            "id": "383",
+            "ll": [
+                37.39629,
+                21.839109
+            ],
+            "title": "Phigaleia",
+            "uri": "http://pleiades.stoa.org/places/570598"
+        },
+        {
+            "id": "335",
+            "ll": [
+                37.6847165,
+                22.7501091667
+            ],
+            "title": "Argolis",
+            "uri": "http://pleiades.stoa.org/places/570104"
+        },
+        {
+            "id": "465",
+            "ll": [
+                37.5,
+                26.333333
+            ],
+            "title": "Ikarion Mare",
+            "uri": "http://pleiades.stoa.org/places/599668"
+        },
+        {
+            "id": "679",
+            "ll": [
+                37.409,
+                25.229
+            ],
+            "title": "Rheneia Ins.",
+            "uri": "http://pleiades.stoa.org/places/599919"
+        },
+        {
+            "id": "423",
+            "ll": [
+                38.3194635,
+                23.7899985
+            ],
+            "title": "Oropos",
+            "uri": "http://pleiades.stoa.org/places/580044"
+        },
+        {
+            "id": "270",
+            "ll": [
+                38.499419,
+                24.104151
+            ],
+            "title": "Tamynai",
+            "uri": "http://pleiades.stoa.org/places/541121"
+        },
+        {
+            "id": "622",
+            "ll": [
+                38.25,
+                24.25
+            ],
+            "title": "Aigilia? Ins.",
+            "uri": "http://pleiades.stoa.org/places/540605"
+        },
+        {
+            "id": "412",
+            "ll": [
+                38.375,
+                23.625
+            ],
+            "title": "Asopos fl.",
+            "uri": "http://pleiades.stoa.org/places/579880"
+        },
+        {
+            "id": "263",
+            "ll": [
+                38.221257,
+                23.273345
+            ],
+            "title": "Plataea",
+            "uri": "http://pleiades.stoa.org/places/541063"
+        },
+        {
+            "id": "411",
+            "ll": [
+                38.2055285,
+                23.8361515
+            ],
+            "title": "Aphidna",
+            "uri": "http://pleiades.stoa.org/places/579873"
+        },
+        {
+            "id": "479",
+            "ll": [
+                37.44,
+                25.37
+            ],
+            "title": "Mykonos Ins.",
+            "uri": "http://pleiades.stoa.org/places/599808"
+        },
+        {
+            "id": "720",
+            "ll": [
+                38.3462075,
+                23.661354
+            ],
+            "title": "Delion",
+            "uri": "http://pleiades.stoa.org/places/540725"
+        },
+        {
+            "id": "60",
+            "ll": [
+                40.0877137,
+                16.1384854
+            ],
+            "title": "Siris/Semnus fl.",
+            "uri": "http://pleiades.stoa.org/places/452451"
+        },
+        {
+            "id": "211",
+            "ll": [
+                38.5161836464,
+                21.7601315988
+            ],
+            "title": "Aetolia",
+            "uri": "http://pleiades.stoa.org/places/540591"
+        },
+        {
+            "id": "401",
+            "ll": [
+                37.456281,
+                22.060685
+            ],
+            "title": "Trapezous",
+            "uri": "http://pleiades.stoa.org/places/570746"
+        },
+        {
+            "id": "376",
+            "ll": [
+                37.83914,
+                21.981451
+            ],
+            "title": "Paos",
+            "uri": "http://pleiades.stoa.org/places/570558"
+        },
+        {
+            "id": "241",
+            "ll": [
+                39.500564,
+                22.294124
+            ],
+            "title": "Krannon/Ephyra",
+            "uri": "http://pleiades.stoa.org/places/540886"
+        },
+        {
+            "id": "687",
+            "ll": [
+                37.875,
+                23.875
+            ],
+            "title": "Hymettos M.",
+            "uri": "http://pleiades.stoa.org/places/579955"
+        },
+        {
+            "id": "577",
+            "ll": [
+                41.115693,
+                31.297325
+            ],
+            "title": "Elaios",
+            "uri": "http://pleiades.stoa.org/places/844913"
+        },
+        {
+            "id": "258",
+            "ll": [
+                39.75,
+                21.75
+            ],
+            "title": "Peneios fl.",
+            "uri": "http://pleiades.stoa.org/places/541022"
+        },
+        {
+            "id": "208",
+            "ll": [
+                39.517533,
+                20.179996
+            ],
+            "title": "Torone",
+            "uri": "http://pleiades.stoa.org/places/531125"
+        },
+        {
+            "id": "128",
+            "ll": [
+                40.355943,
+                24.163782
+            ],
+            "title": "Dion",
+            "uri": "http://pleiades.stoa.org/places/501400"
+        },
+        {
+            "id": "144",
+            "ll": [
+                40.330422,
+                24.190639
+            ],
+            "title": "Olophyxos",
+            "uri": "http://pleiades.stoa.org/places/501535"
+        },
+        {
+            "id": "120",
+            "ll": [
+                40.183833,
+                24.34933
+            ],
+            "title": "Akrothooi",
+            "uri": "http://pleiades.stoa.org/places/501343"
+        },
+        {
+            "id": "168",
+            "ll": [
+                40.288017,
+                24.158674
+            ],
+            "title": "Thyssos",
+            "uri": "http://pleiades.stoa.org/places/501643"
+        },
+        {
+            "id": "137",
+            "ll": [
+                40.214176,
+                24.233651
+            ],
+            "title": "Kleonai",
+            "uri": "http://pleiades.stoa.org/places/501469"
+        },
+        {
+            "id": "192",
+            "ll": [
+                40.617746,
+                27.114093
+            ],
+            "title": "Tiristasis/Tyrodiza",
+            "uri": "http://pleiades.stoa.org/places/511449"
+        },
+        {
+            "id": "131",
+            "ll": [
+                40.790236,
+                23.890379
+            ],
+            "title": "Eion",
+            "uri": "http://pleiades.stoa.org/places/501410"
+        },
+        {
+            "id": "506",
+            "ll": [
+                38.073196,
+                30.173857
+            ],
+            "title": "Apamea/Kelainai/Kibotos",
+            "uri": "http://pleiades.stoa.org/places/638751"
+        },
+        {
+            "id": "505",
+            "ll": [
+                37.8891725,
+                29.8094275
+            ],
+            "title": "Anaua/Sanaos",
+            "uri": "http://pleiades.stoa.org/places/638743"
+        },
+        {
+            "id": "508",
+            "ll": [
+                37.786618,
+                29.259931
+            ],
+            "title": "Colossae",
+            "uri": "http://pleiades.stoa.org/places/638811"
+        },
+        {
+            "id": "139",
+            "ll": [
+                40.186504,
+                26.357002
+            ],
+            "title": "Madytos",
+            "uri": "http://pleiades.stoa.org/places/501503"
+        },
+        {
+            "id": "296",
+            "ll": [
+                39.17898,
+                26.842283
+            ],
+            "title": "Karene?",
+            "uri": "http://pleiades.stoa.org/places/550621"
+        },
+        {
+            "id": "295",
+            "ll": [
+                38.9691667,
+                26.8597222
+            ],
+            "title": "Kane M.",
+            "uri": "http://pleiades.stoa.org/places/550616"
+        },
+        {
+            "id": "281",
+            "ll": [
+                39.504028,
+                26.934551
+            ],
+            "title": "Adramyttium",
+            "uri": "http://pleiades.stoa.org/places/550403"
+        },
+        {
+            "id": "315",
+            "ll": [
+                40.011104,
+                26.307891
+            ],
+            "title": "Rhoiteion",
+            "uri": "http://pleiades.stoa.org/places/550856"
+        },
+        {
+            "id": "310",
+            "ll": [
+                40.035846,
+                26.343963
+            ],
+            "title": "Ophryneion",
+            "uri": "http://pleiades.stoa.org/places/550787"
+        },
+        {
+            "id": "115",
+            "ll": [
+                40.513545,
+                26.786353
+            ],
+            "title": "Agora",
+            "uri": "http://pleiades.stoa.org/places/501332"
+        },
+        {
+            "id": "705",
+            "ll": [
+                40.75,
+                26.75
+            ],
+            "title": "Melas? fl.",
+            "uri": "http://pleiades.stoa.org/places/501514"
+        },
+        {
+            "id": "158",
+            "ll": [
+                40.75,
+                25.75
+            ],
+            "title": "Serreion Pr.",
+            "uri": "http://pleiades.stoa.org/places/501606"
+        },
+        {
+            "id": "359",
+            "ll": [
+                37.412293,
+                24.429784
+            ],
+            "title": "Kythnos",
+            "uri": "http://pleiades.stoa.org/places/570402"
+        },
+        {
+            "id": "329",
+            "ll": [
+                38.25,
+                21.75
+            ],
+            "title": "Achaea",
+            "uri": "http://pleiades.stoa.org/places/570028"
+        },
+        {
+            "id": "516",
+            "ll": [
+                34.858397,
+                35.859448
+            ],
+            "title": "Arados",
+            "uri": "http://pleiades.stoa.org/places/668197"
+        },
+        {
+            "id": "484",
+            "ll": [
+                36.583333,
+                27.166667
+            ],
+            "title": "Nisyros Ins.",
+            "uri": "http://pleiades.stoa.org/places/599830"
+        },
+        {
+            "id": "466",
+            "ll": [
+                36.983333,
+                26.983333
+            ],
+            "title": "Kalymna Ins.",
+            "uri": "http://pleiades.stoa.org/places/599684"
+        },
+        {
+            "id": "141",
+            "ll": [
+                40.86393,
+                25.630902
+            ],
+            "title": "Mesambria",
+            "uri": "http://pleiades.stoa.org/places/501516"
+        },
+        {
+            "id": "164",
+            "ll": [
+                40.93661,
+                25.282291
+            ],
+            "title": "Stryme?",
+            "uri": "http://pleiades.stoa.org/places/501628"
+        },
+        {
+            "id": "140",
+            "ll": [
+                40.873751,
+                25.511426
+            ],
+            "title": "Maroneia",
+            "uri": "http://pleiades.stoa.org/places/501507"
+        },
+        {
+            "id": "127",
+            "ll": [
+                40.99287,
+                25.165653
+            ],
+            "title": "Dikaia",
+            "uri": "http://pleiades.stoa.org/places/501399"
+        },
+        {
+            "id": "694",
+            "ll": [
+                40.9973096,
+                25.3111574
+            ],
+            "title": "Ismaris L.",
+            "uri": "http://pleiades.stoa.org/places/501440"
+        },
+        {
+            "id": "693",
+            "ll": [
+                41.03,
+                25.12
+            ],
+            "title": "Bistonis L.",
+            "uri": "http://pleiades.stoa.org/places/501378"
+        },
+        {
+            "id": "723",
+            "ll": [
+                41.75,
+                23.75
+            ],
+            "title": "Nestos fl.",
+            "uri": "http://pleiades.stoa.org/places/501524"
+        },
+        {
+            "id": "152",
+            "ll": [
+                40.953889,
+                24.622222
+            ],
+            "title": "Pistyros?",
+            "uri": "http://pleiades.stoa.org/places/501569"
+        },
+        {
+            "id": "150",
+            "ll": [
+                40.760666,
+                23.940471
+            ],
+            "title": "Phagres",
+            "uri": "http://pleiades.stoa.org/places/501559"
+        },
+        {
+            "id": "440",
+            "ll": [
+                35.531102,
+                23.774253
+            ],
+            "title": "Pergamos?",
+            "uri": "http://pleiades.stoa.org/places/589984"
+        },
+        {
+            "id": "148",
+            "ll": [
+                40.916944,
+                24.082778
+            ],
+            "title": "Pangaion M.",
+            "uri": "http://pleiades.stoa.org/places/501551"
+        },
+        {
+            "id": "121",
+            "ll": [
+                40.75,
+                23.75
+            ],
+            "title": "Angites fl.",
+            "uri": "http://pleiades.stoa.org/places/501350"
+        },
+        {
+            "id": "676",
+            "ll": [
+                40.8387,
+                23.849638
+            ],
+            "title": "Ennea Hodoi",
+            "uri": "http://pleiades.stoa.org/places/501412"
+        },
+        {
+            "id": "122",
+            "ll": [
+                40.780146,
+                23.814606
+            ],
+            "title": "Argilos",
+            "uri": "http://pleiades.stoa.org/places/501358"
+        },
+        {
+            "id": "88",
+            "ll": [
+                41.25,
+                23.25
+            ],
+            "title": "Bisaltia",
+            "uri": "http://pleiades.stoa.org/places/491547"
+        },
+        {
+            "id": "314",
+            "ll": [
+                38.75,
+                26.25
+            ],
+            "title": "Poseideion Pr.",
+            "uri": "http://pleiades.stoa.org/places/550843"
+        },
+        {
+            "id": "163",
+            "ll": [
+                40.592218,
+                23.795769
+            ],
+            "title": "Stageira",
+            "uri": "http://pleiades.stoa.org/places/501625"
+        },
+        {
+            "id": "108",
+            "ll": [
+                40.58155,
+                22.94402
+            ],
+            "title": "Therme",
+            "uri": "http://pleiades.stoa.org/places/491740"
+        },
+        {
+            "id": "494",
+            "ll": [
+                37.75,
+                26.25
+            ],
+            "title": "Therma/Asklepieis",
+            "uri": "http://pleiades.stoa.org/places/599976"
+        },
+        {
+            "id": "123",
+            "ll": [
+                40.369294,
+                23.830518
+            ],
+            "title": "Ass(er)a?",
+            "uri": "http://pleiades.stoa.org/places/501363"
+        },
+        {
+            "id": "151",
+            "ll": [
+                40.342219,
+                23.724709
+            ],
+            "title": "Piloros",
+            "uri": "http://pleiades.stoa.org/places/501567"
+        },
+        {
+            "id": "160",
+            "ll": [
+                40.24917,
+                23.721477
+            ],
+            "title": "Singos",
+            "uri": "http://pleiades.stoa.org/places/501613"
+        },
+        {
+            "id": "156",
+            "ll": [
+                40.087542,
+                23.978698
+            ],
+            "title": "Sarte",
+            "uri": "http://pleiades.stoa.org/places/501603"
+        },
+        {
+            "id": "451",
+            "ll": [
+                37.75,
+                26.75
+            ],
+            "title": "Ampelos Pr.",
+            "uri": "http://pleiades.stoa.org/places/599487"
+        },
+        {
+            "id": "132",
+            "ll": [
+                40.200006,
+                23.688564
+            ],
+            "title": "Galepsos",
+            "uri": "http://pleiades.stoa.org/places/501422"
+        },
+        {
+            "id": "157",
+            "ll": [
+                40.298222,
+                23.539631
+            ],
+            "title": "Sermylia",
+            "uri": "http://pleiades.stoa.org/places/501605"
+        },
+        {
+            "id": "99",
+            "ll": [
+                40.278319,
+                23.396101
+            ],
+            "title": "Mekyberna",
+            "uri": "http://pleiades.stoa.org/places/491660"
+        },
+        {
+            "id": "101",
+            "ll": [
+                40.295328,
+                23.3557696667
+            ],
+            "title": "Olynthos",
+            "uri": "http://pleiades.stoa.org/places/491678"
+        },
+        {
+            "id": "161",
+            "ll": [
+                40.25,
+                23.75
+            ],
+            "title": "Sithonia",
+            "uri": "http://pleiades.stoa.org/places/501618"
+        },
+        {
+            "id": "135",
+            "ll": [
+                39.75,
+                23.75
+            ],
+            "title": "Kanastraion Pr.",
+            "uri": "http://pleiades.stoa.org/places/501453"
+        },
+        {
+            "id": "103",
+            "ll": [
+                39.9832624,
+                23.6437183
+            ],
+            "title": "Pallene/Phlegra",
+            "uri": "http://pleiades.stoa.org/places/491682"
+        },
+        {
+            "id": "106",
+            "ll": [
+                40.193696,
+                23.327812
+            ],
+            "title": "Poteidaia/Kassandreia",
+            "uri": "http://pleiades.stoa.org/places/491701"
+        },
+        {
+            "id": "143",
+            "ll": [
+                40.017316,
+                23.529229
+            ],
+            "title": "Neapolis",
+            "uri": "http://pleiades.stoa.org/places/501522"
+        },
+        {
+            "id": "116",
+            "ll": [
+                39.978627,
+                23.666064
+            ],
+            "title": "Aige",
+            "uri": "http://pleiades.stoa.org/places/501335"
+        },
+        {
+            "id": "167",
+            "ll": [
+                39.95,
+                23.66667
+            ],
+            "title": "Th(e)rambos",
+            "uri": "http://pleiades.stoa.org/places/501637"
+        },
+        {
+            "id": "162",
+            "ll": [
+                39.939063,
+                23.574785
+            ],
+            "title": "Skione",
+            "uri": "http://pleiades.stoa.org/places/501620"
+        },
+        {
+            "id": "86",
+            "ll": [
+                40.309275,
+                23.060368
+            ],
+            "title": "Aisa",
+            "uri": "http://pleiades.stoa.org/places/491516"
+        },
+        {
+            "id": "93",
+            "ll": [
+                40.326285,
+                23.022765
+            ],
+            "title": "Gigonos",
+            "uri": "http://pleiades.stoa.org/places/491602"
+        },
+        {
+            "id": "85",
+            "ll": [
+                40.439481,
+                22.879124
+            ],
+            "title": "Aineia",
+            "uri": "http://pleiades.stoa.org/places/491513"
+        },
+        {
+            "id": "96",
+            "ll": [
+                40.25,
+                22.75
+            ],
+            "title": "Krousis",
+            "uri": "http://pleiades.stoa.org/places/491645"
+        },
+        {
+            "id": "107",
+            "ll": [
+                40.670226,
+                22.808289
+            ],
+            "title": "Sindos",
+            "uri": "http://pleiades.stoa.org/places/491717"
+        },
+        {
+            "id": "89",
+            "ll": [
+                40.704218,
+                22.781173
+            ],
+            "title": "Chalastra",
+            "uri": "http://pleiades.stoa.org/places/491560"
+        },
+        {
+            "id": "87",
+            "ll": [
+                41.0572437,
+                22.5226845
+            ],
+            "title": "Axios fl.",
+            "uri": "http://pleiades.stoa.org/places/491534"
+        },
+        {
+            "id": "95",
+            "ll": [
+                40.764014,
+                22.591256
+            ],
+            "title": "Ichnai",
+            "uri": "http://pleiades.stoa.org/places/491619"
+        },
+        {
+            "id": "104",
+            "ll": [
+                40.7702775,
+                22.4927425
+            ],
+            "title": "Pella/Diokletianoupolis",
+            "uri": "http://pleiades.stoa.org/places/491687"
+        },
+        {
+            "id": "91",
+            "ll": [
+                40.75,
+                22.75
+            ],
+            "title": "Echeidoros fl.",
+            "uri": "http://pleiades.stoa.org/places/491584"
+        },
+        {
+            "id": "97",
+            "ll": [
+                40.7545506,
+                22.1710891
+            ],
+            "title": "Loudias L.",
+            "uri": "http://pleiades.stoa.org/places/491654"
+        },
+        {
+            "id": "94",
+            "ll": [
+                40.25,
+                21.75
+            ],
+            "title": "Haliakmon fl.",
+            "uri": "http://pleiades.stoa.org/places/491614"
+        },
+        {
+            "id": "236",
+            "ll": [
+                39.858934,
+                22.498138
+            ],
+            "title": "Gonnoi",
+            "uri": "http://pleiades.stoa.org/places/540793"
+        },
+        {
+            "id": "250",
+            "ll": [
+                39.016944,
+                22.709722
+            ],
+            "title": "Othrys M.",
+            "uri": "http://pleiades.stoa.org/places/540994"
+        },
+        {
+            "id": "219",
+            "ll": [
+                39.25,
+                22.25
+            ],
+            "title": "Apidanos fl.",
+            "uri": "http://pleiades.stoa.org/places/540647"
+        },
+        {
+            "id": "247",
+            "ll": [
+                39.25,
+                21.75
+            ],
+            "title": "Onochonos fl.",
+            "uri": "http://pleiades.stoa.org/places/540985"
+        },
+        {
+            "id": "231",
+            "ll": [
+                39.25,
+                22.25
+            ],
+            "title": "Enipeus fl.",
+            "uri": "http://pleiades.stoa.org/places/540763"
+        },
+        {
+            "id": "252",
+            "ll": [
+                39.25,
+                21.75
+            ],
+            "title": "Pamisos fl.",
+            "uri": "http://pleiades.stoa.org/places/541005"
+        },
+        {
+            "id": "692",
+            "ll": [
+                39.75,
+                22.75
+            ],
+            "title": "Boibe L.",
+            "uri": "http://pleiades.stoa.org/places/540690"
+        },
+        {
+            "id": "349",
+            "ll": [
+                37.301493,
+                23.136994
+            ],
+            "title": "Halieis",
+            "uri": "http://pleiades.stoa.org/places/570274"
+        },
+        {
+            "id": "178",
+            "ll": [
+                40.978415,
+                27.508023
+            ],
+            "title": "Bisanthe/Rhaidestos",
+            "uri": "http://pleiades.stoa.org/places/511187"
+        },
+        {
+            "id": "426",
+            "ll": [
+                37.948092,
+                23.5308043333
+            ],
+            "title": "Salamis",
+            "uri": "http://pleiades.stoa.org/places/580100"
+        },
+        {
+            "id": "420",
+            "ll": [
+                37.712252,
+                24.039891
+            ],
+            "title": "Laureion",
+            "uri": "http://pleiades.stoa.org/places/580010"
+        },
+        {
+            "id": "674",
+            "ll": [
+                36.436769,
+                27.390048
+            ],
+            "title": "Telos (island)",
+            "uri": "http://pleiades.stoa.org/places/599961"
+        },
+        {
+            "id": "74",
+            "ll": [
+                37.251831,
+                14.339927
+            ],
+            "title": "Maktorion?",
+            "uri": "http://pleiades.stoa.org/places/462295"
+        },
+        {
+            "id": "75",
+            "ll": [
+                37.8196573,
+                15.2689014
+            ],
+            "title": "Naxos",
+            "uri": "http://pleiades.stoa.org/places/462386"
+        },
+        {
+            "id": "73",
+            "ll": [
+                37.285478,
+                14.998115
+            ],
+            "title": "Leontini",
+            "uri": "http://pleiades.stoa.org/places/462279"
+        },
+        {
+            "id": "68",
+            "ll": [
+                36.84241,
+                15.107016
+            ],
+            "title": "Helorus",
+            "uri": "http://pleiades.stoa.org/places/462234"
+        },
+        {
+            "id": "65",
+            "ll": [
+                36.8721183,
+                14.4474043
+            ],
+            "title": "Camarina",
+            "uri": "http://pleiades.stoa.org/places/462126"
+        },
+        {
+            "id": "71",
+            "ll": [
+                37.567342,
+                14.90091
+            ],
+            "title": "Hybla Gereatis",
+            "uri": "http://pleiades.stoa.org/places/462251"
+        },
+        {
+            "id": "72",
+            "ll": [
+                37.077093,
+                14.830384
+            ],
+            "title": "Kasmenai",
+            "uri": "http://pleiades.stoa.org/places/462269"
+        },
+        {
+            "id": "76",
+            "ll": [
+                37.939199,
+                12.839871
+            ],
+            "title": "Segesta/Egesta",
+            "uri": "http://pleiades.stoa.org/places/462487"
+        },
+        {
+            "id": "64",
+            "ll": [
+                37.290594,
+                13.585475
+            ],
+            "title": "Akragas/Agrigentum",
+            "uri": "http://pleiades.stoa.org/places/462086"
+        },
+        {
+            "id": "388",
+            "ll": [
+                36.951434,
+                21.65854
+            ],
+            "title": "Pylos/Koryphasion",
+            "uri": "http://pleiades.stoa.org/places/570640"
+        },
+        {
+            "id": "442",
+            "ll": [
+                35.141666,
+                26.089695
+            ],
+            "title": "Praisos",
+            "uri": "http://pleiades.stoa.org/places/590011"
+        },
+        {
+            "id": "55",
+            "ll": [
+                40.498685,
+                17.641913
+            ],
+            "title": "Uria",
+            "uri": "http://pleiades.stoa.org/places/442839"
+        },
+        {
+            "id": "237",
+            "ll": [
+                39.1485485153,
+                22.8223459744
+            ],
+            "title": "Halos",
+            "uri": "http://pleiades.stoa.org/places/540804"
+        },
+        {
+            "id": "271",
+            "ll": [
+                39.934167,
+                22.7175
+            ],
+            "title": "Tempe",
+            "uri": "http://pleiades.stoa.org/places/541131"
+        },
+        {
+            "id": "272",
+            "ll": [
+                38.796511,
+                22.538294
+            ],
+            "title": "Thermopylae",
+            "uri": "http://pleiades.stoa.org/places/541140"
+        },
+        {
+            "id": "276",
+            "ll": [
+                38.792037,
+                22.447577
+            ],
+            "title": "Trachis/Herakleia",
+            "uri": "http://pleiades.stoa.org/places/541157"
+        },
+        {
+            "id": "220",
+            "ll": [
+                39.017832,
+                23.220954
+            ],
+            "title": "Artemision",
+            "uri": "http://pleiades.stoa.org/places/540667"
+        },
+        {
+            "id": "686",
+            "ll": [
+                38.946604,
+                23.090527
+            ],
+            "title": "Histiaia/Hestiaia",
+            "uri": "http://pleiades.stoa.org/places/540817"
+        },
+        {
+            "id": "711",
+            "ll": [
+                40.366667,
+                25.166667
+            ],
+            "title": "Thracium/Macedonicum Mare",
+            "uri": "http://pleiades.stoa.org/places/501639"
+        },
+        {
+            "id": "265",
+            "ll": [
+                39.25,
+                23.25
+            ],
+            "title": "Sciathus Ins.",
+            "uri": "http://pleiades.stoa.org/places/541092"
+        },
+        {
+            "id": "213",
+            "ll": [
+                38.801852,
+                22.586084
+            ],
+            "title": "Alpenos",
+            "uri": "http://pleiades.stoa.org/places/540624"
+        },
+        {
+            "id": "216",
+            "ll": [
+                38.800123,
+                22.510613
+            ],
+            "title": "Anthela",
+            "uri": "http://pleiades.stoa.org/places/540640"
+        },
+        {
+            "id": "246",
+            "ll": [
+                38.828611,
+                22.288611
+            ],
+            "title": "Oeta M.",
+            "uri": "http://pleiades.stoa.org/places/540968"
+        },
+        {
+            "id": "268",
+            "ll": [
+                38.902984,
+                24.565356
+            ],
+            "title": "Skyros",
+            "uri": "http://pleiades.stoa.org/places/541108"
+        },
+        {
+            "id": "266",
+            "ll": [
+                39.475095,
+                23.085265
+            ],
+            "title": "Sepias",
+            "uri": "http://pleiades.stoa.org/places/541096"
+        },
+        {
+            "id": "240",
+            "ll": [
+                39.571201,
+                22.95459
+            ],
+            "title": "Kasthaneia",
+            "uri": "http://pleiades.stoa.org/places/540856"
+        },
+        {
+            "id": "417",
+            "ll": [
+                37.9582581,
+                23.6959733
+            ],
+            "title": "Ilissos fl.",
+            "uri": "http://pleiades.stoa.org/places/579959"
+        },
+        {
+            "id": "251",
+            "ll": [
+                39.310841,
+                22.944398
+            ],
+            "title": "Pagasai",
+            "uri": "http://pleiades.stoa.org/places/540998"
+        },
+        {
+            "id": "218",
+            "ll": [
+                39.146291,
+                23.312404
+            ],
+            "title": "Aphetai?",
+            "uri": "http://pleiades.stoa.org/places/540645"
+        },
+        {
+            "id": "450",
+            "ll": [
+                37.5944752,
+                27.9841577
+            ],
+            "title": "Alabanda/Antiocheia Chrysaoron",
+            "uri": "http://pleiades.stoa.org/places/599479"
+        },
+        {
+            "id": "531",
+            "ll": [
+                34.757212,
+                32.406593
+            ],
+            "title": "(Nea) Paphos",
+            "uri": "http://pleiades.stoa.org/places/707586"
+        },
+        {
+            "id": "244",
+            "ll": [
+                38.75,
+                22.25
+            ],
+            "title": "Malis",
+            "uri": "http://pleiades.stoa.org/places/540930"
+        },
+        {
+            "id": "217",
+            "ll": [
+                38.375439,
+                22.626059
+            ],
+            "title": "Antikyra",
+            "uri": "http://pleiades.stoa.org/places/540642"
+        },
+        {
+            "id": "269",
+            "ll": [
+                38.75,
+                22.25
+            ],
+            "title": "Spercheios",
+            "uri": "http://pleiades.stoa.org/places/541112"
+        },
+        {
+            "id": "229",
+            "ll": [
+                38.75,
+                22.25
+            ],
+            "title": "Dyras fl.",
+            "uri": "http://pleiades.stoa.org/places/540745"
+        },
+        {
+            "id": "260",
+            "ll": [
+                38.75,
+                22.25
+            ],
+            "title": "Phoinix? fl.",
+            "uri": "http://pleiades.stoa.org/places/541049"
+        },
+        {
+            "id": "374",
+            "ll": [
+                37.724716,
+                22.31536
+            ],
+            "title": "Orchomenos",
+            "uri": "http://pleiades.stoa.org/places/570535"
+        },
+        {
+            "id": "384",
+            "ll": [
+                37.831664,
+                22.641069
+            ],
+            "title": "Phleious",
+            "uri": "http://pleiades.stoa.org/places/570602"
+        },
+        {
+            "id": "239",
+            "ll": [
+                38.25,
+                24.75
+            ],
+            "title": "Kaphereus Pr.",
+            "uri": "http://pleiades.stoa.org/places/540852"
+        },
+        {
+            "id": "348",
+            "ll": [
+                37.75,
+                24.75
+            ],
+            "title": "Geraistos Pr.",
+            "uri": "http://pleiades.stoa.org/places/570259"
+        },
+        {
+            "id": "255",
+            "ll": [
+                38.535435,
+                22.621902
+            ],
+            "title": "Parnassus M.",
+            "uri": "http://pleiades.stoa.org/places/541012"
+        },
+        {
+            "id": "238",
+            "ll": [
+                38.591667,
+                22.915278
+            ],
+            "title": "Hyampolis",
+            "uri": "http://pleiades.stoa.org/places/540820"
+        },
+        {
+            "id": "274",
+            "ll": [
+                38.5817245,
+                22.673318
+            ],
+            "title": "Tithorea/Neon",
+            "uri": "http://pleiades.stoa.org/places/541152"
+        },
+        {
+            "id": "215",
+            "ll": [
+                38.518403,
+                22.374172
+            ],
+            "title": "Amphissa",
+            "uri": "http://pleiades.stoa.org/places/540630"
+        },
+        {
+            "id": "222",
+            "ll": [
+                38.75,
+                22.75
+            ],
+            "title": "Cephisus fl.",
+            "uri": "http://pleiades.stoa.org/places/540700"
+        },
+        {
+            "id": "228",
+            "ll": [
+                38.7086695,
+                22.5585205
+            ],
+            "title": "Drymaia",
+            "uri": "http://pleiades.stoa.org/places/540743"
+        },
+        {
+            "id": "224",
+            "ll": [
+                38.640939,
+                22.489574
+            ],
+            "title": "Charadra",
+            "uri": "http://pleiades.stoa.org/places/540709"
+        },
+        {
+            "id": "233",
+            "ll": [
+                38.623689,
+                22.540903
+            ],
+            "title": "Erochos",
+            "uri": "http://pleiades.stoa.org/places/540770"
+        },
+        {
+            "id": "275",
+            "ll": [
+                38.678999,
+                22.601059
+            ],
+            "title": "Tithronion",
+            "uri": "http://pleiades.stoa.org/places/541153"
+        },
+        {
+            "id": "214",
+            "ll": [
+                38.642319,
+                22.598214
+            ],
+            "title": "Amphikleia",
+            "uri": "http://pleiades.stoa.org/places/540629"
+        },
+        {
+            "id": "256",
+            "ll": [
+                38.626517,
+                22.671601
+            ],
+            "title": "Pedieis?",
+            "uri": "http://pleiades.stoa.org/places/541016"
+        },
+        {
+            "id": "277",
+            "ll": [
+                38.403234,
+                22.322506
+            ],
+            "title": "Triteia",
+            "uri": "http://pleiades.stoa.org/places/541166"
+        },
+        {
+            "id": "230",
+            "ll": [
+                38.626349,
+                22.764982
+            ],
+            "title": "Elateia",
+            "uri": "http://pleiades.stoa.org/places/540755"
+        },
+        {
+            "id": "254",
+            "ll": [
+                38.551148,
+                22.817862
+            ],
+            "title": "Parapotamioi",
+            "uri": "http://pleiades.stoa.org/places/541011"
+        },
+        {
+            "id": "253",
+            "ll": [
+                38.498702,
+                22.822117
+            ],
+            "title": "Panopeos/Phanotis",
+            "uri": "http://pleiades.stoa.org/places/541008"
+        },
+        {
+            "id": "243",
+            "ll": [
+                38.25,
+                21.75
+            ],
+            "title": "Locris Ozolia",
+            "uri": "http://pleiades.stoa.org/places/540919"
+        },
+        {
+            "id": "386",
+            "ll": [
+                37.75,
+                23.25
+            ],
+            "title": "Pogon",
+            "uri": "http://pleiades.stoa.org/places/570622"
+        },
+        {
+            "id": "232",
+            "ll": [
+                38.694365,
+                22.415737
+            ],
+            "title": "Erineos",
+            "uri": "http://pleiades.stoa.org/places/540769"
+        },
+        {
+            "id": "337",
+            "ll": [
+                37.527311,
+                22.874043
+            ],
+            "title": "Asine",
+            "uri": "http://pleiades.stoa.org/places/570124"
+        },
+        {
+            "id": "355",
+            "ll": [
+                36.884777,
+                22.237649
+            ],
+            "title": "Kardamyle",
+            "uri": "http://pleiades.stoa.org/places/570330"
+        },
+        {
+            "id": "425",
+            "ll": [
+                37.875,
+                23.625
+            ],
+            "title": "Psyttaleia Ins.",
+            "uri": "http://pleiades.stoa.org/places/580094"
+        },
+        {
+            "id": "419",
+            "ll": [
+                37.875,
+                23.625
+            ],
+            "title": "Kynosoura Pr.",
+            "uri": "http://pleiades.stoa.org/places/580002"
+        },
+        {
+            "id": "700",
+            "ll": [
+                37.937222,
+                23.644609
+            ],
+            "title": "Mounichia Limen",
+            "uri": "http://pleiades.stoa.org/places/580029"
+        },
+        {
+            "id": "677",
+            "ll": [
+                37.937222,
+                23.644609
+            ],
+            "title": "Peiraieus/Piraeus",
+            "uri": "http://pleiades.stoa.org/places/580062"
+        },
+        {
+            "id": "331",
+            "ll": [
+                37.154,
+                21.721
+            ],
+            "title": "Aigaleon M.",
+            "uri": "http://pleiades.stoa.org/places/570041"
+        },
+        {
+            "id": "409",
+            "ll": [
+                37.8300155,
+                23.804843
+            ],
+            "title": "Anagyrous",
+            "uri": "http://pleiades.stoa.org/places/579863"
+        },
+        {
+            "id": "418",
+            "ll": [
+                37.875,
+                23.625
+            ],
+            "title": "Kolias Pr.",
+            "uri": "http://pleiades.stoa.org/places/579981"
+        },
+        {
+            "id": "338",
+            "ll": [
+                37.476608,
+                23.92397
+            ],
+            "title": "Belbina Ins.",
+            "uri": "http://pleiades.stoa.org/places/570150"
+        },
+        {
+            "id": "92",
+            "ll": [
+                40.946148,
+                22.111673
+            ],
+            "title": "Europos",
+            "uri": "http://pleiades.stoa.org/places/491594"
+        },
+        {
+            "id": "242",
+            "ll": [
+                38.4353745,
+                22.8749615
+            ],
+            "title": "Lebadeia",
+            "uri": "http://pleiades.stoa.org/places/540907"
+        },
+        {
+            "id": "264",
+            "ll": [
+                38.458796,
+                23.229601
+            ],
+            "title": "Ptoios, T.",
+            "uri": "http://pleiades.stoa.org/places/541078"
+        },
+        {
+            "id": "225",
+            "ll": [
+                38.447092,
+                23.068726
+            ],
+            "title": "Copais L.",
+            "uri": "http://pleiades.stoa.org/places/540715"
+        },
+        {
+            "id": "212",
+            "ll": [
+                38.4565114,
+                23.2213292
+            ],
+            "title": "Akraiphiai",
+            "uri": "http://pleiades.stoa.org/places/540617"
+        },
+        {
+            "id": "632",
+            "ll": [
+                40.525805,
+                22.010422
+            ],
+            "title": "Bora/Bermion M.",
+            "uri": "http://pleiades.stoa.org/places/491551"
+        },
+        {
+            "id": "375",
+            "ll": [
+                37.345994,
+                22.206506
+            ],
+            "title": "Oresthasion",
+            "uri": "http://pleiades.stoa.org/places/570536"
+        },
+        {
+            "id": "414",
+            "ll": [
+                38.13302775,
+                23.79187175
+            ],
+            "title": "Dekeleia",
+            "uri": "http://pleiades.stoa.org/places/579907"
+        },
+        {
+            "id": "267",
+            "ll": [
+                38.309378,
+                23.38353
+            ],
+            "title": "Skolos",
+            "uri": "http://pleiades.stoa.org/places/541106"
+        },
+        {
+            "id": "367",
+            "ll": [
+                37.7306445,
+                22.7561415
+            ],
+            "title": "Mycenae",
+            "uri": "http://pleiades.stoa.org/places/570491"
+        },
+        {
+            "id": "206",
+            "ll": [
+                38.222555,
+                20.437481
+            ],
+            "title": "Pale",
+            "uri": "http://pleiades.stoa.org/places/531036"
+        },
+        {
+            "id": "199",
+            "ll": [
+                38.2,
+                20.59
+            ],
+            "title": "Cephallania Ins.",
+            "uri": "http://pleiades.stoa.org/places/530826"
+        },
+        {
+            "id": "673",
+            "ll": [
+                38.155245,
+                24.240527
+            ],
+            "title": "Styra",
+            "uri": "http://pleiades.stoa.org/places/541117"
+        },
+        {
+            "id": "342",
+            "ll": [
+                37.541156,
+                22.254905
+            ],
+            "title": "Dipaia",
+            "uri": "http://pleiades.stoa.org/places/570199"
+        },
+        {
+            "id": "354",
+            "ll": [
+                37.1754315,
+                21.9204815
+            ],
+            "title": "Ithome M.",
+            "uri": "http://pleiades.stoa.org/places/570318"
+        },
+        {
+            "id": "205",
+            "ll": [
+                38.807342,
+                20.713116
+            ],
+            "title": "Leucas",
+            "uri": "http://pleiades.stoa.org/places/530974"
+        },
+        {
+            "id": "629",
+            "ll": [
+                38.1850025,
+                23.2505528
+            ],
+            "title": "Cithaeron M.",
+            "uri": "http://pleiades.stoa.org/places/540714"
+        },
+        {
+            "id": "235",
+            "ll": [
+                38.378178,
+                23.390503
+            ],
+            "title": "Glisas",
+            "uri": "http://pleiades.stoa.org/places/540791"
+        },
+        {
+            "id": "245",
+            "ll": [
+                38.25,
+                23.25
+            ],
+            "title": "Oeroe fl.",
+            "uri": "http://pleiades.stoa.org/places/540967"
+        },
+        {
+            "id": "394",
+            "ll": [
+                37.25,
+                21.75
+            ],
+            "title": "Stenykleros",
+            "uri": "http://pleiades.stoa.org/places/570690"
+        },
+        {
+            "id": "204",
+            "ll": [
+                39.75,
+                21.25
+            ],
+            "title": "Lakmon M.",
+            "uri": "http://pleiades.stoa.org/places/530972"
+        },
+        {
+            "id": "82",
+            "ll": [
+                40.318889,
+                19.428611
+            ],
+            "title": "Orikon",
+            "uri": "http://pleiades.stoa.org/places/481939"
+        },
+        {
+            "id": "461",
+            "ll": [
+                37.75,
+                27.25
+            ],
+            "title": "Gaison? fl.",
+            "uri": "http://pleiades.stoa.org/places/599621"
+        },
+        {
+            "id": "490",
+            "ll": [
+                37.626598,
+                27.213678
+            ],
+            "title": "Skolopoeis",
+            "uri": "http://pleiades.stoa.org/places/599940"
+        },
+        {
+            "id": "300",
+            "ll": [
+                39.47832135,
+                26.06330945
+            ],
+            "title": "Lekton Pr.",
+            "uri": "http://pleiades.stoa.org/places/550691"
+        }
+    ],
+    "printed": "1873",
+    "sections": [
+        {
+            "firstPage": "1",
+            "section": "1"
+        },
+        {
+            "firstPage": "217",
+            "section": "2"
+        },
+        {
+            "firstPage": "399",
+            "section": "3"
+        },
+        {
+            "firstPage": "559",
+            "section": "4"
+        },
+        {
+            "firstPage": "764",
+            "section": "5"
+        },
+        {
+            "firstPage": "890",
+            "section": "6"
+        },
+        {
+            "firstPage": "1030",
+            "section": "7"
+        },
+        {
+            "firstPage": "1269",
+            "section": "8"
+        },
+        {
+            "firstPage": "1413",
+            "section": "9"
+        }
+    ],
+    "texts": [
+        {
+            "documentID": "1",
+            "label": "English",
+            "lang": "en",
+            "language": "English"
+        },
+        {
+            "documentID": "2",
+            "label": "Ancient Greek",
+            "lang": "grc",
+            "language": "\u03b5\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac"
+        }
+    ],
+    "title": "A Dictionary of Greek and Roman biography and mythology",
+    "uri": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0104"
+}
