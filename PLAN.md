@@ -62,6 +62,50 @@ Retrieve hypothes.is annotation JSON from Perseids.
 Retrieve lat-lon for pleiades places.
 Massage data into structure that drives GapVis.
 
+## Reader View
+
+Adam
+
+Use Capitains-Sparrow to retrieve CTS texts and update reader view.
+
+	http://perseusdl.github.io/Capitains-Sparrow/doc_html/api/
+
+Getting cts.js to work with require.js is difficult.
+Old version of require.js.
+Couldn't sort out shim config.
+
+Just using like so.
+
+	var settings = {
+	  "endpoint" : "http://sosol.perseids.org/exist/rest/db/xq/CTS.xq?",
+	};
+	var repo = new CTS.repository.repository( settings.endpoint, 3 );
+	var text = new CTS.text.Passage( 'urn:cts:greekLit:tlg0003.tlg001.perseus-eng6:4', repo.endpoint );
+	
+	text.retrieve({
+		success: function(){
+			cts_success( text.getXml() );
+		},
+		error: function( err ){
+			console.log( err );
+		}
+	});
+	
+	function cts_success( xml ){
+		console.log( xml );
+	}
+
+Here's sample markeup of Page HTML as used in Herodotus Histories
+
+	<div class="text-en" lang="en">
+		This is the display of the inquiry of Herodotus of <span data-token-id="11" class="place" data-place-id="462">Halicarnassus</span>, so that things done by man not be forgotten in time, and that great and marvelous deeds, some displayed by the Hellenes, some by the barbarians, not lose their glory, including among others what was the cause of their waging war on each other.<br>
+		<br>
+		The Persian learned men say that the Phoenicians were the cause of the dispute. These (they say) came to our seas from the sea which is called Red, and having settled in the country which they still occupy, at once began to make long voyages. Among other places to which they carried Egyptian and Assyrian merchandise, they came to <span data-token-id="129" class="place" data-place-id="336">Argos</span>, which was at that time preeminent in every way among the people of what is now called <span data-token-id="148" class="place" data-place-id="665">Hellas</span>. The Phoenicians came to <span data-token-id="154" class="place" data-place-id="336">Argos</span>, and set out their cargo.<br>
+		<br>
+		On the fifth or sixth day after their arrival, when their wares were almost all sold, many women came to the shore and among them especially the daughter of the king, whose name was Io (according to Persians and Greeks alike), the daughter of Inachus.<br>
+		<br>
+		As these stood about the stern of the ship bargaining for the wares they liked, the Phoenicians incited one another to set upon them. Most of the women escaped: Io and others were seized and thrown into the ship, which then sailed away for <span data-token-id="262" class="place" data-place-id="604">Egypt</span>.
+	</div>
 
 ## Social Network View
 
