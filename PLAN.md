@@ -7,10 +7,9 @@ Built on-top of backbone.js
 	* After cloning run
 	
 			git submodule update --init
+			npm install
 
-Uses ant to build app
-
-You have to install ant to build the app.
+It uses ant to build app
 
 Running OSX?
 
@@ -77,25 +76,41 @@ Couldn't sort out shim config.
 Just using like so.
 
 	var settings = {
-	  "endpoint" : "http://sosol.perseids.org/exist/rest/db/xq/CTS.xq?",
+	  "endpoint": "http://sosol.perseids.org/exist/rest/db/xq/CTS.xq?",
+		"inventory": "annotsrc",
+		"urn": "urn:cts:greekLit:tlg0003.tlg001.perseus-eng6:4"
 	};
-	var repo = new CTS.repository.repository( settings.endpoint, 3 );
-	var text = new CTS.text.Passage( 'urn:cts:greekLit:tlg0003.tlg001.perseus-eng6:4', repo.endpoint );
 	
-	text.retrieve({
+	function passage( opt ){
+		return new CTS.text.Passage( opt[0], opt[1], opt[2] )
+	}
+	
+	var psg = passage([ 
+		settings.urn, 
+		settings.endpoint, 
+		settings.inventory
+	]);
+	
+	function success( xml ){
+		console.log( xml );
+	}
+	
+	psg.retrieve({
 		success: function(){
-			cts_success( text.getXml() );
+			success( psg.getXml() );
 		},
 		error: function( err ){
 			console.log( err );
 		}
 	});
-	
-	function cts_success( xml ){
-		console.log( xml );
-	}
 
-Here's sample markeup of Page HTML as used in Herodotus Histories
+Not that difficult...
+
+Next task.
+I'll have to transform the TEI XML returned by cts.js.
+
+Here's sample mark-up of Page HTML as used in Herodotus Histories
+
 
 	<div class="text-en" lang="en">
 		This is the display of the inquiry of Herodotus of <span data-token-id="11" class="place" data-place-id="462">Halicarnassus</span>, so that things done by man not be forgotten in time, and that great and marvelous deeds, some displayed by the Hellenes, some by the barbarians, not lose their glory, including among others what was the cause of their waging war on each other.<br>
