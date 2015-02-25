@@ -7,6 +7,7 @@ define(['gv'], function(gv) {
         BookListItemView;
     
     // View: BookListView (item in book index)
+		
     BookListItemView = View.extend({
         tagName: 'p',
         
@@ -30,6 +31,7 @@ define(['gv'], function(gv) {
     });
         
     // View: Book List View
+		
     return View.extend({
         className: 'panel padded-scroll full-height loading',
         
@@ -41,11 +43,15 @@ define(['gv'], function(gv) {
         
         render: function() {
             var view = this;
+						
             // make content
+						
             view.$el
                 .html($('#book-list-template').html())
                 .removeClass('loading');
+						
             // make the book list
+						
             view.$('.book-list').empty();
             view.model.forEach(function(book) {
                 var item = new BookListItemView({ model:book });

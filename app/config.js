@@ -38,7 +38,7 @@ define({
               	'.left-panel': {
               	    layout: '#layout-full-top',
               	    slots: {
-              	        '.top-slot': 'views/PagesView',
+              	        '.top-slot': 'views/PerseusPageView',
               	        '.bottom-slot': 'views/PageControlView'
               	    }
               	},
@@ -64,7 +64,7 @@ define({
                 '.left-panel': {
                     layout: '#layout-full-top',
                     slots: {
-                        '.top-slot': 'views/PagesView',
+                        '.top-slot': 'views/PerseusPageView',
                         '.bottom-slot': 'views/PageControlView'
                     }
                 },

@@ -1,7 +1,10 @@
 /*
  * Social Network View
  */
-define(['gv', 'views/BookView', 'util/slide'], 
+define([
+'gv', 
+'views/BookView', 
+'util/slide'], 
 function( gv, BookView, slide ) {
     var state = gv.state;
     

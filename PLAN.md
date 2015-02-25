@@ -107,6 +107,11 @@ Just using like so.
 Not that difficult...
 
 Next task.
+Tie this into Backbone
+
+	there is ready() function.
+
+Next task.
 I'll have to transform the TEI XML returned by cts.js.
 
 Here's sample mark-up of Page HTML as used in Herodotus Histories

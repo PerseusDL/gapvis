@@ -1,7 +1,11 @@
 /*
  * Page View
  */
-define(['gv', 'views/BookView', 'util/slide'], function(gv, BookView, slide) {
+define([
+'gv', 
+'views/BookView', 
+'util/slide' ], 
+function( gv, BookView, slide ) {
     var state = gv.state;
   
     // View: PageView (page content)
