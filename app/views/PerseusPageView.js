@@ -3,9 +3,9 @@
  */
 define([
 'gv', 
-'views/BookView',
-'models/PerseusPage' ], 
-function( gv, BookView, PerseusPage ) {
+'models/PerseusPage',
+'views/BookView' ], 
+function( gv, PerseusPage, BookView ) {
 	var state = gv.state;
 	
 	// View: Perseus Page View
@@ -13,21 +13,19 @@ function( gv, BookView, PerseusPage ) {
 	return BookView.extend({
 		className: 'perseus-page-view',
 		template: '#perseus-page-template',
+		
 		initialize: function(){
-			var view = this;
-			view.page = new PerseusPage( "urn:cts:greekLit:tlg0003.tlg001.perseus-eng6:4" );
-			view.page.on( 'perseus_page:load', view.render )
+			var self = this;
+			self.page = new PerseusPage( "urn:cts:greekLit:tlg0003.tlg001.perseus-eng6:4" );
+			self.bindState( 'PerseusPage:success', self.render, self )
 		},
+		
 		render: function(){
-			var view = this;
-			
-			console.log( view );
+			var self = this;
 			
 			// render content and append to parent
 			
-			view.renderTemplate();
-			return view;
+			self.renderTemplate( { out: self.page.out } );
 		}
 	});
-    
 });

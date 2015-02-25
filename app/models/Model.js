@@ -22,7 +22,9 @@ define(function() {
 			},
 			
 			isFullyLoaded: function() {
+				
 			    // override in subclasses
+				
 			    return true;
 			},
 			

@@ -7,8 +7,6 @@ define([
 function( gv, Model ) {
     var settings = gv.settings,
         PerseusPage;
-		
-		var self = this;
        
     // Model: PerseusPage
 				
@@ -36,12 +34,19 @@ function( gv, Model ) {
 					
 					psg.retrieve({
 						success: function(){
-							self.xml = psg.getXml();
-							self.trigger( 'perseus_page:load' );
+							
+							// Get the response template ready
+							
+							self.response = psg.getXml();
+							var body = self.response.getElementsByTagName("body")[0];
+							var xml = body.childNodes[0].nextSibling;
+							self.out = $(xml).text();
+							
+							// Let the app know data has been successfully retrieved
+							
+							self.trigger( 'PerseusPage:success' );
 						},
-						error: function( err ){
-							console.log( err );
-						}
+						error: function( err ){ throw err }
 					});
 					
         }
