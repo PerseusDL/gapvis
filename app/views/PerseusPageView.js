@@ -1,6 +1,7 @@
 /*
  * Perseus Page View
  */
+
 define([
 'gv', 
 'models/PerseusPage',
@@ -14,18 +15,20 @@ function( gv, PerseusPage, BookView ) {
 		className: 'perseus-page-view',
 		template: '#perseus-page-template',
 		
-		initialize: function(){
-			var self = this;
-			self.page = new PerseusPage( "urn:cts:greekLit:tlg0003.tlg001.perseus-eng6:4" );
-			self.bindState( 'PerseusPage:success', self.render, self )
-		},
-		
 		render: function(){
 			var self = this;
-			
-			// render content and append to parent
-			
-			self.renderTemplate( { out: self.page.out } );
+			if ( 'page' in self ){
+				console.log( 'view--render!' )
+				self.renderTemplate( { out: self.page.out } );
+			}
+		},
+		
+		initialize: function(){
+			var self = this;
+			console.log( 'view--init!' );
+			self.page = new PerseusPage( "alcathoe-bio-1" );
+			console.log( self );
+			self.bindState( self.page.event.success, self.render, self )
 		}
 	});
 });

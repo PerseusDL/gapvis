@@ -1,6 +1,7 @@
 /*
  * PerseusPage model
  */
+
 define([
 'gv', 
 'models/Model' ], 
@@ -12,7 +13,8 @@ function( gv, Model ) {
 				
 		var config = {
 		  "endpoint": "http://sosol.perseids.org/exist/rest/db/xq/CTS.xq?",
-			"inventory": "annotsrc"
+			"inventory": "annotsrc",
+			"prefix": "urn:cts:pdlrefwk:viaf88890045.003.perseus-eng1:"
 		};
 		
 		// Retrieve CTS passage
@@ -23,11 +25,17 @@ function( gv, Model ) {
 				
 		return Model.extend({
         type: 'page',
-        initialize: function( urn ) {
+				event: {
+					success: 'PerseusPage:Success'
+				},
+        initialize: function( id ) {
 					var self = this;
 					
+					// Modify person id so CTS.js works
+					
+					id = id.replace( 'bio-', '' ).replace( '-', '_' );
 					var psg = passage([ 
-						urn,
+						config.prefix + id,
 						config.endpoint, 
 						config.inventory
 					]);
@@ -37,14 +45,15 @@ function( gv, Model ) {
 							
 							// Get the response template ready
 							
-							self.response = psg.getXml();
-							var body = self.response.getElementsByTagName("body")[0];
-							var xml = body.childNodes[0].nextSibling;
-							self.out = $(xml).text();
+							var xml = psg.getXml();
+							var $xml = $( xml.getElementsByTagName('body')[0].innerHTML );
+							self.out = $xml.text();
 							
 							// Let the app know data has been successfully retrieved
 							
-							self.trigger( 'PerseusPage:success' );
+							console.log( 'model--trigger!' );
+							
+							self.trigger( self.event.success );
 						},
 						error: function( err ){ throw err }
 					});
@@ -52,7 +61,3 @@ function( gv, Model ) {
         }
     });
 });
-
-/*
-Test: require(['models/PerseusPage'], function( p ){ new p() });
-*/
