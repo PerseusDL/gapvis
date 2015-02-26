@@ -8,6 +8,7 @@ define([
 'views/BookView' ], 
 function( gv, PerseusPage, BookView ) {
   var state = gv.state;
+	_.extend( Backbone.Events );
   
   // View: Perseus Page View
   
@@ -18,17 +19,14 @@ function( gv, PerseusPage, BookView ) {
     render: function(){
       var self = this;
       if ( 'page' in self ){
-        console.log( 'view--render!' )
         self.renderTemplate( { out: self.page.out } );
       }
     },
     
     initialize: function(){
       var self = this;
-      console.log( 'view--init!' );
       self.page = new PerseusPage( "alcathoe-bio-1" );
-      console.log( self );
-      self.bindState( self.page.event.success, self.render, self )
+      self.page.on( self.page.event.success, self.render, self )
     }
   });
 });
