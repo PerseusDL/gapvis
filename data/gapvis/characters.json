@@ -1,0 +1,27 @@
+{
+  "http://data.perseus.org/people/smith:alcathoe-1#this": {
+    "name": "",
+    "rel": [
+      {
+        "name": "Minyas",
+        "type": "snap:FatherOf",
+        "id": "http://data.perseus.org/people/smith:minyas-1#this"
+      },
+      {
+        "name": "Leucippe",
+        "type": "snap:SisterOf",
+        "id": "http://data.perseus.org/people/smith:leucippe-2#this"
+      },
+      {
+        "name": "Leucippe",
+        "type": "snap:SisterOf",
+        "id": "http://data.perseus.org/people/smith:leucippe-2#this"
+      },
+      {
+        "name": "Hippasus",
+        "type": "snap:NephewOf",
+        "id": "http://data.perseus.org/people/smith:hippasus-4#this"
+      }
+    ]
+  }
+}

@@ -12,8 +12,9 @@ open( book );
 pleiades( process.argv[2] );
 */
 
-var data = dir_data( '../data/perseids' );
-soc_net( data, '../data/gapvis/soc_net.json' );
+var src = dir_data( '../data/perseids' );
+make_vis_data( src, '../data/gapvis' );
+
 
 // Retrieve pleiades data
 
@@ -55,7 +56,7 @@ function open_json( file ){
 // Write the file
 
 function write( file, data ){
-	fs.writeFile( file, data,
+	fs.writeFile( file, JSON.stringify( data, null, 2 ),
 	function( err ){
 		if ( err ){
 			console.log( err );
@@ -69,22 +70,56 @@ function write( file, data ){
 
 // social network
 
-function soc_net( data, file ){
-	var output = { characters:[] };
+function make_vis_data( data, dir ){
+	
+	var character = {};
+	var cts_map = {};
+	var place = {};
+	
 	for ( var i=0; i<data.length; i++ ){
-		var char = data[i];
-		output.characters.push( char );
+		var d = data[i];
+		var body = d.hasBody;
+		var char = {};
+		
+		// Grab the CTS
+		
+		var cts = d.hasTarget.hasSource['@id'];
+		
+		// Character
+		
+		if ( '@graph' in body ) {
+			var s = body['@graph'][0]['@id'];
+			var p = body['@graph'][1]['@type'];
+			var o = body['@graph'][1]['snap:bond-with']['@id'];
+			var nam = d.hasTarget.hasSelector.exact;
+			cts_map[s] = cts;
+			if(!( s in character )){
+				character[s] = { name: '', rel:[] };
+			}
+			character[s]['rel'].push( { name: nam, type: p, id: o } );
+		}
+		
+		// Place
+		
+		else {
+			var s = body[0]['@id'];
+			if (!( cts in place )){
+				place[cts] = [];
+			}
+			place[cts].push( s );
+		}
 	}
-	write( file, JSON.stringify( output, null, 2 ));
+	
+	// Write json files
+	
+	write( dir+'/characters.json', character );
+	write( dir+'/cts_map.json', cts_map );
+	write( dir+'/places.json', place );
+	
 }
 
+// Build book from separate files
 
-// book
-
-function book( data, file ){
-	var output = {};
-	for ( var i=0; i<data.length; i++ ){
-		
-	}
-	write( file, JSON.stringify( output, null, 2 ));
+function build_book(){
+	
 }
