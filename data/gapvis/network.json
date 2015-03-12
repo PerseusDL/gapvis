@@ -1,0 +1,2371 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "name": "Aceso",
+      "group": 3
+    },
+    {
+      "id": 1,
+      "name": "Acheron",
+      "group": 1
+    },
+    {
+      "id": 2,
+      "name": "Achilles",
+      "group": 1
+    },
+    {
+      "id": 3,
+      "name": "Acis",
+      "group": 1
+    },
+    {
+      "id": 4,
+      "name": "Acrisius",
+      "group": 1
+    },
+    {
+      "id": 5,
+      "name": "Adonis",
+      "group": 1
+    },
+    {
+      "id": 6,
+      "name": "Adrasteia",
+      "group": 3
+    },
+    {
+      "id": 7,
+      "name": "Aegea",
+      "group": 1
+    },
+    {
+      "id": 8,
+      "name": "Aegeus",
+      "group": 1
+    },
+    {
+      "id": 9,
+      "name": "Aegina",
+      "group": 2
+    },
+    {
+      "id": 10,
+      "name": "Aegle",
+      "group": 3
+    },
+    {
+      "id": 11,
+      "name": "Aella",
+      "group": 2
+    },
+    {
+      "id": 12,
+      "name": "Aeolus",
+      "group": 2
+    },
+    {
+      "id": 13,
+      "name": "Aeson",
+      "group": 3
+    },
+    {
+      "id": 14,
+      "name": "Aethiopia",
+      "group": 1
+    },
+    {
+      "id": 15,
+      "name": "Aetolus",
+      "group": 2
+    },
+    {
+      "id": 16,
+      "name": "Agamemnon",
+      "group": 2
+    },
+    {
+      "id": 17,
+      "name": "Agasthenes",
+      "group": 3
+    },
+    {
+      "id": 18,
+      "name": "Alcestis",
+      "group": 3
+    },
+    {
+      "id": 19,
+      "name": "Alcibie",
+      "group": 2
+    },
+    {
+      "id": 20,
+      "name": "Amphiaraus",
+      "group": 3
+    },
+    {
+      "id": 21,
+      "name": "Amphiaraus",
+      "group": 2
+    },
+    {
+      "id": 22,
+      "name": "Amphictyon",
+      "group": 1
+    },
+    {
+      "id": 23,
+      "name": "Amphilochus",
+      "group": 3
+    },
+    {
+      "id": 24,
+      "name": "Amphion and Zethus",
+      "group": 2
+    },
+    {
+      "id": 25,
+      "name": "Amymone",
+      "group": 2
+    },
+    {
+      "id": 26,
+      "name": "Anaxagoras",
+      "group": 2
+    },
+    {
+      "id": 27,
+      "name": "Anchises",
+      "group": 3
+    },
+    {
+      "id": 28,
+      "name": "Andromache",
+      "group": 2
+    },
+    {
+      "id": 29,
+      "name": "Andromeda",
+      "group": 3
+    },
+    {
+      "id": 30,
+      "name": "Anius",
+      "group": 3
+    },
+    {
+      "id": 31,
+      "name": "Antandre",
+      "group": 3
+    },
+    {
+      "id": 32,
+      "name": "Antheia",
+      "group": 3
+    },
+    {
+      "id": 33,
+      "name": "Antigone",
+      "group": 1
+    },
+    {
+      "id": 34,
+      "name": "Antiope",
+      "group": 1
+    },
+    {
+      "id": 35,
+      "name": "Aoide",
+      "group": 3
+    },
+    {
+      "id": 36,
+      "name": "Aphaea",
+      "group": 1
+    },
+    {
+      "id": 37,
+      "name": "Apollo",
+      "group": 1
+    },
+    {
+      "id": 38,
+      "name": "Apollonis",
+      "group": 3
+    },
+    {
+      "id": 39,
+      "name": "Arachne",
+      "group": 3
+    },
+    {
+      "id": 40,
+      "name": "Arcadia",
+      "group": 2
+    },
+    {
+      "id": 41,
+      "name": "Arcadia",
+      "group": 3
+    },
+    {
+      "id": 42,
+      "name": "Areto",
+      "group": 2
+    },
+    {
+      "id": 43,
+      "name": "Argeus",
+      "group": 2
+    },
+    {
+      "id": 44,
+      "name": "Argonauts",
+      "group": 2
+    },
+    {
+      "id": 45,
+      "name": "Argos",
+      "group": 3
+    },
+    {
+      "id": 46,
+      "name": "Argus",
+      "group": 3
+    },
+    {
+      "id": 47,
+      "name": "Ariadne",
+      "group": 1
+    },
+    {
+      "id": 48,
+      "name": "Ariadne",
+      "group": 1
+    },
+    {
+      "id": 49,
+      "name": "Aristaeus",
+      "group": 3
+    },
+    {
+      "id": 50,
+      "name": "Asclepius",
+      "group": 1
+    },
+    {
+      "id": 51,
+      "name": "Asopus",
+      "group": 1
+    },
+    {
+      "id": 52,
+      "name": "Assaracus",
+      "group": 3
+    },
+    {
+      "id": 53,
+      "name": "Asteria",
+      "group": 1
+    },
+    {
+      "id": 54,
+      "name": "Atalanta",
+      "group": 1
+    },
+    {
+      "id": 55,
+      "name": "Atreus",
+      "group": 2
+    },
+    {
+      "id": 56,
+      "name": "Attica",
+      "group": 3
+    },
+    {
+      "id": 57,
+      "name": "Augeas",
+      "group": 1
+    },
+    {
+      "id": 58,
+      "name": "Autesion",
+      "group": 2
+    },
+    {
+      "id": 59,
+      "name": "Bebryces",
+      "group": 1
+    },
+    {
+      "id": 60,
+      "name": "Bias",
+      "group": 1
+    },
+    {
+      "id": 61,
+      "name": "Borysthenis",
+      "group": 3
+    },
+    {
+      "id": 62,
+      "name": "Branchus",
+      "group": 1
+    },
+    {
+      "id": 63,
+      "name": "Bremusa",
+      "group": 1
+    },
+    {
+      "id": 64,
+      "name": "Busiris",
+      "group": 3
+    },
+    {
+      "id": 65,
+      "name": "Cadmus",
+      "group": 1
+    },
+    {
+      "id": 66,
+      "name": "Caeneus",
+      "group": 2
+    },
+    {
+      "id": 67,
+      "name": "Calchas",
+      "group": 1
+    },
+    {
+      "id": 68,
+      "name": "Calliope",
+      "group": 1
+    },
+    {
+      "id": 69,
+      "name": "Calypso",
+      "group": 3
+    },
+    {
+      "id": 70,
+      "name": "Car",
+      "group": 1
+    },
+    {
+      "id": 71,
+      "name": "Carmanor",
+      "group": 3
+    },
+    {
+      "id": 72,
+      "name": "Carnus",
+      "group": 2
+    },
+    {
+      "id": 73,
+      "name": "Carya",
+      "group": 1
+    },
+    {
+      "id": 74,
+      "name": "Cassandra",
+      "group": 2
+    },
+    {
+      "id": 75,
+      "name": "Cassandra",
+      "group": 1
+    },
+    {
+      "id": 76,
+      "name": "Castor",
+      "group": 3
+    },
+    {
+      "id": 77,
+      "name": "Catreus",
+      "group": 1
+    },
+    {
+      "id": 78,
+      "name": "Cecrops I",
+      "group": 2
+    },
+    {
+      "id": 79,
+      "name": "Ceisus",
+      "group": 1
+    },
+    {
+      "id": 80,
+      "name": "Celaeno",
+      "group": 3
+    },
+    {
+      "id": 81,
+      "name": "Celeus",
+      "group": 2
+    },
+    {
+      "id": 82,
+      "name": "Cephalus",
+      "group": 1
+    },
+    {
+      "id": 83,
+      "name": "Cepheus",
+      "group": 2
+    },
+    {
+      "id": 84,
+      "name": "Cephisso",
+      "group": 1
+    },
+    {
+      "id": 85,
+      "name": "Ceraon",
+      "group": 2
+    },
+    {
+      "id": 86,
+      "name": "Charnabon",
+      "group": 2
+    },
+    {
+      "id": 87,
+      "name": "Chimera",
+      "group": 3
+    },
+    {
+      "id": 88,
+      "name": "Chios",
+      "group": 3
+    },
+    {
+      "id": 89,
+      "name": "Chrysippus",
+      "group": 1
+    },
+    {
+      "id": 90,
+      "name": "Chrysothemis",
+      "group": 2
+    },
+    {
+      "id": 91,
+      "name": "Cilician Thebe",
+      "group": 1
+    },
+    {
+      "id": 92,
+      "name": "Circe",
+      "group": 3
+    },
+    {
+      "id": 93,
+      "name": "Cladeus",
+      "group": 1
+    },
+    {
+      "id": 94,
+      "name": "Clio",
+      "group": 2
+    },
+    {
+      "id": 95,
+      "name": "Clytemnestra",
+      "group": 3
+    },
+    {
+      "id": 96,
+      "name": "Clytie",
+      "group": 2
+    },
+    {
+      "id": 97,
+      "name": "Cocytus",
+      "group": 2
+    },
+    {
+      "id": 98,
+      "name": "Codrus",
+      "group": 3
+    },
+    {
+      "id": 99,
+      "name": "Colchis",
+      "group": 1
+    },
+    {
+      "id": 100,
+      "name": "Comus",
+      "group": 3
+    },
+    {
+      "id": 101,
+      "name": "Corinthus",
+      "group": 1
+    },
+    {
+      "id": 102,
+      "name": "Corymbus",
+      "group": 1
+    },
+    {
+      "id": 103,
+      "name": "Cranaus",
+      "group": 2
+    },
+    {
+      "id": 104,
+      "name": "Creon",
+      "group": 2
+    },
+    {
+      "id": 105,
+      "name": "Creon",
+      "group": 3
+    },
+    {
+      "id": 106,
+      "name": "Cres",
+      "group": 1
+    },
+    {
+      "id": 107,
+      "name": "Cresphontes",
+      "group": 2
+    },
+    {
+      "id": 108,
+      "name": "Crete",
+      "group": 2
+    },
+    {
+      "id": 109,
+      "name": "Cretheus",
+      "group": 2
+    },
+    {
+      "id": 110,
+      "name": "Criasus",
+      "group": 1
+    },
+    {
+      "id": 111,
+      "name": "Curetes",
+      "group": 1
+    },
+    {
+      "id": 112,
+      "name": "Cyamites",
+      "group": 3
+    },
+    {
+      "id": 113,
+      "name": "Cylarabes",
+      "group": 3
+    },
+    {
+      "id": 114,
+      "name": "Cyprus",
+      "group": 2
+    },
+    {
+      "id": 115,
+      "name": "Cyzicus",
+      "group": 3
+    },
+    {
+      "id": 116,
+      "name": "Danaus",
+      "group": 1
+    },
+    {
+      "id": 117,
+      "name": "Danaë",
+      "group": 3
+    },
+    {
+      "id": 118,
+      "name": "Dardanus",
+      "group": 1
+    },
+    {
+      "id": 119,
+      "name": "Deianeira",
+      "group": 2
+    },
+    {
+      "id": 120,
+      "name": "Deiphontes",
+      "group": 3
+    },
+    {
+      "id": 121,
+      "name": "Demeter",
+      "group": 1
+    },
+    {
+      "id": 122,
+      "name": "Demophon of Athens",
+      "group": 2
+    },
+    {
+      "id": 123,
+      "name": "Diomedes",
+      "group": 3
+    },
+    {
+      "id": 124,
+      "name": "Diomedes",
+      "group": 1
+    },
+    {
+      "id": 125,
+      "name": "Dionysus",
+      "group": 3
+    },
+    {
+      "id": 126,
+      "name": "Dionysus",
+      "group": 2
+    },
+    {
+      "id": 127,
+      "name": "Dorians",
+      "group": 3
+    },
+    {
+      "id": 128,
+      "name": "Dryad",
+      "group": 1
+    },
+    {
+      "id": 129,
+      "name": "Echetus",
+      "group": 1
+    },
+    {
+      "id": 130,
+      "name": "Eidyia",
+      "group": 3
+    },
+    {
+      "id": 131,
+      "name": "Eileithyia",
+      "group": 2
+    },
+    {
+      "id": 132,
+      "name": "Eiresione",
+      "group": 3
+    },
+    {
+      "id": 133,
+      "name": "Electra",
+      "group": 3
+    },
+    {
+      "id": 134,
+      "name": "Eleusis",
+      "group": 2
+    },
+    {
+      "id": 135,
+      "name": "Eleusis",
+      "group": 3
+    },
+    {
+      "id": 136,
+      "name": "Elis",
+      "group": 2
+    },
+    {
+      "id": 137,
+      "name": "Ennomus",
+      "group": 1
+    },
+    {
+      "id": 138,
+      "name": "Enyalius",
+      "group": 1
+    },
+    {
+      "id": 139,
+      "name": "Enyo",
+      "group": 2
+    },
+    {
+      "id": 140,
+      "name": "Epigoni",
+      "group": 2
+    },
+    {
+      "id": 141,
+      "name": "Epimeliad",
+      "group": 2
+    },
+    {
+      "id": 142,
+      "name": "Epione",
+      "group": 2
+    },
+    {
+      "id": 143,
+      "name": "Erato",
+      "group": 3
+    },
+    {
+      "id": 144,
+      "name": "Erechtheus",
+      "group": 2
+    },
+    {
+      "id": 145,
+      "name": "Erginus",
+      "group": 2
+    },
+    {
+      "id": 146,
+      "name": "Erichthonius of Athens",
+      "group": 1
+    },
+    {
+      "id": 147,
+      "name": "Eteocles",
+      "group": 2
+    },
+    {
+      "id": 148,
+      "name": "Eteocles",
+      "group": 2
+    },
+    {
+      "id": 149,
+      "name": "Euboea",
+      "group": 2
+    },
+    {
+      "id": 150,
+      "name": "Eunostus",
+      "group": 3
+    },
+    {
+      "id": 151,
+      "name": "Eunostus",
+      "group": 3
+    },
+    {
+      "id": 152,
+      "name": "Europa",
+      "group": 1
+    },
+    {
+      "id": 153,
+      "name": "Eurotas",
+      "group": 1
+    },
+    {
+      "id": 154,
+      "name": "Eurotas",
+      "group": 3
+    },
+    {
+      "id": 155,
+      "name": "Eurypyle",
+      "group": 3
+    },
+    {
+      "id": 156,
+      "name": "Eurystheus",
+      "group": 2
+    },
+    {
+      "id": 157,
+      "name": "Euterpe",
+      "group": 1
+    },
+    {
+      "id": 158,
+      "name": "Ganymede",
+      "group": 1
+    },
+    {
+      "id": 159,
+      "name": "Gelanor",
+      "group": 2
+    },
+    {
+      "id": 160,
+      "name": "Haemus",
+      "group": 1
+    },
+    {
+      "id": 161,
+      "name": "Halitherses",
+      "group": 1
+    },
+    {
+      "id": 162,
+      "name": "Hamadryad",
+      "group": 3
+    },
+    {
+      "id": 163,
+      "name": "Harpocrates",
+      "group": 3
+    },
+    {
+      "id": 164,
+      "name": "Hecaterus",
+      "group": 1
+    },
+    {
+      "id": 165,
+      "name": "Hector",
+      "group": 1
+    },
+    {
+      "id": 166,
+      "name": "Hecuba",
+      "group": 2
+    },
+    {
+      "id": 167,
+      "name": "Hegemone",
+      "group": 3
+    },
+    {
+      "id": 168,
+      "name": "Helen of Troy|Helen",
+      "group": 1
+    },
+    {
+      "id": 169,
+      "name": "Helenus",
+      "group": 2
+    },
+    {
+      "id": 170,
+      "name": "Helenus",
+      "group": 2
+    },
+    {
+      "id": 171,
+      "name": "Hephaestus",
+      "group": 1
+    },
+    {
+      "id": 172,
+      "name": "Hermes",
+      "group": 3
+    },
+    {
+      "id": 173,
+      "name": "Hermione",
+      "group": 3
+    },
+    {
+      "id": 174,
+      "name": "Hestia",
+      "group": 3
+    },
+    {
+      "id": 175,
+      "name": "Hippolyta",
+      "group": 3
+    },
+    {
+      "id": 176,
+      "name": "Hippothoe",
+      "group": 2
+    },
+    {
+      "id": 177,
+      "name": "Hippothoon",
+      "group": 2
+    },
+    {
+      "id": 178,
+      "name": "Horae",
+      "group": 3
+    },
+    {
+      "id": 179,
+      "name": "Hygieia",
+      "group": 3
+    },
+    {
+      "id": 180,
+      "name": "Hymenaios",
+      "group": 3
+    },
+    {
+      "id": 181,
+      "name": "Hyrieus",
+      "group": 3
+    },
+    {
+      "id": 182,
+      "name": "Iamidai",
+      "group": 3
+    },
+    {
+      "id": 183,
+      "name": "Iaso",
+      "group": 2
+    },
+    {
+      "id": 184,
+      "name": "Ichnaea",
+      "group": 3
+    },
+    {
+      "id": 185,
+      "name": "Idmon",
+      "group": 3
+    },
+    {
+      "id": 186,
+      "name": "Ilus",
+      "group": 3
+    },
+    {
+      "id": 187,
+      "name": "Iolaus",
+      "group": 3
+    },
+    {
+      "id": 188,
+      "name": "Iphigenia",
+      "group": 2
+    },
+    {
+      "id": 189,
+      "name": "Iphito",
+      "group": 3
+    },
+    {
+      "id": 190,
+      "name": "Ismene",
+      "group": 3
+    },
+    {
+      "id": 191,
+      "name": "Ithaca",
+      "group": 1
+    },
+    {
+      "id": 192,
+      "name": "Iynx",
+      "group": 1
+    },
+    {
+      "id": 193,
+      "name": "Jason",
+      "group": 3
+    },
+    {
+      "id": 194,
+      "name": "Jocasta",
+      "group": 3
+    },
+    {
+      "id": 195,
+      "name": "Kea",
+      "group": 2
+    },
+    {
+      "id": 196,
+      "name": "Korybantes",
+      "group": 2
+    },
+    {
+      "id": 197,
+      "name": "Krotos",
+      "group": 2
+    },
+    {
+      "id": 198,
+      "name": "Lampedo",
+      "group": 1
+    },
+    {
+      "id": 199,
+      "name": "Lampsace",
+      "group": 2
+    },
+    {
+      "id": 200,
+      "name": "Laomedon",
+      "group": 1
+    },
+    {
+      "id": 201,
+      "name": "Lapiths",
+      "group": 2
+    },
+    {
+      "id": 202,
+      "name": "Lapiths",
+      "group": 3
+    },
+    {
+      "id": 203,
+      "name": "Larissa",
+      "group": 1
+    },
+    {
+      "id": 204,
+      "name": "Laërtes",
+      "group": 2
+    },
+    {
+      "id": 205,
+      "name": "Lethe",
+      "group": 2
+    },
+    {
+      "id": 206,
+      "name": "Lycaon",
+      "group": 1
+    },
+    {
+      "id": 207,
+      "name": "Lycurgus of Arcadia",
+      "group": 1
+    },
+    {
+      "id": 208,
+      "name": "Lycurgus of Nemea",
+      "group": 2
+    },
+    {
+      "id": 209,
+      "name": "Lyrnessus",
+      "group": 2
+    },
+    {
+      "id": 210,
+      "name": "Maenad",
+      "group": 3
+    },
+    {
+      "id": 211,
+      "name": "Makedon",
+      "group": 1
+    },
+    {
+      "id": 212,
+      "name": "Manto",
+      "group": 3
+    },
+    {
+      "id": 213,
+      "name": "Marpesia",
+      "group": 2
+    },
+    {
+      "id": 214,
+      "name": "Medea",
+      "group": 1
+    },
+    {
+      "id": 215,
+      "name": "Medusa",
+      "group": 3
+    },
+    {
+      "id": 216,
+      "name": "Megareus of Onchestus",
+      "group": 3
+    },
+    {
+      "id": 217,
+      "name": "Megareus of Thebes",
+      "group": 1
+    },
+    {
+      "id": 218,
+      "name": "Melampus",
+      "group": 3
+    },
+    {
+      "id": 219,
+      "name": "Melampus",
+      "group": 3
+    },
+    {
+      "id": 220,
+      "name": "Melanippe",
+      "group": 2
+    },
+    {
+      "id": 221,
+      "name": "Melanthus",
+      "group": 3
+    },
+    {
+      "id": 222,
+      "name": "Meleager",
+      "group": 2
+    },
+    {
+      "id": 223,
+      "name": "Melete",
+      "group": 1
+    },
+    {
+      "id": 224,
+      "name": "Meliae",
+      "group": 1
+    },
+    {
+      "id": 225,
+      "name": "Melpomene",
+      "group": 1
+    },
+    {
+      "id": 226,
+      "name": "Memnon",
+      "group": 3
+    },
+    {
+      "id": 227,
+      "name": "Memphis",
+      "group": 2
+    },
+    {
+      "id": 228,
+      "name": "Menelaus",
+      "group": 2
+    },
+    {
+      "id": 229,
+      "name": "Menestheus",
+      "group": 3
+    },
+    {
+      "id": 230,
+      "name": "Mese",
+      "group": 1
+    },
+    {
+      "id": 231,
+      "name": "Methe",
+      "group": 1
+    },
+    {
+      "id": 232,
+      "name": "Midas",
+      "group": 3
+    },
+    {
+      "id": 233,
+      "name": "Minos",
+      "group": 2
+    },
+    {
+      "id": 234,
+      "name": "Minos",
+      "group": 2
+    },
+    {
+      "id": 235,
+      "name": "Minos",
+      "group": 2
+    },
+    {
+      "id": 236,
+      "name": "Minotaur",
+      "group": 3
+    },
+    {
+      "id": 237,
+      "name": "Minotaur",
+      "group": 1
+    },
+    {
+      "id": 238,
+      "name": "Mneme",
+      "group": 3
+    },
+    {
+      "id": 239,
+      "name": "Molpadia",
+      "group": 2
+    },
+    {
+      "id": 240,
+      "name": "Mopsus",
+      "group": 3
+    },
+    {
+      "id": 241,
+      "name": "Muses",
+      "group": 3
+    },
+    {
+      "id": 242,
+      "name": "Mycenae",
+      "group": 2
+    },
+    {
+      "id": 243,
+      "name": "Myles",
+      "group": 3
+    },
+    {
+      "id": 244,
+      "name": "Myrina",
+      "group": 3
+    },
+    {
+      "id": 245,
+      "name": "Myrmidons",
+      "group": 2
+    },
+    {
+      "id": 246,
+      "name": "Naiad",
+      "group": 1
+    },
+    {
+      "id": 247,
+      "name": "Nestor",
+      "group": 3
+    },
+    {
+      "id": 248,
+      "name": "Nete",
+      "group": 2
+    },
+    {
+      "id": 249,
+      "name": "Niobe",
+      "group": 2
+    },
+    {
+      "id": 250,
+      "name": "Nycteus",
+      "group": 3
+    },
+    {
+      "id": 251,
+      "name": "Oceanid",
+      "group": 3
+    },
+    {
+      "id": 252,
+      "name": "Odyssey",
+      "group": 3
+    },
+    {
+      "id": 253,
+      "name": "Odyssey",
+      "group": 3
+    },
+    {
+      "id": 254,
+      "name": "Oebalus",
+      "group": 1
+    },
+    {
+      "id": 255,
+      "name": "Oedipus",
+      "group": 2
+    },
+    {
+      "id": 256,
+      "name": "Oeneus",
+      "group": 2
+    },
+    {
+      "id": 257,
+      "name": "Oenomaus",
+      "group": 3
+    },
+    {
+      "id": 258,
+      "name": "Ogygus",
+      "group": 1
+    },
+    {
+      "id": 259,
+      "name": "Oicles",
+      "group": 1
+    },
+    {
+      "id": 260,
+      "name": "Oileus",
+      "group": 3
+    },
+    {
+      "id": 261,
+      "name": "Orchomenus",
+      "group": 1
+    },
+    {
+      "id": 262,
+      "name": "Oread",
+      "group": 2
+    },
+    {
+      "id": 263,
+      "name": "Orestes",
+      "group": 2
+    },
+    {
+      "id": 264,
+      "name": "Orithyia",
+      "group": 3
+    },
+    {
+      "id": 265,
+      "name": "Orpheus",
+      "group": 3
+    },
+    {
+      "id": 266,
+      "name": "Otrera",
+      "group": 2
+    },
+    {
+      "id": 267,
+      "name": "Ourea",
+      "group": 2
+    },
+    {
+      "id": 268,
+      "name": "Oxyntes",
+      "group": 1
+    },
+    {
+      "id": 269,
+      "name": "Palaestra",
+      "group": 3
+    },
+    {
+      "id": 270,
+      "name": "Palici",
+      "group": 2
+    },
+    {
+      "id": 271,
+      "name": "Pan",
+      "group": 1
+    },
+    {
+      "id": 272,
+      "name": "Panacea",
+      "group": 1
+    },
+    {
+      "id": 273,
+      "name": "Pandion I",
+      "group": 3
+    },
+    {
+      "id": 274,
+      "name": "Pandion II",
+      "group": 3
+    },
+    {
+      "id": 275,
+      "name": "Pandion II",
+      "group": 1
+    },
+    {
+      "id": 276,
+      "name": "Pandora",
+      "group": 1
+    },
+    {
+      "id": 277,
+      "name": "Pantariste",
+      "group": 1
+    },
+    {
+      "id": 278,
+      "name": "Pasithea",
+      "group": 1
+    },
+    {
+      "id": 279,
+      "name": "Pelias",
+      "group": 2
+    },
+    {
+      "id": 280,
+      "name": "Pelops",
+      "group": 3
+    },
+    {
+      "id": 281,
+      "name": "Penelope",
+      "group": 2
+    },
+    {
+      "id": 282,
+      "name": "Peneus",
+      "group": 3
+    },
+    {
+      "id": 283,
+      "name": "Penthesilea",
+      "group": 2
+    },
+    {
+      "id": 284,
+      "name": "Pentheus",
+      "group": 1
+    },
+    {
+      "id": 285,
+      "name": "Persephone",
+      "group": 3
+    },
+    {
+      "id": 286,
+      "name": "Perseus",
+      "group": 3
+    },
+    {
+      "id": 287,
+      "name": "Perseus",
+      "group": 3
+    },
+    {
+      "id": 288,
+      "name": "Phaeacia",
+      "group": 1
+    },
+    {
+      "id": 289,
+      "name": "Phaedra",
+      "group": 1
+    },
+    {
+      "id": 290,
+      "name": "Pherae",
+      "group": 1
+    },
+    {
+      "id": 291,
+      "name": "Philomelus",
+      "group": 1
+    },
+    {
+      "id": 292,
+      "name": "Phineus",
+      "group": 1
+    },
+    {
+      "id": 293,
+      "name": "Phlegethon",
+      "group": 2
+    },
+    {
+      "id": 294,
+      "name": "Phlegyas",
+      "group": 3
+    },
+    {
+      "id": 295,
+      "name": "Phoenicia",
+      "group": 1
+    },
+    {
+      "id": 296,
+      "name": "Phoenix",
+      "group": 1
+    },
+    {
+      "id": 297,
+      "name": "Phoroneus",
+      "group": 2
+    },
+    {
+      "id": 298,
+      "name": "Phrygia",
+      "group": 1
+    },
+    {
+      "id": 299,
+      "name": "Phyleus",
+      "group": 2
+    },
+    {
+      "id": 300,
+      "name": "Pirithous",
+      "group": 2
+    },
+    {
+      "id": 301,
+      "name": "Pittheus",
+      "group": 2
+    },
+    {
+      "id": 302,
+      "name": "Plutus",
+      "group": 2
+    },
+    {
+      "id": 303,
+      "name": "Pollux",
+      "group": 2
+    },
+    {
+      "id": 304,
+      "name": "Polybus of Corinth",
+      "group": 1
+    },
+    {
+      "id": 305,
+      "name": "Polybus of Sicyon",
+      "group": 1
+    },
+    {
+      "id": 306,
+      "name": "Polybus of Thebes",
+      "group": 1
+    },
+    {
+      "id": 307,
+      "name": "Polyeidos",
+      "group": 2
+    },
+    {
+      "id": 308,
+      "name": "Polyhymnia",
+      "group": 2
+    },
+    {
+      "id": 309,
+      "name": "Polymatheia",
+      "group": 2
+    },
+    {
+      "id": 310,
+      "name": "Polynices",
+      "group": 1
+    },
+    {
+      "id": 311,
+      "name": "Polyxena",
+      "group": 2
+    },
+    {
+      "id": 312,
+      "name": "Pompeii",
+      "group": 2
+    },
+    {
+      "id": 313,
+      "name": "Potamoi",
+      "group": 3
+    },
+    {
+      "id": 314,
+      "name": "Priam",
+      "group": 1
+    },
+    {
+      "id": 315,
+      "name": "Priapus",
+      "group": 2
+    },
+    {
+      "id": 316,
+      "name": "Proetus",
+      "group": 2
+    },
+    {
+      "id": 317,
+      "name": "Pylades",
+      "group": 3
+    },
+    {
+      "id": 318,
+      "name": "Rhadamanthys",
+      "group": 2
+    },
+    {
+      "id": 319,
+      "name": "Rhapso",
+      "group": 2
+    },
+    {
+      "id": 320,
+      "name": "Rhesus of Thrace",
+      "group": 3
+    },
+    {
+      "id": 321,
+      "name": "Sarpedon",
+      "group": 2
+    },
+    {
+      "id": 322,
+      "name": "Satyr",
+      "group": 1
+    },
+    {
+      "id": 323,
+      "name": "Scamander",
+      "group": 3
+    },
+    {
+      "id": 324,
+      "name": "Semele",
+      "group": 2
+    },
+    {
+      "id": 325,
+      "name": "Sicyon",
+      "group": 3
+    },
+    {
+      "id": 326,
+      "name": "Silenus",
+      "group": 3
+    },
+    {
+      "id": 327,
+      "name": "Sisyphus",
+      "group": 2
+    },
+    {
+      "id": 328,
+      "name": "Sisyphus",
+      "group": 3
+    },
+    {
+      "id": 329,
+      "name": "Sithon",
+      "group": 1
+    },
+    {
+      "id": 330,
+      "name": "Sparta",
+      "group": 1
+    },
+    {
+      "id": 331,
+      "name": "Talaus",
+      "group": 3
+    },
+    {
+      "id": 332,
+      "name": "Tantalus",
+      "group": 3
+    },
+    {
+      "id": 333,
+      "name": "Tegea",
+      "group": 3
+    },
+    {
+      "id": 334,
+      "name": "Tegyrios",
+      "group": 3
+    },
+    {
+      "id": 335,
+      "name": "Telamon",
+      "group": 3
+    },
+    {
+      "id": 336,
+      "name": "Telemus",
+      "group": 2
+    },
+    {
+      "id": 337,
+      "name": "Telephus",
+      "group": 3
+    },
+    {
+      "id": 338,
+      "name": "Telete",
+      "group": 1
+    },
+    {
+      "id": 339,
+      "name": "Temenus",
+      "group": 2
+    },
+    {
+      "id": 340,
+      "name": "Terpsichore",
+      "group": 2
+    },
+    {
+      "id": 341,
+      "name": "Teucer",
+      "group": 2
+    },
+    {
+      "id": 342,
+      "name": "Teumessian",
+      "group": 2
+    },
+    {
+      "id": 343,
+      "name": "Teuthras",
+      "group": 3
+    },
+    {
+      "id": 344,
+      "name": "Thalia",
+      "group": 1
+    },
+    {
+      "id": 345,
+      "name": "Thelxinoe",
+      "group": 2
+    },
+    {
+      "id": 346,
+      "name": "Theoclymenus",
+      "group": 1
+    },
+    {
+      "id": 347,
+      "name": "Thersander",
+      "group": 3
+    },
+    {
+      "id": 348,
+      "name": "Thyestes",
+      "group": 1
+    },
+    {
+      "id": 349,
+      "name": "Tiresias",
+      "group": 2
+    },
+    {
+      "id": 350,
+      "name": "Tiryns",
+      "group": 1
+    },
+    {
+      "id": 351,
+      "name": "Tisamenus",
+      "group": 3
+    },
+    {
+      "id": 352,
+      "name": "Tyndareus",
+      "group": 2
+    },
+    {
+      "id": 353,
+      "name": "Urania",
+      "group": 1
+    },
+    {
+      "id": 354,
+      "name": "Uranus",
+      "group": 1
+    },
+    {
+      "id": 355,
+      "name": "Zagreus",
+      "group": 2
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 286,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 160,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 234,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 53,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 40,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 240,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 189,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 150,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 305,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 85,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 250,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 233,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 92,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 53,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 16,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 65,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 192,
+      "value": 1
+    },
+    {
+      "source": 2,
+      "target": 83,
+      "value": 1
+    },
+    {
+      "source": 2,
+      "target": 254,
+      "value": 1
+    },
+    {
+      "source": 2,
+      "target": 103,
+      "value": 1
+    },
+    {
+      "source": 2,
+      "target": 41,
+      "value": 1
+    },
+    {
+      "source": 2,
+      "target": 259,
+      "value": 1
+    },
+    {
+      "source": 2,
+      "target": 255,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 14,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 167,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 247,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 338,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 176,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 331,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 295,
+      "value": 1
+    },
+    {
+      "source": 4,
+      "target": 162,
+      "value": 1
+    },
+    {
+      "source": 4,
+      "target": 139,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 333,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 121,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 156,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 245,
+      "value": 1
+    },
+    {
+      "source": 6,
+      "target": 163,
+      "value": 1
+    },
+    {
+      "source": 6,
+      "target": 124,
+      "value": 1
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "value": 1
+    },
+    {
+      "source": 7,
+      "target": 21,
+      "value": 1
+    },
+    {
+      "source": 7,
+      "target": 265,
+      "value": 1
+    },
+    {
+      "source": 7,
+      "target": 215,
+      "value": 1
+    },
+    {
+      "source": 7,
+      "target": 24,
+      "value": 1
+    },
+    {
+      "source": 8,
+      "target": 111,
+      "value": 1
+    },
+    {
+      "source": 8,
+      "target": 182,
+      "value": 1
+    },
+    {
+      "source": 8,
+      "target": 213,
+      "value": 1
+    },
+    {
+      "source": 8,
+      "target": 224,
+      "value": 1
+    },
+    {
+      "source": 9,
+      "target": 186,
+      "value": 1
+    },
+    {
+      "source": 9,
+      "target": 115,
+      "value": 1
+    },
+    {
+      "source": 9,
+      "target": 50,
+      "value": 1
+    },
+    {
+      "source": 9,
+      "target": 106,
+      "value": 1
+    },
+    {
+      "source": 9,
+      "target": 117,
+      "value": 1
+    },
+    {
+      "source": 10,
+      "target": 286,
+      "value": 1
+    },
+    {
+      "source": 10,
+      "target": 170,
+      "value": 1
+    },
+    {
+      "source": 10,
+      "target": 233,
+      "value": 1
+    },
+    {
+      "source": 10,
+      "target": 148,
+      "value": 1
+    },
+    {
+      "source": 10,
+      "target": 249,
+      "value": 1
+    },
+    {
+      "source": 10,
+      "target": 128,
+      "value": 1
+    },
+    {
+      "source": 11,
+      "target": 73,
+      "value": 1
+    },
+    {
+      "source": 11,
+      "target": 139,
+      "value": 1
+    },
+    {
+      "source": 11,
+      "target": 1,
+      "value": 2
+    },
+    {
+      "source": 11,
+      "target": 290,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 352,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 29,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 124,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 106,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 6,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 306,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 189,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 64,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 302,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 23,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 45,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 139,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 205,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 314,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 333,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 200,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 263,
+      "value": 1
+    },
+    {
+      "source": 16,
+      "target": 223,
+      "value": 1
+    },
+    {
+      "source": 16,
+      "target": 108,
+      "value": 1
+    },
+    {
+      "source": 17,
+      "target": 97,
+      "value": 1
+    },
+    {
+      "source": 17,
+      "target": 213,
+      "value": 1
+    },
+    {
+      "source": 17,
+      "target": 145,
+      "value": 1
+    },
+    {
+      "source": 17,
+      "target": 132,
+      "value": 1
+    },
+    {
+      "source": 18,
+      "target": 39,
+      "value": 1
+    },
+    {
+      "source": 18,
+      "target": 22,
+      "value": 1
+    },
+    {
+      "source": 18,
+      "target": 48,
+      "value": 1
+    },
+    {
+      "source": 18,
+      "target": 24,
+      "value": 1
+    },
+    {
+      "source": 18,
+      "target": 25,
+      "value": 1
+    },
+    {
+      "source": 18,
+      "target": 349,
+      "value": 1
+    },
+    {
+      "source": 19,
+      "target": 133,
+      "value": 1
+    },
+    {
+      "source": 19,
+      "target": 217,
+      "value": 1
+    },
+    {
+      "source": 19,
+      "target": 308,
+      "value": 1
+    },
+    {
+      "source": 19,
+      "target": 90,
+      "value": 1
+    },
+    {
+      "source": 19,
+      "target": 54,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 290,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 67,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 294,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 312,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 116,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 141,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 306,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 115,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 62,
+      "value": 1
+    },
+    {
+      "source": 22,
+      "target": 351,
+      "value": 1
+    },
+    {
+      "source": 23,
+      "target": 143,
+      "value": 1
+    },
+    {
+      "source": 23,
+      "target": 274,
+      "value": 1
+    },
+    {
+      "source": 24,
+      "target": 354,
+      "value": 1
+    },
+    {
+      "source": 24,
+      "target": 332,
+      "value": 1
+    },
+    {
+      "source": 24,
+      "target": 150,
+      "value": 1
+    },
+    {
+      "source": 24,
+      "target": 343,
+      "value": 1
+    },
+    {
+      "source": 24,
+      "target": 5,
+      "value": 1
+    },
+    {
+      "source": 24,
+      "target": 302,
+      "value": 1
+    },
+    {
+      "source": 24,
+      "target": 89,
+      "value": 1
+    },
+    {
+      "source": 24,
+      "target": 308,
+      "value": 1
+    }
+  ]
+}
