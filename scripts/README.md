@@ -1,1 +1,1 @@
-node pleiades.js 226646
+node build.js
