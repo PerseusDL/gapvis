@@ -1,8 +1,8 @@
 /*
  * Book model
  */
-define(['gv', 'models/Model', 'models/Places', 'models/Pages'], 
-    function(gv, Model, Places, Pages) {
+define(['gv', 'models/Model', "util/injector"], 
+    function(gv, Model, injector) {
     
     var settings = gv.settings;
        
@@ -15,18 +15,30 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages'],
             author: "Unnamed Author",
             printed: "?"
         },
-        
+
+        inject: function(list) {
+            var book = this;
+            if(injections.length > 0) {
+                var key = injections.shift();
+                book[key] = new injector(key)();
+                book[key].book = book;
+
+                book[key].ready(function() {
+                    book.inject(injections);
+                });
+            } else {
+                return;
+            }
+        },
         initialize: function() {
             var book = this,
-					
-            // create collections
-            places = book.places = new Places(),
-            pages = book.pages = new Pages();
-								
-            // set backreferences
-								
-            places.book = book;
-            pages.book = book;
+                injections = gv.settings.models.injections.book;
+
+            if(injections.length > 0) {
+                var key = injections.shift();
+                book[key] = new injector(key)();
+                inject(injections);
+            }
         },
         
         parse: function(data) {
@@ -37,15 +49,16 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages'],
         // reset collections with current data
 				
         initCollections: function( placeData, pageData ) {
-            if (DEBUG) console.log('Initializing book ' + this.id + ': ' +
-                pageData.length + ' pages and ' +
-                placeData.length + ' places');
+            if (DEBUG) console.log('Initializing book ' + this.id);
             var places = this.places,
                 pages = this.pages;
-            places.reset(placeData);
+            // TO DO
+            //places.reset(placeData);
 						
             // convert page ids to strings
-						
+            pages.id = this.id;
+            pages.fetchNew();
+			/*	
             pages.reset(pageData.map(function(p) {
                 p.id = String(p.id);
                 return p;
@@ -61,10 +74,11 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages'],
                 });
             });
             places.sort();
+            */
         },
         
         isFullyLoaded: function() {
-            return !!(this.pages.length && this.places.length);
+            return !!(this.pages.length);
         },
         
         // array of page labels for timemap
@@ -74,7 +88,7 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages'],
 				// 	var book = this;
 				// 	return this.pages.map(function(p) { return book.pageIdToRef(p.id).label });
 				// }
-            return this.pages.map(function(p) { return p.id });
+            return this.pages.map(function(p) { return (p.label) ? p.label : p.id });
         },
         
         // array of items for timemap

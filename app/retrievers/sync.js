@@ -21,12 +21,14 @@ define(["gv"], function(gv) {
             if (DEBUG) console.log(dat)
         }
         options.success = function(resp, status, xhr) {
-            _(collection.parse(resp, xhr)).each(function(item) {
-                if (!collection.get(item.id)) {
-                    collection.add(item, {silent:true});
-                }
-            });
-            if (!options.silent) collection.trigger('reset', collection, options);
+            if(typeof collection.add !== "undefined") {
+                _(collection.parse(resp, xhr)).each(function(item) {
+                    if (!collection.get(item.id)) {
+                        collection.add(item, {silent:true});
+                    }
+                });
+                if (!options.silent) collection.trigger('reset', collection, options);
+            }
             if (success) success(collection, resp);
         };
         return (this.sync || Backbone.sync).call(this, 'read', this, options);

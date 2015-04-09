@@ -1,6 +1,6 @@
 define(function() {
     /**
-     * Retrieve pages reference using the cts identifier of a book
+     * Retrieve page text using the cts identifier of a passage
      * @param  {Object.<string, any>}   options         List of options for ajax call / retrieval
      * @param  {function}               options.success Callback
      * @return {Object}  Return an updated/synced object passed as "this"
@@ -8,15 +8,13 @@ define(function() {
     return function(options) {
         var self = this,
             endpoint = self.url(true),
-            text = new CTS.text.Text(self.id, endpoint);
+            passage = new CTS.text.Passage(self.id, endpoint);
 
-        text.getValidReff({
+        return passage.getXml({
             success : function(data) {
-                console.log(data)
-                self.set({"pages" : data})
-                options.success(data)
-            },
-            level : options.level || 1
+                self.set({text : page.getText()})
+                if (options.success) options.success()
+            }
         });
     }
 });

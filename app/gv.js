@@ -97,15 +97,27 @@ define(function() {
         models : {
             endpoints : {
                 bookslist : BOOKSLIST_ENDPOINT,
-                book : BOOK_ENDPOINT
+                book  : BOOK_ENDPOINT,
+                
+                pages : PAGES_ENDPOINT,
+                page  : PAGE_ENDPOINT
             },
             retrievers : {
                 bookslist: BOOKSLIST_RETRIEVER,
-                book: BOOK_RETRIEVER
+                book: BOOK_RETRIEVER,
+
+                pages : PAGES_RETRIEVER,
+                page : PAGE_RETRIEVER
             },
             options : {
                 bookslist : BOOKSLIST_OPTIONS,
-                book : BOOK_OPTIONS
+                book : BOOK_OPTIONS,
+
+                pages : PAGES_OPTIONS,
+                page : PAGE_OPTIONS
+            },
+            injections : {
+                book : ["pages"]
             }
         }
     });

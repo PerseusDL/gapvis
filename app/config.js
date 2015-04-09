@@ -17,7 +17,7 @@ define({
             }
         },
         'book-summary': {
-            layout: '#layout-book-1panel',
+            layout: '#layout-book-2panel',
             className: 'summary-view',
             router: 'book/:bookid',
             slots: {

@@ -1,10 +1,11 @@
-define(["retrievers/sync", "retrievers/cts.pages"], function(sync, ctsReff) {
+define(["retrievers/sync", "retrievers/cts.reff", "retrievers/cts.page"], function(sync, ctsReff, ctsPage) {
     /*
        
      */
     var retrievers = {
         "sync" : sync,
-        "cts.pages" : ctsReff
+        "cts.reff" : ctsReff,
+        "cts.page" : ctsPage
     }
     /**
      * Load a retriever based on a string.

@@ -42,7 +42,6 @@ Backbone.sync = function( method, model, options ) {
 // initialize empty book list
 
 gv.books = new Books();
-console.log(gv.books)
 // add parameters for permalinks
 
 gv.addParameter('bookid', { deserialize: String });

@@ -9,7 +9,6 @@ define(["gv"], function(gv)  {
      * @return {string}        The url for Backbone.Sync
      */
     return function(url, e) {
-        console.log(url)
         if(typeof url === "string") {
             endpoint = url;
         } else if (typeof url === "function" && typeof url() === "string") {

@@ -14,22 +14,23 @@ function( gv, BookView, slide ) {
         className: 'single-page panel',
         template: '#page-template',
         
+        /**
+         * Initialize the page. So it needs to be waiting for ready 
+         * @return {[type]}
+         */
         initialize: function() {
-            var view = this,
-                page = view.model;
-                
-            // listen for state changes
-                
-            view.bindState('change:pageview', view.renderPageView, view);
-            view.bindState('change:placeid', view.renderPlaceHighlight, view);
-            
-            // set backreference
-            
-            page.view = view;
-
+            var view = this;
             // load page
-            
-            page.ready(function() {
+            this.ready(function() {
+                page = view.model;
+                // listen for state changes
+
+                view.bindState('change:pageview', view.renderPageView, view);
+                view.bindState('change:placeid', view.renderPlaceHighlight, view);
+
+                // set backreference
+
+                page.view = view;
                 view.render();
             });
         },

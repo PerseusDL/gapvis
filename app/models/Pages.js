@@ -1,9 +1,8 @@
 /*
  * Page model
  */
-define(['gv', 'models/Model', 'models/Collection'], function(gv, Model, Collection) {
-    var settings = gv.settings,
-        Page;
+define(['models/Model', 'models/Collection'], function(Model, Collection) {
+    var Page;
        
     // Model: Page
     Page = Model.extend({
@@ -26,10 +25,8 @@ define(['gv', 'models/Model', 'models/Collection'], function(gv, Model, Collecti
     
     // Collection: PageList
     return Collection.extend({
-        model: Page,
-        url: function() {
-            return settings.API_ROOT +  '/books/' + this.book.id + '/page';
-        }
+        type: "pages",
+        model: Page
     });
     
 });

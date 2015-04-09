@@ -11,7 +11,7 @@ define(["gv", "retrievers/retriever", 'util/endpoints'], function(gv, R, endpoin
          * @return {Any}
          */
         url : function(getEndpoint) {
-            return endpoints.call(this, gv.settings.models.endpoints[this.type])
+            return endpoints.call(this, gv.settings.models.endpoints[this.type], getEndpoint)
         },
         /**
          * [fetchNew description]
@@ -27,14 +27,43 @@ define(["gv", "retrievers/retriever", 'util/endpoints'], function(gv, R, endpoin
          * @return {[type]}
          */
         getOrCreate: function(modelId) {
-            console.log(modelId)
             var model = this.get(modelId);
             if (!model) {
                 model = new this.model({ id: modelId});
                 this.add(model);
             }
-            console.log(model)
             return model;
+        },
+        /**
+         * Load data and execute a function as callback
+         * @param    {function} callback  Callback to execute when data are available
+         * @executes {function} callback
+         */
+        ready : function(callback) {
+            var self = this;
+            if (typeof self._loading === "undefined") {
+                self._loading = false
+            }
+            if (typeof self._loaded === "undefined") {
+                self._loaded = false
+            }
+
+            if(self._loading === false && self._loaded === false) {
+                self._loading = true;
+
+                self.fetchNew({
+                    success : function(data) {
+                        self.trigger("ready", self);
+                        self._loading = false;
+                        self._loaded = true;
+                        callback();
+                    }
+                });
+            } else if (self._loaded === false) {
+                return;
+            } else {
+                callback();
+            }
         }
         
     });
