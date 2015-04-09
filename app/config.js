@@ -17,39 +17,41 @@ define({
             }
         },
         'book-summary': {
-            layout: '#layout-book-3panel',
+            layout: '#layout-book-1panel',
             className: 'summary-view',
             router: 'book/:bookid',
             slots: {
                 '.navigation-view': 'views/NavigationView',
                 '.book-title-view': 'views/BookTitleView',
-                '.text-slot': 'views/BookSummaryTextView',
+                '.text-slot': 'views/BookSummaryTextView'
+                /*,
                 '.left-panel': 'views/BookSummaryMapView',
                 '.right-panel': 'views/PlaceFrequencyBarsView'
+                */
             }
         },
-				'social-network-view': {
+        'social-network-view': {
             layout:  '#layout-book-2panel',
-						className: 'social-network-view',
-						router: 'social-network/:bookid',
-						slots: {
-								'.navigation-view': 'views/NavigationView',
-								'.book-title-view': 'views/BookTitleView',
-              	'.left-panel': {
-              	    layout: '#layout-full-top',
-              	    slots: {
-              	        '.top-slot': 'views/PerseusPageView',
-              	        '.bottom-slot': 'views/PageControlView'
-              	    }
-              	},
-              	'.right-panel': {
-              	    layout: '#layout-full-top',
-              	    slots: {
-              	        '.top-slot': 'views/SocialNetworkView'
-              	    }
-              	}
-						}
-				},
+            className: 'social-network-view',
+            router: 'social-network/:bookid',
+            slots: {
+                '.navigation-view': 'views/NavigationView',
+                '.book-title-view': 'views/BookTitleView',
+                '.left-panel': {
+                    layout: '#layout-full-top',
+                    slots: {
+                        '.top-slot': 'views/PageView',
+                        '.bottom-slot': 'views/PageControlView'
+                    }
+                },
+                '.right-panel': {
+                    layout: '#layout-full-top',
+                    slots: {
+                        '.top-slot': 'views/SocialNetworkView'
+                    }
+                }
+            }
+        },
         'reading-view': {
             layout:  '#layout-book-2panel',
             className: 'reading-view',
@@ -64,7 +66,7 @@ define({
                 '.left-panel': {
                     layout: '#layout-full-top',
                     slots: {
-                        '.top-slot': 'views/PerseusPageView',
+                        '.top-slot': 'views/PageView',
                         '.bottom-slot': 'views/PageControlView'
                     }
                 },

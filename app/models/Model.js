@@ -15,11 +15,16 @@ define(["util/endpoints", "gv", "retrievers/retriever"], function(endpoints, gv,
     return Model.extend({
             type: 'model',
             
-	        url : function() {
-	            return endpoints.call(this, gv.settings.endpoints[this.type])
+            /**
+             * URL Method inherited from backbone, using endpoints helper
+             * @param  {?boolean}  getEndpoint  Wether we want the url or the endpoint
+             * @return {Any}
+             */
+	        url : function(getEndpoint) {
+	            return endpoints.call(this, gv.settings.models.endpoints[this.type], getEndpoint)
 	        },
 	        fetch: function(options) {
-	            return R(gv.settings.retrievers[this.type]).call(this, options, this.endpoint);
+	            return R(gv.settings.models.retrievers[this.type]).call(this, _.extend(options || {}, gv.settings.models.options[this.type]));
 	        },
             
             isFullyLoaded: function() {

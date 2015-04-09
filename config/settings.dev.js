@@ -8,7 +8,7 @@ REPORT_URL = 'tests/api/flags/';
 // REPORT_BAD_TOKEN_URL = null;
 // //if present and not null, makes a direct link isntead of a form. Looks for {place-id}
 //REPORT_PROBLEM_PLACE_URL = 'http://gap2.alexandriaarchive.org/report/place-issues/{place-id}';
-CTS_API  = 'http://localhost:8080/exist/rest/db/xq/CTS.xq';
+CTS_API  = 'http://localhost:5000/cts/api';
 API_ROOT = 'http://localhost:5000';
 // API_ROOT = 'http://localhost/gapvis';
 // REPORT_URL = 'http://gap2.alexandriaarchive.org/flags/';
@@ -48,6 +48,8 @@ PLACE_THEME = "frequency"; // Supported values are 'frequency' and 'feature'. If
 
 BOOKSLIST_RETRIEVER = "sync";
 BOOKSLIST_ENDPOINT =  API_ROOT + '/joth/books';
+BOOKSLIST_OPTIONS = {}
 
 BOOK_RETRIEVER = "cts.pages";
-BOOK_ENDPOINT =  function() { console.log("HELLO"); return new CTS.endpoint.XQ(CTS_API, "annotsrc"); }
+BOOK_ENDPOINT =  function() { return new CTS.endpoint.XQ(CTS_API, "annotsrc"); } // Doing that so the loading of CTS is made...
+BOOK_OPTIONS = { "level" : 2 }

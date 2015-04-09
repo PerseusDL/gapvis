@@ -11,7 +11,9 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages'],
         type: 'book',
         
         defaults: {
-            title: "Untitled Book"
+            title: "Untitled Book",
+            author: "Unnamed Author",
+            printed: "?"
         },
         
         initialize: function() {

@@ -94,13 +94,19 @@ define(function() {
         /*
             Retrievers
          */
-        endpoints : {
-            bookslist : BOOKSLIST_ENDPOINT,
-            book_endpoint : BOOK_ENDPOINT
-        },
-        retrievers : {
-            bookslist: BOOKSLIST_RETRIEVER,
-            book: BOOK_RETRIEVER
+        models : {
+            endpoints : {
+                bookslist : BOOKSLIST_ENDPOINT,
+                book : BOOK_ENDPOINT
+            },
+            retrievers : {
+                bookslist: BOOKSLIST_RETRIEVER,
+                book: BOOK_RETRIEVER
+            },
+            options : {
+                bookslist : BOOKSLIST_OPTIONS,
+                book : BOOK_OPTIONS
+            }
         }
     });
     
