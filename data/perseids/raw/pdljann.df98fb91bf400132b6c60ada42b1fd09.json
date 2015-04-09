@@ -1,0 +1,53 @@
+{
+  "@context": "http://www.w3.org/ns/oa-context-20130208.json",
+  "@id": "http://data.perseus.org/collections/urn:cite:perseus:pdljann.df98fb91bf400132b6c60ada42b1fd09",
+  "annotatedBy": {
+    "@type": "foaf:Person",
+    "@id": "http://data.perseus.org/sosol/users/Grace%20Tellado"
+    },
+  "@type": "oa:Annotation",
+  "dcterms:source": "https://hypothes.is/api/annotations/fY8pgbNgTsyn7GrFWSRZCg",
+  "dcterms:title": "http://data.perseus.org/people/smith:hecabe-1#this identifies Hecabe as snap:MotherOf in urn:cts:pdlrefwk:viaf88890045.003.perseus-eng1:hector_1",
+  "annotatedAt": "2015-02-15T23:30:11.931032+00:00",
+  "motivatedBy": "oa:identifying",
+  "serializedBy": {
+    "@id": "https://hypothes.is",
+    "@type": "prov:SoftwareAgent"
+    },
+  "hasTarget": {
+    "@id": "http://data.perseus.org/collections/urn:cite:perseus:pdljann.df98fb91bf400132b6c60ada42b1fd09#target-1",
+    "@type": "oa:SpecificResource",
+    "hasSource": {
+      "@id": "urn:cts:pdlrefwk:viaf88890045.003.perseus-eng1:hector_1"
+            },
+    "hasSelector": {
+      "@id": "http://data.perseus.org/collections/urn:cite:perseus:pdljann.df98fb91bf400132b6c60ada42b1fd09#target-1-sel-1",
+      "@type": "oa:TextQuoteSelector",
+      "exact": "Hecabe",
+      "prefix": "hastened to the city to request",
+      "suffix": "to pray to Athena for assistanc"
+            }
+    },
+  "hasBody": {
+    "@context": {
+      "snap": "http://onto.snapdrgn.net/snap#",
+      "lawd": "http://lawd.info/ontology/",
+      "perseusrdf": "http://data.perseus.org/rdfvocab/addons/"
+            },
+    "@graph": [
+      {
+        "@id": "http://data.perseus.org/people/smith:hector-1#this",
+        "snap:has-bond": {
+          "@id": "http://data.perseus.org/collections/urn:cite:perseus:pdljann.df98fb91bf400132b6c60ada42b1fd09#bond-1"
+                                        }
+                        },
+      {
+        "@id": "http://data.perseus.org/collections/urn:cite:perseus:pdljann.df98fb91bf400132b6c60ada42b1fd09#bond-1",
+        "@type": "snap:MotherOf",
+        "snap:bond-with": {
+          "@id": "http://data.perseus.org/people/smith:hecabe-1#this"
+                                        }
+                        }
+    ]
+    }
+}

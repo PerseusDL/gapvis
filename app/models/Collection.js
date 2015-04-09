@@ -1,33 +1,33 @@
 /*
  * Core setup for collections
  */
-define(function() {
+define(["gv", "retrievers/retriever", 'util/endpoints'], function(gv, R, endpoints) {
 
     return Backbone.Collection.extend({
-    
-        // fetch list without overwriting existing objects (copied from fetch())
-        fetchNew: function(options) {
-            options = options || {};
-            var collection = this,
-                success = options.success;
-            options.success = function(resp, status, xhr) {
-                _(collection.parse(resp, xhr)).each(function(item) {
-                    if (!collection.get(item.id)) {
-                        collection.add(item, {silent:true});
-                    }
-                });
-                if (!options.silent) collection.trigger('reset', collection, options);
-                if (success) success(collection, resp);
-            };
-            return (this.sync || Backbone.sync).call(this, 'read', this, options);
+        url : function() {
+            return endpoints.call(this, gv.settings.endpoints[this.type])
         },
-        
+        /**
+         * [fetchNew description]
+         * @param  {[type]}
+         * @return {[type]}
+         */
+        fetchNew: function(options) {
+            return R(gv.settings.retrievers[this.type]).call(this, options, this.endpoint);
+        },
+        /**
+         * [getOrCreate description]
+         * @param  {[type]}
+         * @return {[type]}
+         */
         getOrCreate: function(modelId) {
+            console.log(modelId)
             var model = this.get(modelId);
             if (!model) {
                 model = new this.model({ id: modelId});
                 this.add(model);
             }
+            console.log(model)
             return model;
         }
         

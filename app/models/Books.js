@@ -5,10 +5,8 @@ define(['gv', 'models/Collection', 'models/Book'], function(gv, Collection, Book
     
     // Collection: BookList
     return Collection.extend({
+        type: 'bookslist',
         model: Book,
-        url: function() { 
-            return gv.settings.API_ROOT +  '/books/.json' 
-        },
         comparator: function(book) {
             // try for author last name
             var author = (book.get('author') || '')

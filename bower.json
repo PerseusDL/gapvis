@@ -1,0 +1,11 @@
+{
+  "name": "gapvis",
+  "version": "0.0.1",
+  "main": ["./app/**"],
+  "ignore": [
+      "**/.*"
+  ],
+  "dependencies": {
+    "bootstrap": ">= 3.0.0"
+  }
+}

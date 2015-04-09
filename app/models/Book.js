@@ -14,10 +14,6 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages'],
             title: "Untitled Book"
         },
         
-        url: function() {
-            return settings.API_ROOT + '/books/' + this.id + '.json';
-        },
-        
         initialize: function() {
             var book = this,
 					

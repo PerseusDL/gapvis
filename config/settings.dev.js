@@ -8,11 +8,11 @@ REPORT_URL = 'tests/api/flags/';
 // REPORT_BAD_TOKEN_URL = null;
 // //if present and not null, makes a direct link isntead of a form. Looks for {place-id}
 //REPORT_PROBLEM_PLACE_URL = 'http://gap2.alexandriaarchive.org/report/place-issues/{place-id}';
-
-API_ROOT = 'http://gap2.alexandriaarchive.org';
+CTS_API  = 'http://localhost:8080/exist/rest/db/xq/CTS.xq';
+API_ROOT = 'http://localhost:5000';
 // API_ROOT = 'http://localhost/gapvis';
 // REPORT_URL = 'http://gap2.alexandriaarchive.org/flags/';
-API_DATA_TYPE = 'json';
+API_DATA_TYPE = 'xml';
 DEBUG = true;
 // if present and not null, makes a direct link isntead of a form. Looks for {token-id}
 //REPORT_BAD_TOKEN_URL = "http://gap2.alexandriaarchive.org/report/token-issues/{token-id}";
@@ -38,3 +38,16 @@ VIEW_ON_LINK = function( uri, page ){
 };
 
 PLACE_THEME = "frequency"; // Supported values are 'frequency' and 'feature'. If the value is set to 'feature' then places should have a 'type' property set to one of the following values: "REGION", "SETTLEMENT", "NATURAL_FEATURE"
+
+
+/**
+ * The previous system depends only one kind of retriever, 
+ * 	using simple ajax calls without dealing with multiple endpoints
+ * 	Instead of that, the new configuration file should handle multiple functions for retrievers
+ */
+
+BOOKSLIST_RETRIEVER = "sync";
+BOOKSLIST_ENDPOINT =  API_ROOT + '/joth/books';
+
+BOOK_RETRIEVER = "cts.pages";
+BOOK_ENDPOINT =  function() { console.log("HELLO"); return new CTS.endpoint.XQ(CTS_API, "annotsrc"); }

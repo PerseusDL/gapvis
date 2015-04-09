@@ -28,7 +28,6 @@ require([
 'views/Layout', 
 'routers/Router' ], 
 function( gv, config, Books ) {
-
 // change Backbone.sync to use JSON/JSONP
 	
 var defaultSync = Backbone.sync;
@@ -43,10 +42,10 @@ Backbone.sync = function( method, model, options ) {
 // initialize empty book list
 
 gv.books = new Books();
-
+console.log(gv.books)
 // add parameters for permalinks
 
-gv.addParameter('bookid', { deserialize: parseInt });
+gv.addParameter('bookid', { deserialize: String });
 gv.addParameter('pageid', { deserialize: String });
 gv.addParameter('placeid', { deserialize: parseInt });
 gv.addParameter('pageview');

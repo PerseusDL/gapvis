@@ -90,7 +90,18 @@ define(function() {
         scaleColors: scaleColors,
         colorThemes: colorThemes,
 		placeTypes: placeTypes,
-		themeByType: themeByType
+		themeByType: themeByType,
+        /*
+            Retrievers
+         */
+        endpoints : {
+            bookslist : BOOKSLIST_ENDPOINT,
+            book_endpoint : BOOK_ENDPOINT
+        },
+        retrievers : {
+            bookslist: BOOKSLIST_RETRIEVER,
+            book: BOOK_RETRIEVER
+        }
     });
     
     return gv;
