@@ -1,8 +1,8 @@
 /*
  * Book model
  */
-define(['gv', 'models/Model', "util/injector"], 
-    function(gv, Model, injector) {
+define(['gv', 'models/Model', 'models/Places', 'models/Pages'], 
+    function(gv, Model, Places, Pages) {
     
     var settings = gv.settings;
        
@@ -15,30 +15,17 @@ define(['gv', 'models/Model', "util/injector"],
             author: "Unnamed Author",
             printed: "?"
         },
-
-        inject: function(list) {
-            var book = this;
-            if(injections.length > 0) {
-                var key = injections.shift();
-                book[key] = new injector(key)();
-                book[key].book = book;
-
-                book[key].ready(function() {
-                    book.inject(injections);
-                });
-            } else {
-                return;
-            }
-        },
         initialize: function() {
-            var book = this,
-                injections = gv.settings.models.injections.book;
-
-            if(injections.length > 0) {
-                var key = injections.shift();
-                book[key] = new injector(key)();
-                inject(injections);
-            }
+            var book = this;
+					
+            // create collections
+            places = book.places = new Places(),
+            pages = book.pages = new Pages();
+								
+            // set backreferences
+								
+            places.book = book;
+            pages.book = book;
         },
         
         parse: function(data) {
