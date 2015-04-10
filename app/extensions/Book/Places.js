@@ -6,12 +6,13 @@
 define(function() {
     return function() {
         return {
-            initplaces : function() {
+            initplaces : function(callback) {
               if(this._initiated["places"]) return true;
               var pages = this.pages,
                   places = this.places;
               if(DEBUG) console.log("(Book.Places) Init.Places ...")
               // calculate frequencies of place in all pages
+              // 
               pages.each(function(page) {
                   page.get('places').forEach(function(placeId) {
                       var place = places.get(placeId),
@@ -21,6 +22,7 @@ define(function() {
               });
               places.sort();
               this._initiated["places"] = true;
+              if(callback) callback();
             },
             // array of items for timemap
             timemapItems: function(startId, endId) {
@@ -29,6 +31,7 @@ define(function() {
                 pages = book.pages,
                 startIndex = startId ? pages.indexOf(pages.get(startId)) : 0,
                 endIndex = endId ? pages.indexOf(pages.get(endId)) : pages.length - 1;
+
               pages.models.slice(startIndex, endIndex)
                 .forEach(function(page) {
                   var places = _.uniq(page.get('places'));

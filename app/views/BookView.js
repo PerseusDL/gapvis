@@ -56,17 +56,23 @@ function(gv){
           book = view.model = gv.books.getOrCreate( bookId );
           
           // set the page id if not set
-          
-          book.ready(function() {
-            if ( !state.get( 'pageid' ) ){
-              state.set({ pageid: book.firstId() });
+          view.lastBookStatus = false;
+          book.ready(view.cid, function() {
+            // This limits the situation to only one callback called !
+            if(view.lastBookStatus !== book.isFullyLoaded() && book.isFullyLoaded()) {
+              view.lastBookStatus = true;
+              if ( !state.get( 'pageid' ) ){
+                state.set({ pageid: book.firstId() });
+              }
+              callback.call(view);
+
+              console.log(view, " is rendered (BookView)")
+              state.set("book:loaded", true);
             }
-            callback();
           });
           
         } else {
-
-          callback();
+          callback.call(view);
         }
       }
         

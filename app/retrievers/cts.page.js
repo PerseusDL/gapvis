@@ -20,6 +20,7 @@ define(function() {
                 })
                 //self.set({text : passage.getText(["note", "bibl"])})
                 if (options.success) options.success(self);
+                if (!options.silent) self.trigger('reset', self, options);
                 self.trigger("ready", self);
             },
             error : function() { var error = options.error || function() {}; error(); }

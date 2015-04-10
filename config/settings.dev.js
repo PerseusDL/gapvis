@@ -42,6 +42,7 @@ PLACE_THEME = "frequency"; // Supported values are 'frequency' and 'feature'. If
 
 
 CTS_ENDPOINT = function() { return new CTS.endpoint.XQ(CTS_API, "annotsrc"); } // Doing that so the loading of CTS is made...
+CTS_JOTH_ENDPOINT = function() { return new CTS.endpoint.XQ("http://localhost:5000/joth/books/reffs", "annotsrc"); } // Doing that so the loading of CTS is made...
 /**
  * The previous system depends only one kind of retriever, 
  * 	using simple ajax calls without dealing with multiple endpoints
@@ -61,7 +62,7 @@ PAGE_ENDPOINT =  CTS_ENDPOINT;
 PAGE_OPTIONS = {};
 
 PAGES_RETRIEVER = "cts.reff";
-PAGES_ENDPOINT =  CTS_ENDPOINT;
+PAGES_ENDPOINT =  CTS_JOTH_ENDPOINT;
 PAGES_OPTIONS = { "level" : 2 };
 
 PLACES_RETRIEVER = "joth.places";

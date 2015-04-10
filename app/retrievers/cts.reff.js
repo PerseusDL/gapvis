@@ -21,6 +21,7 @@ define(function() {
                     }
                 });
                 if(options.success) options.success(self);
+                if (!options.silent) self.trigger('reset', self, options);
                 self.trigger("ready", self);
             },
             level : options.level || 1

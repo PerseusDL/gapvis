@@ -17,17 +17,15 @@ define({
             }
         },
         'book-summary': {
-            layout: '#layout-book-2panel',
+            layout: '#layout-book-3panel',
             className: 'summary-view',
             router: 'book/:bookid',
             slots: {
                 '.navigation-view': 'views/NavigationView',
                 '.book-title-view': 'views/BookTitleView',
-                '.text-slot': 'views/BookSummaryTextView'
-                /*,
+                '.text-slot': 'views/BookSummaryTextView',
                 '.left-panel': 'views/BookSummaryMapView',
                 '.right-panel': 'views/PlaceFrequencyBarsView'
-                */
             }
         },
         'social-network-view': {

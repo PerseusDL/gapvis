@@ -33,9 +33,11 @@ define(['gv', 'views/BookView'], function(gv, BookView) {
                 places.sort();
                 view.render();
             });
+            console.log(view.ready);
         },
         
         render: function() {
+            console.log(this, " is rendered (PlaceFrequencyBarsView")
             var view = this,
                 singlePlace = !!view.options.place,
                 book = view.model,
@@ -248,7 +250,19 @@ define(['gv', 'views/BookView'], function(gv, BookView) {
               
             return this;
         },
-        
+/*
+        ready : function(callback) { 
+            var view = this;
+            if(view.options.parent) {
+                view.options.parent.on("ready", function() {
+                    console.log(view)
+                    callback.call(view);
+                });
+            } else {
+                callback();
+            }
+        },
+*/        
         renderControls: function() {
             var view = this,
                 barSort = state.get('barsort');

@@ -12,7 +12,6 @@ define(['gv', 'views/BookView'], function(gv, BookView) {
         
         initialize: function(opts) {
             var view = this;
-            console.log("What's going on ?")
             // listen for state changes
             
             view.bindState('change:pageid', view.renderNextPrev, view);

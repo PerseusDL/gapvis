@@ -60,9 +60,11 @@ define(function() {
                 if(book._fetched["pages"] !== true) {
                     book.on("ready.pages", function() {
                         cb();
+                        if (!options.silent) collection.trigger('reset', collection, options);
                     });
                 } else {
                     cb();
+                    if (!options.silent) collection.trigger('reset', collection, options);
                 }
             }
         };

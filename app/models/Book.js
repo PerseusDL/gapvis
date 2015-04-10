@@ -30,6 +30,8 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/
       book.injections = gv.settings.models.injections.book;
 
       book._initiated = {};
+      book._need_initiation = [];
+
       //We make a list of what need to be retrieved
       book.requiredData = ["self"].concat(gv.settings.models.injections.book || [])
 
@@ -42,6 +44,9 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/
         _.each(Object.keys(fns), function(fn) {
             // We attach those functions
             book[fn] = fns[fn];
+            if(fn === "init"+val) {
+                book._need_initiation.push(val);
+            }
         })
 
         // set backreferences
@@ -57,18 +62,26 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/
      * @param  {function} loadCallback    Callback, no data passed to it
      * @param  {function} immediateCallback Callback (?), no data passed to it
      */
-    ready: function( loadCallback, immediateCallback ){
+    ready: function(id, loadCallback, immediateCallback ){
       var model = this,
         immediateCallback = immediateCallback || loadCallback;
-            
+
+      if(typeof model.queue === "undefined") {
+        model.queue = {}
+        model.on('ready', function() {
+            _.each(Object.keys(model.queue), function(id) {
+                model.queue[id]();
+            });
+        });
+      }
       if ( !model.isFullyLoaded() ){
           // Legacy was : Ready should be called when all data are available
           // Ready is actually now call back ready up to when everything is loaded !
-          model.on( 'ready', function(loadCallback, immediateCallback) { 
-            if (DEEP_DEBUG) console.log("(Model.Book) Ready triggered ")
-            model.ready(loadCallback, immediateCallback) 
-          });
-          
+          if(!model.queue[id]) {
+              model.queue[id] = function() {
+                model.ready(loadCallback, immediateCallback) 
+              };
+          }
           // fetch model, avoiding multiple simultaneous calls
           // We also check that we have loaded all dependencies
           if ( !model._fetching || model._fetched.length !== model.requiredData.length ){
@@ -85,7 +98,7 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/
               model.fetch({ 
                 success: function() {
                   model._fetched["self"] = true;
-                  model.trigger('ready', loadCallback, immediateCallback);
+                  model.trigger('ready');
                   model._fetching["self"] = false;
                 },
                 error: function() {
@@ -106,7 +119,7 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/
                   model[injected].fetchNew({ 
                     success: function() {
                       model._fetched[injected] = true;
-                      model.trigger('ready', loadCallback, immediateCallback);
+                      model.trigger('ready');
                       model.trigger("ready." + injected)
                       model._fetching[injected] = false;
                     },
@@ -127,12 +140,18 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/
         if(DEEP_DEBUG) console.log("(Model.Book) Book with dependencies loaded")
         // This part will always be the callback, so lets go for it :)
         // We check for each module injected that we have a not created a function related to it for initialization !
-        _.each(model.injections, function(injected) {
-            if(typeof model["init" + injected] === "function") {
-                model["init" + injected]();
-            }
-        });
-        immediateCallback();
+        if(Object.keys(model._initiated).length !== model._need_initiation.length) {
+            _.each(model.injections, function(injected) {
+                if(typeof model["init" + injected] === "function" && !model._initiated[injected]) {
+                    model["init" + injected](function() {
+                        model._initiated[injected] = true;
+                        model.trigger('ready');
+                    });
+                }
+            });
+        } else {
+            immediateCallback();
+        }
       }
     },
 
