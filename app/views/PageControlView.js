@@ -12,7 +12,7 @@ define(['gv', 'views/BookView'], function(gv, BookView) {
         
         initialize: function(opts) {
             var view = this;
-            
+            console.log("What's going on ?")
             // listen for state changes
             
             view.bindState('change:pageid', view.renderNextPrev, view);
@@ -27,6 +27,7 @@ define(['gv', 'views/BookView'], function(gv, BookView) {
             // fill in template
             
             var context = view.model.toJSON();
+            console.log("Control : ", context)
             context.showtext = !!state.get('pagehastext');
             context.showimage = !!state.get('pagehasimage');
             view.renderTemplate(context);

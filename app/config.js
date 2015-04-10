@@ -40,7 +40,7 @@ define({
                 '.left-panel': {
                     layout: '#layout-full-top',
                     slots: {
-                        '.top-slot': 'views/PageView',
+                        '.top-slot': 'views/PagesView',
                         '.bottom-slot': 'views/PageControlView'
                     }
                 },
@@ -66,7 +66,7 @@ define({
                 '.left-panel': {
                     layout: '#layout-full-top',
                     slots: {
-                        '.top-slot': 'views/PageView',
+                        '.top-slot': 'views/PagesView',
                         '.bottom-slot': 'views/PageControlView'
                     }
                 },

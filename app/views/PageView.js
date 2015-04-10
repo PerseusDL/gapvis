@@ -19,10 +19,19 @@ function( gv, BookView, slide ) {
          * @return {[type]}
          */
         initialize: function() {
-            var view = this;
+            var view = this,
+                page = view.model;
+            console.log(page, view)
+            // listen for state changes
+            view.bindState('change:pageview',   view.renderPageView, view);
+            view.bindState('change:placeid',    view.renderPlaceHighlight, view);
+            // set backreference
+            page.view = view;
+
             // load page
-            view.model = view.model.pages;
-            console.log(view.model)
+            page.ready(function() {
+                view.render();
+            });
         },
     
         prepareContext: function(){
@@ -85,7 +94,6 @@ function( gv, BookView, slide ) {
             var view = this,
                 book = view.options.model.collection.book,
                 pageView = state.get('pageview');
-        
             // init pageview state
                 
             if ( typeof pageView === 'undefined' ){

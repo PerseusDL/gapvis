@@ -9,12 +9,20 @@ define(function() {
         var self = this,
             endpoint = self.url(true),
             passage = new CTS.text.Passage(self.id, endpoint);
-
-        return passage.getXml({
+        return passage.retrieve({
             success : function(data) {
-                self.set({text : page.getText()})
-                if (options.success) options.success()
-            }
+                self.set({text : passage.getXml("tei:text")});
+                /**
+                 * Solely purpose of our situation :
+                 */
+                self.set({
+                    text : passage.getText(["note"])
+                })
+                //self.set({text : passage.getText(["note", "bibl"])})
+                if (options.success) options.success(self);
+                self.trigger("ready", self);
+            },
+            error : function() { var error = options.error || function() {}; error(); }
         });
     }
 });
