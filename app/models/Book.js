@@ -28,6 +28,8 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/
       
       //We make a short reference of the injected data
       book.injections = gv.settings.models.injections.book;
+
+      book._initiated = {};
       //We make a list of what need to be retrieved
       book.requiredData = ["self"].concat(gv.settings.models.injections.book || [])
 
@@ -63,7 +65,7 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/
           // Legacy was : Ready should be called when all data are available
           // Ready is actually now call back ready up to when everything is loaded !
           model.on( 'ready', function(loadCallback, immediateCallback) { 
-            if (DEBUG) console.log("(Model.Book) Ready triggered ")
+            if (DEEP_DEBUG) console.log("(Model.Book) Ready triggered ")
             model.ready(loadCallback, immediateCallback) 
           });
           
@@ -105,6 +107,7 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/
                     success: function() {
                       model._fetched[injected] = true;
                       model.trigger('ready', loadCallback, immediateCallback);
+                      model.trigger("ready." + injected)
                       model._fetching[injected] = false;
                     },
                     error: function() {
@@ -121,7 +124,14 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/
             }); 
         }
       } else {
-        if(DEBUG) console.log("(Model.Book) Book with dependencies loaded")
+        if(DEEP_DEBUG) console.log("(Model.Book) Book with dependencies loaded")
+        // This part will always be the callback, so lets go for it :)
+        // We check for each module injected that we have a not created a function related to it for initialization !
+        _.each(model.injections, function(injected) {
+            if(typeof model["init" + injected] === "function") {
+                model["init" + injected]();
+            }
+        });
         immediateCallback();
       }
     },

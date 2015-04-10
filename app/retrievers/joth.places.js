@@ -9,6 +9,7 @@ define(function() {
     return function(options) {
         options = options || {};
         var collection = this,
+            book = collection.book,
             success = options.success;
 
         var options = _.extend({
@@ -21,12 +22,48 @@ define(function() {
         }
         options.success = function(resp, status, xhr) {
             if(typeof collection.add !== "undefined") {
-                console.log(resp);
                 /**
                  * No we parse what we can from the items :)
                  */
+                var pages = {}
+                //For each annotation
+                _.each(resp.places, function(annotation) {
+                    //For each annotation, we have a source !
+                    var target = annotation["hasTarget"]["hasSource"]["@id"];
+                    if(!pages[target]) { pages[target] = []; }
+
+                    // We have a body
+                    _.each(annotation.hasBody, function(body){
+                        var item = {
+                            id : body["@id"],
+                            title : body["@id"],
+                            ll : [32.5, 32.5]
+                        }
+                        if (!collection.get(item.id)) {
+                            collection.add(item, {silent:true});
+                        }
+                        //We put the place into the list of annotation for one page.
+                        pages[target].push(item.id);
+                    });
+                });
+                // So now we have registered the places. 
+                // We need now to load annotations links for each page now.
+                // For that we need the collection pages to be ready !
                 
-                //if (success) success(collection, resp);
+                // First we setup a callback to avoid code repetition
+                var cb = function() {
+                    _.each(Object.keys(pages), function(pageId) {
+                        book.pages.get(pageId).set("places", pages[pageId]);
+                    });
+                    if (success) success(collection, resp);
+                }
+                if(book._fetched["pages"] !== true) {
+                    book.on("ready.pages", function() {
+                        cb();
+                    });
+                } else {
+                    cb();
+                }
             }
         };
         return (this.sync || Backbone.sync).call(this, 'read', this, options);

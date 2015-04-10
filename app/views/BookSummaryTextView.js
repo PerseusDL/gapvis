@@ -17,6 +17,7 @@ function( gv, BookView ) {
         // render and update functions
         
         render: function() {
+            console.log(this.model.places.toJSON())
             var view = this,
                 book = view.model, 
                 context = _.extend({}, book.toJSON(), {

@@ -80,7 +80,6 @@ define(['gv', 'views/BookView', 'views/PageView', 'views/ChangeLinkView'],
                     oldPage && pages.indexOf(oldPage) > pages.indexOf(page)
                 );
             }
-						console.log( view );
             return view;
         },
         

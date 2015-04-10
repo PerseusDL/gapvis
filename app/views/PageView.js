@@ -21,7 +21,6 @@ function( gv, BookView, slide ) {
         initialize: function() {
             var view = this,
                 page = view.model;
-            console.log(page, view)
             // listen for state changes
             view.bindState('change:pageview',   view.renderPageView, view);
             view.bindState('change:placeid',    view.renderPlaceHighlight, view);

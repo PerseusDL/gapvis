@@ -6,6 +6,22 @@
 define(function() {
     return function() {
         return {
+            initplaces : function() {
+              if(this._initiated["places"]) return true;
+              var pages = this.pages,
+                  places = this.places;
+              if(DEBUG) console.log("(Book.Places) Init.Places ...")
+              // calculate frequencies of place in all pages
+              pages.each(function(page) {
+                  page.get('places').forEach(function(placeId) {
+                      var place = places.get(placeId),
+                          freq = place.get('frequency');
+                      place.set({ frequency: freq+1 })
+                  });
+              });
+              places.sort();
+              this._initiated["places"] = true;
+            },
             // array of items for timemap
             timemapItems: function(startId, endId) {
               var book = this,

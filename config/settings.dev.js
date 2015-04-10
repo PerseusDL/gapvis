@@ -14,6 +14,7 @@ API_ROOT = 'http://localhost:5000';
 // REPORT_URL = 'http://gap2.alexandriaarchive.org/flags/';
 API_DATA_TYPE = 'xml';
 DEBUG = true;
+DEEP_DEBUG = false;
 // if present and not null, makes a direct link isntead of a form. Looks for {token-id}
 //REPORT_BAD_TOKEN_URL = "http://gap2.alexandriaarchive.org/report/token-issues/{token-id}";
 VIEW_ON = "View on Perseus"
