@@ -24,6 +24,11 @@ define(['models/Model', 'models/Collection'], function(Model, Collection) {
     });
     
     // Collection: PageList
+    /**
+     * Collection of Page
+     *     Instantiate and retrieve things through @this.book.id
+     * @type Collection.Pages
+     */
     return Collection.extend({
         type: "pages",
         model: Page

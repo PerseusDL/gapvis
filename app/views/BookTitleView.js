@@ -21,8 +21,8 @@ function( gv, BookView ){
 				
         render: function() {
 					var view = this;
-					
 					var context = view.model.toJSON();
+                    console.log(view.model)
 					if ( state.get('view') == 'reading-view' ){	
 						context.intro = gv.settings.READING_VIEW_INTRO;					
 					}

@@ -21,18 +21,8 @@ function( gv, BookView, slide ) {
         initialize: function() {
             var view = this;
             // load page
-            this.ready(function() {
-                page = view.model;
-                // listen for state changes
-
-                view.bindState('change:pageview', view.renderPageView, view);
-                view.bindState('change:placeid', view.renderPlaceHighlight, view);
-
-                // set backreference
-
-                page.view = view;
-                view.render();
-            });
+            view.model = view.model.pages;
+            console.log(view.model)
         },
     
         prepareContext: function(){

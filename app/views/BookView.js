@@ -58,13 +58,10 @@ function(gv){
           // set the page id if not set
           
           book.ready(function() {
-            var pages = book.pages;
-            pages.ready(function() {
-              if ( !state.get( 'pageid' ) ){
-                state.set({ pageid: book.firstId() });
-              }
-              callback();
-            });
+            if ( !state.get( 'pageid' ) ){
+              state.set({ pageid: book.firstId() });
+            }
+            callback();
           });
           
         } else {
