@@ -65,9 +65,6 @@ function(gv){
                 state.set({ pageid: book.firstId() });
               }
               callback.call(view);
-
-              console.log(view, " is rendered (BookView)")
-              state.set("book:loaded", true);
             }
           });
           
