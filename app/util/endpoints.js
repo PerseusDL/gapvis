@@ -11,11 +11,11 @@ define(["gv"], function(gv)  {
     return function(url, e) {
         if(typeof url === "string") {
             endpoint = url;
-        } else if (typeof url === "function" && typeof url() === "string") {
-            url = url();
+        } else if (typeof url === "function" && typeof url.call(this) === "string") {
+            url = url.call(this);
             endpoint = url;
         } else {
-            endpoint = (typeof url === "function") ? url() : url;
+            endpoint = (typeof url === "function") ? url.call(this) : url;
             url = "fake";
         }
         return (e) ? endpoint : url;

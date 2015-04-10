@@ -41,7 +41,6 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/
             // We attach those functions
             book[fn] = fns[fn];
         })
-        console.log(book)
 
         // set backreferences
         book[val].book = book;

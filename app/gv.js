@@ -100,24 +100,33 @@ define(function() {
                 book  : BOOK_ENDPOINT,
                 
                 pages : PAGES_ENDPOINT,
-                page  : PAGE_ENDPOINT
+                page  : PAGE_ENDPOINT,
+
+                places: PLACES_ENDPOINT,
+                place: PLACE_ENDPOINT
             },
             retrievers : {
                 bookslist: BOOKSLIST_RETRIEVER,
                 book: BOOK_RETRIEVER,
 
                 pages : PAGES_RETRIEVER,
-                page : PAGE_RETRIEVER
+                page : PAGE_RETRIEVER,
+
+                places: PLACES_RETRIEVER,
+                place: PLACE_RETRIEVER
             },
             options : {
                 bookslist : BOOKSLIST_OPTIONS,
                 book : BOOK_OPTIONS,
 
                 pages : PAGES_OPTIONS,
-                page : PAGE_OPTIONS
+                page : PAGE_OPTIONS,
+
+                places: PLACES_OPTIONS,
+                place: PLACE_OPTIONS
             },
             injections : {
-                book : ["pages"]
+                book : ["pages", "places"]
             }
         }
     });

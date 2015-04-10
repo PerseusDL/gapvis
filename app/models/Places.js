@@ -80,10 +80,8 @@ function( gv, Model, Collection ){
     // Collection: PlaceList
 		
     return Collection.extend({
+    		type: "places",
 			model: Place,
-			url: function() {
-			    return settings.API_ROOT + '/places' 
-			},
 			comparator: function( place ){
 			    return -place.get('frequency')
 			}

@@ -49,7 +49,7 @@ CTS_ENDPOINT = function() { return new CTS.endpoint.XQ(CTS_API, "annotsrc"); } /
 
 BOOKSLIST_RETRIEVER = "sync";
 BOOKSLIST_ENDPOINT =  API_ROOT + '/joth/books';
-BOOKSLIST_OPTIONS = {}
+BOOKSLIST_OPTIONS = {};
 
 BOOK_RETRIEVER = "sync";;
 BOOK_ENDPOINT =  API_ROOT + '/joth/books';
@@ -57,8 +57,16 @@ BOOK_OPTIONS = {}
 
 PAGE_RETRIEVER = "cts.page";
 PAGE_ENDPOINT =  CTS_ENDPOINT;
-PAGE_OPTIONS = {}
+PAGE_OPTIONS = {};
 
 PAGES_RETRIEVER = "cts.reff";
 PAGES_ENDPOINT =  CTS_ENDPOINT;
-PAGES_OPTIONS = { "level" : 2 }
+PAGES_OPTIONS = { "level" : 2 };
+
+PLACES_RETRIEVER = "joth.places";
+PLACES_ENDPOINT =  function() { return "http://localhost:5000/joth/places?urn="+this.book.id; };
+PLACES_OPTIONS = {}
+
+PLACE_RETRIEVER = "joth.places";
+PLACE_ENDPOINT =  function() { return "http://localhost:5000/joth/PLACE?urn="+this.book.id; };
+PLACE_OPTIONS = {}
