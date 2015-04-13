@@ -5,14 +5,6 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/
   function(gv, Model, Places, Pages, PagesFN, PlacesFN) {
   
   var settings = gv.settings;
-  var injections = {
-    "pages" : Pages,
-    "places" : Places
-  }
-  var injectionsFN = {
-    "pages" : PagesFN,
-    "places" : PlacesFN
-  }
      
   // Model: Book
   return Model.extend({
@@ -22,37 +14,6 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/
       title: "Untitled Book",
       author: "Unnamed Author",
       printed: "?"
-    },
-    initialize: function() {
-      var book = this;
-      
-      //We make a short reference of the injected data
-      book.injections = gv.settings.models.injections.book;
-
-      book._initiated = {};
-      book._need_initiation = [];
-
-      //We make a list of what need to be retrieved
-      book.requiredData = ["self"].concat(gv.settings.models.injections.book || [])
-
-
-      _.each(book.injections, function(val) {
-        // create collections
-        book[val] = new injections[val];
-        //We load the required function
-        var fns = injectionsFN[val]();
-        _.each(Object.keys(fns), function(fn) {
-            // We attach those functions
-            book[fn] = fns[fn];
-            if(fn === "init"+val) {
-                book._need_initiation.push(val);
-            }
-        })
-
-        // set backreferences
-        book[val].book = book;
-      });
-
     },
 
     /**
@@ -138,20 +99,7 @@ define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/
         }
       } else {
         if(DEEP_DEBUG) console.log("(Model.Book) Book with dependencies loaded")
-        // This part will always be the callback, so lets go for it :)
-        // We check for each module injected that we have a not created a function related to it for initialization !
-        if(Object.keys(model._initiated).length !== model._need_initiation.length) {
-            _.each(model.injections, function(injected) {
-                if(typeof model["init" + injected] === "function" && !model._initiated[injected]) {
-                    model["init" + injected](function() {
-                        model._initiated[injected] = true;
-                        model.trigger('ready');
-                    });
-                }
-            });
-        } else {
-            immediateCallback();
-        }
+        model.onReady(immediateCallback);
       }
     },
 

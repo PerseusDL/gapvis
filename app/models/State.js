@@ -6,7 +6,7 @@ define(['gv'], function(gv) {
     // model to hold current state
     gv.State = gv.State.extend({
     
-        initialize: function() {
+        init: function() {
             var state = this;
             // listen for state changes
             state.on('change:bookid', function() {

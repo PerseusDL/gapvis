@@ -2,6 +2,8 @@ define(function() {
     /**
      * Retrieve places reference and link using the cts identifier of a book
      *     Parse them as it need to
+     *     This retriever does not need OpenAnnotation. Through, if you want to see links in your text
+     *     you will need to call it.
      * @param  {Object.<string, any>}   options         List of options for ajax call / retrieval
      * @param  {function}               options.success Callback
      * @return {Object}  Return an updated/synced object passed as "this"
@@ -48,7 +50,10 @@ define(function() {
                             placesId.push(item.id)
                         }
                         //We put the place into the list of annotation for one page.
-                        pages[target].push(item.id);
+                        pages[target].push({
+                            id : item.id,
+                            selector : annotation["hasTarget"]["hasSelector"]
+                        });
                     });
                 });
 
@@ -62,7 +67,10 @@ define(function() {
                 // First we setup a callback to avoid code repetition
                 var cb = function() {
                     _.each(Object.keys(pages), function(pageId) {
-                        book.pages.get(pageId).set("places", pages[pageId]);
+                        book.pages.get(pageId).set({
+                            "places" : _.map(pages[pageId], function(val) { return val.id; }),
+                            "placesAnnotations" : pages[pageId]
+                        });
                     });
                     if (success) success(collection, resp);
                 }
@@ -81,7 +89,7 @@ define(function() {
                             })
                             if(book._fetched["pages"] !== true) {
                                 book.on("ready.pages", function() {
-                                    cb();t
+                                    cb();
                                     if (!options.silent) collection.trigger('reset', collection, options);
                                 });
                             } else {

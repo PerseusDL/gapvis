@@ -6,7 +6,7 @@
 define(function() {
     return function() {
         return {
-            initplaces : function(callback) {
+            "ready/extensions/Book/Places" : function(callback) {
               if(this._initiated["places"]) return true;
               var pages = this.pages,
                   places = this.places;
@@ -22,7 +22,7 @@ define(function() {
               });
               places.sort();
               this._initiated["places"] = true;
-              if(callback) callback();
+              if(typeof callback === "function") callback();
             },
             // array of items for timemap
             timemapItems: function(startId, endId) {

@@ -127,6 +127,17 @@ define(function() {
             },
             injections : {
                 book : ["pages", "places"]
+            },
+            extensions : {
+                book : ["extensions/Book/Pages", "extensions/Book/Places"],
+                page : [{
+                    name : "extensions/Page/OpenAnnotation",
+                    parameters : {
+                        attributeNames : ["places"],
+                        prefixes : ["<a data-place='hello'>"],
+                        suffixes : ["</a>"]
+                    }
+                }]
             }
         }
     });

@@ -19,7 +19,6 @@ function( gv, Model, Collection ){
 				title: "Untitled Place",
 				frequency: 0
 			},
-			
 			isFullyLoaded: function() {
 				return !!this.get('uri');
 			},

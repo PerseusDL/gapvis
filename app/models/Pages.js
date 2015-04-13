@@ -1,9 +1,9 @@
 /*
  * Page model
  */
-define(['models/Model', 'models/Collection'], function(Model, Collection) {
+define(['models/Model', 'models/Collection'], function(Model, Collection, OpenAnnotation) {
     var Page;
-       
+
     // Model: Page
     Page = Model.extend({
         type: 'page',
@@ -12,7 +12,8 @@ define(['models/Model', 'models/Collection'], function(Model, Collection) {
             places: []
         }, 
         
-        initialize: function() {
+        init: function() {
+
             this.set({
                 title:'Page ' + this.id
             });
