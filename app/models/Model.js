@@ -5,7 +5,11 @@ define([
     "require",
     "util/endpoints",
     "gv",
-    "retrievers/retriever"
+    "retrievers/retriever",
+    //Extensions. Should be a better way to do that.
+    "extensions/Page/OpenAnnotation", 
+    'extensions/Book/Pages', 
+    'extensions/Book/Places'
 ], function(
     require,
     endpoints,
@@ -68,7 +72,6 @@ define([
                 _.each(model.injections, function(injection) {
                     var key = injectionsDict[injection],
                         dependency = require(key);
-                    console.log(key, dependency)
                     // create collections
                     model[injection] = new dependency();
                     // set backreferences
@@ -82,7 +85,8 @@ define([
                             params = {};
                     } else {
                         var ext = require(extension.name)(),
-                            params = extension.parameters;
+                            params = extension.parameters,
+                            extension = extension.name;
                     }
                     _.each(Object.keys(ext), function(fn) {
                         // We attach those functions

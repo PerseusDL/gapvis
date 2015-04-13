@@ -20,7 +20,7 @@ define(["util/regexpEscape"], function(RegExpEscape) {
                     attributeNames = parameters.attributeNames,
                     prefixes = parameters.prefixes,
                     suffixes = parameters.suffixes;
-                
+                console.log("Am I called ?", parameters)
                 _.each(attributeNames, function(attributeName, index) {
                     var suffix = suffixes[index],
                         prefix = prefix[index];

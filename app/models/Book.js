@@ -1,8 +1,11 @@
 /*
  * Book model
  */
-define(['gv', 'models/Model', 'models/Places', 'models/Pages', 'extensions/Book/Pages', 'extensions/Book/Places'], 
-  function(gv, Model, Places, Pages, PagesFN, PlacesFN) {
+define(['gv', 'models/Model', 
+  //Should find another wya to do that :
+  'models/Places', 'models/Pages'
+  ], 
+  function(gv, Model) {
   
   var settings = gv.settings;
      
