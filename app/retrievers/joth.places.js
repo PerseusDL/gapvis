@@ -81,7 +81,7 @@ define(function() {
                             })
                             if(book._fetched["pages"] !== true) {
                                 book.on("ready.pages", function() {
-                                    cb();
+                                    cb();t
                                     if (!options.silent) collection.trigger('reset', collection, options);
                                 });
                             } else {
