@@ -9,7 +9,8 @@ define([
     //Extensions. Should be a better way to do that.
     "extensions/Page/OpenAnnotation", 
     'extensions/Book/Pages', 
-    'extensions/Book/Places'
+    'extensions/Book/Places', 
+    'extensions/Book/Network'
 ], function(
     require,
     endpoints,

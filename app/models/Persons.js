@@ -2,32 +2,11 @@ define(
     //Dependencies
     [
         "models/Collection",
-        "models/Model"
+        "models/Model",
+        "models/Bonds"
     ],
     //Call
-    function(Collection, Model) {
-
-        /**
-         * Bond Model
-         * @type {[type]}
-         */
-        var Bond = Model.extend({
-            type: "bond",
-            defaults : {
-                source : null,
-                target : null,
-                type : "bond"
-            }
-        });
-
-        /**
-         * Bonds Collection
-         * @type {Backbone.Collection}
-         */
-        var Bonds = Collection.extend({
-            type : "bonds",
-            model : Bond
-        })
+    function(Collection, Model, Bonds) {
 
         /**
          * Model for a person
@@ -35,10 +14,6 @@ define(
          */
         var Person = Model.extend({
             type: "person",
-            defaults : {
-                "name" : "NoName",
-                "id" : false
-            },
             init : function() {
                 this.set("bonds", new Bonds());
             },

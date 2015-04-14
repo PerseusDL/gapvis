@@ -81,7 +81,16 @@ SETTINGS_MODELS = {
         book : ["pages", "places", "persons"]
     },
     extensions : {
-        book : ["extensions/Book/Pages", "extensions/Book/Places"],
+        book : [
+            "extensions/Book/Pages",
+            "extensions/Book/Places",
+            {
+                name : "extensions/Book/Network",
+                parameters : {
+                    collection : "persons"
+                }
+            }
+        ],
         page : [{
             name : "extensions/Page/OpenAnnotation",
             parameters : {
