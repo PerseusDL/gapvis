@@ -40,7 +40,7 @@ VIEW_ON_LINK = function( uri, page ){
 
 PLACE_THEME = "frequency"; // Supported values are 'frequency' and 'feature'. If the value is set to 'feature' then places should have a 'type' property set to one of the following values: "REGION", "SETTLEMENT", "NATURAL_FEATURE"
 
-
+// We set up some endpoints to be sure we don't write them multiple times 
 CTS_ENDPOINT = function() { return new CTS.endpoint.XQ(CTS_API, "annotsrc"); } // Doing that so the loading of CTS is made...
 CTS_JOTH_ENDPOINT = function() { return new CTS.endpoint.XQ("http://localhost:5000/joth/books/reffs", "annotsrc"); } // Doing that so the loading of CTS is made...
 /**
@@ -49,26 +49,56 @@ CTS_JOTH_ENDPOINT = function() { return new CTS.endpoint.XQ("http://localhost:50
  * 	Instead of that, the new configuration file should handle multiple functions for retrievers
  */
 
-BOOKSLIST_RETRIEVER = "sync";
-BOOKSLIST_ENDPOINT =  API_ROOT + '/joth/books';
-BOOKSLIST_OPTIONS = {};
-
-BOOK_RETRIEVER = "sync";;
-BOOK_ENDPOINT =  API_ROOT + '/joth/books';
-BOOK_OPTIONS = {}
-
-PAGE_RETRIEVER = "cts.page";
-PAGE_ENDPOINT =  CTS_ENDPOINT;
-PAGE_OPTIONS = {};
-
-PAGES_RETRIEVER = "cts.reff";
-PAGES_ENDPOINT =  CTS_JOTH_ENDPOINT;
-PAGES_OPTIONS = { "level" : 2 };
-
-PLACES_RETRIEVER = "joth.places";
-PLACES_ENDPOINT =  function() { return "http://localhost:5000/joth/places?urn="+this.book.id; };
-PLACES_OPTIONS = {}
-
-PLACE_RETRIEVER = "joth.places";
-PLACE_ENDPOINT =  function() { return "http://localhost:5000/joth/PLACE?urn="+this.book.id; };
-PLACE_OPTIONS = {}
+SETTINGS_MODELS = {
+    endpoints : {
+        bookslist : API_ROOT + '/joth/books',
+        book  : API_ROOT + '/joth/books',
+        pages : CTS_JOTH_ENDPOINT,
+        page  : CTS_ENDPOINT,
+        places: function() { return "http://localhost:5000/joth/places?urn="+this.book.id; },
+        place: function() { return "http://localhost:5000/joth/place?urn="+this.book.id; },
+        persons: function() { return "http://localhost:5000/joth/persons?urn="+this.book.id; }
+    },
+    retrievers : {
+        bookslist: "sync",
+        book: "sync",
+        pages : "cts.reff",
+        page : "cts.page",
+        places: "joth.places",
+        place: "joth.place",
+        persons: "joth.persons"
+    },
+    options : {
+        bookslist : {},
+        book : {},
+        pages : { level : 2 },
+        page : {},
+        places: {},
+        place: {},
+        persons: {}
+    },
+    injections : {
+        book : ["pages", "places", "persons"]
+    },
+    extensions : {
+        book : ["extensions/Book/Pages", "extensions/Book/Places"],
+        page : [{
+            name : "extensions/Page/OpenAnnotation",
+            parameters : {
+                attributeNames : [
+                    "placesAnnotations",
+                    "personsAnnotations"
+                ],
+                prefixes : [
+                    function(id) { 
+                        return '<span class="place" data-place-id="' + id + '">' 
+                    },
+                    function(id) { 
+                        return '<a class="people" style:="color:red;" data-person-id="' + id + '">' 
+                    }
+                ],
+                suffixes : ["</span>", "</a>"]
+            }
+        }]
+    }
+}

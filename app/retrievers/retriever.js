@@ -1,6 +1,18 @@
 define(
-    ["retrievers/sync", "retrievers/cts.reff", "retrievers/cts.page", "retrievers/joth.places"], 
-    function(sync, ctsReff, ctsPage, jothPlaces) {
+    [
+        "retrievers/sync",
+        "retrievers/cts.reff",
+        "retrievers/cts.page",
+        "retrievers/joth.places",
+        "retrievers/joth.persons"
+    ], 
+    function(
+        sync,
+        ctsReff,
+        ctsPage,
+        jothPlaces,
+        jothPersons
+    ) {
         /*
            
          */
@@ -8,7 +20,8 @@ define(
             "sync" : sync,
             "cts.reff" : ctsReff,
             "cts.page" : ctsPage,
-            "joth.places" : jothPlaces
+            "joth.places" : jothPlaces,
+            "joth.persons" : jothPersons
         }
         /**
          * Load a retriever based on a string.

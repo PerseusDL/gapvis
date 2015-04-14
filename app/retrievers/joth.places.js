@@ -3,7 +3,7 @@ define(function() {
      * Retrieve places reference and link using the cts identifier of a book
      *     Parse them as it need to
      *     This retriever does not need OpenAnnotation. Through, if you want to see links in your text
-     *     you will need to call it.
+     *     you will need to call it. The attributes created in Page
      * @param  {Object.<string, any>}   options         List of options for ajax call / retrieval
      * @param  {function}               options.success Callback
      * @return {Object}  Return an updated/synced object passed as "this"

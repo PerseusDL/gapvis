@@ -19,7 +19,8 @@ define([
 
   var injectionsDict = {
     "pages" : "models/Pages",
-    "places" : "models/Places"
+    "places" : "models/Places",
+    "persons" : "models/Persons"
   }
     function stringifyId(item) {
             item.id = String(item.id);
@@ -81,10 +82,10 @@ define([
                 //We extend our methods
                 _.each(model.extensions, function(extension) {
                     if(typeof extension === "string") {
-                        var ext = require(extension)(),
+                        var ext = require(extension)({}),
                             params = {};
                     } else {
-                        var ext = require(extension.name)(),
+                        var ext = require(extension.name)(extension.parameters),
                             params = extension.parameters,
                             extension = extension.name;
                     }
@@ -94,13 +95,13 @@ define([
                         //If one function starts with ready, we must run in the callback of ready 
                         if(fn === "ready/"+extension) {
                             model._on_ready.push(
-                                function() { ext[fn].call(model, params) }
+                                function() { ext[fn].call(model) }
                             );
                         }
                         //If one should be done in the initialization phase, it should start with init
                         else if(fn === "init/"+extension) {
                             model._on_init.push(
-                                function() { ext[fn].call(model, params) }
+                                function() { ext[fn].call(model) }
                             );
                         }
                     })
@@ -136,7 +137,6 @@ define([
                             model._fetching = true;
                             model.fetch({ 
                                 success: function() {
-                                    console.log("Model", model)
                                     if(model._on_ready.length > 0) {
                                         model.onReady();
                                     }

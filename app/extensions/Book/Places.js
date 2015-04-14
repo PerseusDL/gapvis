@@ -34,7 +34,6 @@ define(function() {
               // Slice is non inclusive for the end-element !
               pages.models.slice(startIndex, endIndex)
                 .forEach(function(page) {
-                  console.log(page)
                   var places = _.uniq(page.get('places'));
                   places.forEach(function(placeId) {
                     var place = book.places.get(placeId),

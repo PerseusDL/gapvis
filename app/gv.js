@@ -94,52 +94,7 @@ define(function() {
         /*
             Retrievers
          */
-        models : {
-            endpoints : {
-                bookslist : BOOKSLIST_ENDPOINT,
-                book  : BOOK_ENDPOINT,
-                
-                pages : PAGES_ENDPOINT,
-                page  : PAGE_ENDPOINT,
-
-                places: PLACES_ENDPOINT,
-                place: PLACE_ENDPOINT
-            },
-            retrievers : {
-                bookslist: BOOKSLIST_RETRIEVER,
-                book: BOOK_RETRIEVER,
-
-                pages : PAGES_RETRIEVER,
-                page : PAGE_RETRIEVER,
-
-                places: PLACES_RETRIEVER,
-                place: PLACE_RETRIEVER
-            },
-            options : {
-                bookslist : BOOKSLIST_OPTIONS,
-                book : BOOK_OPTIONS,
-
-                pages : PAGES_OPTIONS,
-                page : PAGE_OPTIONS,
-
-                places: PLACES_OPTIONS,
-                place: PLACE_OPTIONS
-            },
-            injections : {
-                book : ["pages", "places"]
-            },
-            extensions : {
-                book : ["extensions/Book/Pages", "extensions/Book/Places"],
-                page : [{
-                    name : "extensions/Page/OpenAnnotation",
-                    parameters : {
-                        attributeNames : ["places"],
-                        prefixes : ["<a data-place='hello'>"],
-                        suffixes : ["</a>"]
-                    }
-                }]
-            }
-        }
+        models : SETTINGS_MODELS
     });
     
     return gv;

@@ -1,11 +1,15 @@
 /*
  * Book model
  */
-define(['gv', 'models/Model', 
-  //Should find another wya to do that :
-  'models/Places', 'models/Pages'
+define([
+    'gv', 
+    'models/Model', 
+    //Should find another way to retrieve them dynamically :
+    'models/Places',
+    'models/Pages',
+    'models/Persons'
   ], 
-  function(gv, Model) {
+  function(gv, Model, Places, Pages, Persons) {
   
   var settings = gv.settings;
      
