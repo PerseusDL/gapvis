@@ -6,6 +6,10 @@ define(function() {
     // CSS-based slide
     return function slide($el, slideIn, direction, callback) {
         callback = callback || $.noop;
+        $el.toggle(slideIn);
+        callback();
+        /*
+        callback = callback || $.noop;
         if ($.support.transition) {
         
             var slideClass = 'sliding',
@@ -32,6 +36,7 @@ define(function() {
             $el.toggle(slideIn);
             callback();
         }
+        */
     }
     
 });

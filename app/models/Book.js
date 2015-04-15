@@ -7,9 +7,10 @@ define([
     //Should find another way to retrieve them dynamically :
     'models/Places',
     'models/Pages',
-    'models/Persons'
+    'models/Persons',
+    'models/Annotations'
   ], 
-  function(gv, Model, Places, Pages, Persons) {
+  function(gv, Model, Places, Pages, Persons, Annotations) {
   
   var settings = gv.settings;
      

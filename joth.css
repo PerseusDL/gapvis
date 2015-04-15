@@ -1,0 +1,84 @@
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+svg *,
+svg *:after,
+svg *:before {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.btn-nav {
+  display: block;
+  clear: right;
+  min-height: 40px;
+  min-width: 40px;
+  background-color: #da532c;
+  color: #fff;
+  margin: 0px;
+  text-align: center;
+  border: 0;
+  float: right;
+  padding: 0;
+  transition: width 0.5s ease 0s;
+}
+.btn-nav .text {
+  display: none;
+}
+.btn-nav:hover {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.btn-nav:hover > .square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+}
+.btn-nav:hover .square-content {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.btn-nav:hover .square-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.btn-nav:hover:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.btn-nav:hover .text {
+  display: block;
+}
+.btn-nav .logo {
+  display: block;
+  text-align: center;
+}
+.btn-nav:after {
+  display: block;
+  clear: right;
+}
+.navigation-view {
+  text-align: right;
+}
+body {
+  font-family: 'Tinos', serif;
+}
+.left-column {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2), 0 3px 0 #ffffff, 0 4px 0 rgba(0, 0, 0, 0.2), 0 6px 0 #ffffff, 0 7px 0 rgba(0, 0, 0, 0.2), 0 0 3px #ffffff, 0 0 4px rgba(0, 0, 0, 0.2), 0 0 6px #ffffff, 0 0 7px rgba(0, 0, 0, 0.2);
+}
+.right-column > div {
+  margin: 5px 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2);
+}

@@ -134,7 +134,7 @@ function( gv, BookView, slide ) {
         },
         
         open: function(width, fromRight) {
-            this.$el.width(width - 24); // deal with padding
+            //this.$el.width(width - 24); // deal with padding
             slide(this.$el, true, fromRight ? 'right' : 'left');
         },
         

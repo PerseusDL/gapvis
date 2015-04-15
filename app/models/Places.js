@@ -4,7 +4,9 @@
 define([
 'gv', 
 'models/Model', 
-'models/Collection' ], 
+'models/Collection',
+'models/Annotations'
+], 
 function( gv, Model, Collection ){
 	
     var settings = gv.settings,

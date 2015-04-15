@@ -1,8 +1,9 @@
 define([
     "models/Model",
-    "models/Collection"
+    "models/Collection",
+    "models/Annotations"
     ],
-    function (Model, Collection) {
+    function (Model, Collection, Annotations) {
 
         /**
          * Bond Model

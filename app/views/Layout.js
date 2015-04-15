@@ -14,6 +14,7 @@ define(['gv'], function(gv) {
         },
         // default layout
         layout: function() {
+            /*
             // fill screen
             // 
             if (this.topLevel) {
@@ -42,6 +43,7 @@ define(['gv'], function(gv) {
                 });
                 $fill.css({ marginBottom: nextHeight + (nextHeight ? padding : 0) });
             });
+        */
         }
     });
     
