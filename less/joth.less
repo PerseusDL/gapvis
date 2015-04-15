@@ -1,4 +1,18 @@
+
+@serifFontFamily: "Georgia,\"Times New Roman\",Times,serif;";
+
 @import "./css/network.less"; 
+@import "./less/gapvis.blocks.less"; 
+.map {
+    min-height: 400px;
+}
+
+.timemap-view {
+    min-height: 500px;
+}
+.timeline-container {
+    min-height: 100px;
+}
 .btn-nav {
     display: block;
     clear:right;
@@ -62,6 +76,7 @@
     text-align: right;
 }
 body {
+    background-color: #f5f5f5;
     font-family: 'Tinos', serif;
 }
 .left-column {
@@ -76,11 +91,53 @@ body {
                 0 0 4px rgba(0, 0, 0, .2),
                 0 0 6px #fff,  
                 0 0 7px rgba(0, 0, 0, .2);
+    background-color: white;
 }
 .right-column {
     > div {
         margin:5px 5px;
+        background-color: white;
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.2),  
                 0 1px 1px rgba(0, 0, 0, .2);
     }
+}
+.subnavigation-view {
+    padding-top:5px;
+    margin-top:5px;
+    .btn-nav {
+        background-color: #2b5797;
+    }
+}
+.control.btn-nav {
+    display:none;
+    &.on {
+        display: block;
+    }
+}
+.page-title {
+    font-family: 'Damion', cursive;
+    text-align: center;
+    padding:5px;
+    height:40px;
+    margin-bottom: 15px;
+
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-opacity: 0.4; 
+
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2),  
+                0 1px 1px rgba(0, 0, 0, .2);
+    font-size: large;
+}
+h1, h2, h3, h4, h5 {
+    font-family: "Tinos",serif
+}
+svg {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+svg:not(:root) {
+  overflow: hidden;
 }

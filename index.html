@@ -10,7 +10,7 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 </script>
     <![endif]-->
-    
+    <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Tinos' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="./joth.css">
@@ -79,8 +79,15 @@
 
 <body>
 
-    <div id="container">
+    <div id="container" class="container">
+    <div class="row">
+        <div class="page-title">
+            Journey of the Hero
+        </div>
+    </div>
+    <div class="row">
         <div id="app-view" role="main" class="clearfix"></div>
+    </div>
         <footer style="display:none;">
             GapVis (c) 2011 <a href="http://www.nickrabinowitz.com">Nick Rabinowitz</a> / <a href="http://googleancientplaces.wordpress.com/">Google Ancient Places</a>. Hosting by <a href="http://alexandriaarchive.org/">AlexandriaArchive.org</a>. Funding by&nbsp;&nbsp;<img src="images/google_logo.png" alt="Google">.
         </footer>
@@ -296,7 +303,7 @@
                 <div class="square-content">
                     <div class="square-cell">
                     <div class="logo">
-                        <span class="glyphicon glyphicon-people">
+                        <span class="glyphicon glyphicon-user">
                         </span>
                     </div>
                     <span class="text">
@@ -315,7 +322,7 @@
                 <div class="square-content">
                     <div class="square-cell">
                     <div class="logo">
-                        <span class="glyphicon glyphicon-book">
+                        <span class="glyphicon glyphicon-th-list">
                         </span>
                     </div>
                     <span class="text">
@@ -334,7 +341,7 @@
                 <div class="square-content">
                     <div class="square-cell">
                         <div class="logo">
-                            <span class="glyphicon glyphicon-globe">
+                            <span class="glyphicon glyphicon-question-sign">
                             </span>
                         </div>
                         <span class="text">
@@ -352,23 +359,44 @@
     </nav>
 </script>
 <script type="text/template" id="page-control-template">
+
+    <button class="btn-nav prev control">
+        <div class="square">
+            <div class="square-content">
+                <div class="square-cell">
+                    <div class="logo">
+                        <span class="glyphicon glyphicon-menu-left">
+                        </span>
+                    </div>
+                    <span class="text">
+                    Previous
+                    </span>
+                </div>
+            </div>
+        </div>
+    </button>
+    <button class="btn-nav next control">
+        <div class="square">
+            <div class="square-content">
+                <div class="square-cell">
+                    <div class="logo">
+                        <span class="glyphicon glyphicon-menu-right">
+                        </span>
+                    </div>
+                    <span class="text">
+                    Next
+                    </span>
+                </div>
+            </div>
+        </div>
+    </button>
+    <!--
     <div class="nextprev">
         <span class="prev control">&lt;&lt; previous</span>
         <input class="page-id" maxlength="8">
         <span class="next control">next &gt;&gt;</span>
     </div>
-    <div class="imagetoggle">
-    Show:
-    	<% if( showtext !== false ) { %>
-    	<span class="showtext control">Text</span> |
-    	<% } %>
-        <% if(typeof texts !== 'undefined') _.each(texts, function(t){ %>
-        <span class="showtext-<%=t.lang %> control"><%=t.label %></span> |
-        <% }); %>
-    	<% if( showimage !== false ) { %>
-        <span class="showimg control">Scan</span>
-    	<% } %>
-    </div>
+    -->
 </script>
 <script type="text/template" id="page-template">
     <% _.each(texts, function(t){ %><div class="text<% if(t.lang){ %>-<%=t.lang%><%}%>" lang="<%= t.lang %>"><%= t.text %></div> <% }); %>
@@ -458,7 +486,12 @@
 <script type="text/template" id="layout-joth">
     <div class="layout">
         <div class="row">
-            <div class="navigation-view col-md-1 full-height"></div>
+            <div class="col-md-1 full-height">
+                <div class="navigation-view">
+                </div>
+                <div class="subnavigation-view">
+                </div>
+            </div>
             <div class="left-column col-md-5 full-height">
                 <div class="left-title">
                 </div>

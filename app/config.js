@@ -36,20 +36,10 @@ define({
             ],
             slots: {
                 '.navigation-view': 'views/NavigationView',
+                '.subnavigation-view': 'views/PageControlView',
                 '.left-title': 'views/BookTitleView',
-                '.left-content': {
-                    layout: '#layout-full-top',
-                    slots: {
-                        '.top-slot': 'views/PagesView',
-                        '.bottom-slot': 'views/PageControlView'
-                    }
-                },
-                '.right-content': {
-                    layout: '#layout-full-top',
-                    slots: {
-                        '.top-slot': 'views/SocialNetworkView'
-                    }
-                }
+                '.left-content': 'views/PagesView',
+                '.right-content': 'views/SocialNetworkView'
             }
         },
         'reading-view': {
@@ -62,14 +52,9 @@ define({
             ],
             slots: {
                 '.navigation-view': 'views/NavigationView',
+                '.subnavigation-view': 'views/PageControlView',
                 '.left-title': 'views/BookTitleView',
-                '.left-content': {
-                    layout: '#layout-full-top',
-                    slots: {
-                        '.top-slot': 'views/PagesView',
-                        '.bottom-slot': 'views/PageControlView'
-                    }
-                },
+                '.left-content': 'views/PagesView',
                 '.right-content': {
                     layout: '#layout-full-top',
                     slots: {

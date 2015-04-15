@@ -1,0 +1,86 @@
+// place frequency bars view
+.freq-bars-view {
+    text.title {
+        text-anchor: end;
+        font-size: 11px;
+        cursor: pointer;
+    }
+    font-size: 12px;
+}
+
+.timemap-legend-view {
+    text-align: right;
+    
+    img {
+        margin: 0 5px 3px 5px;
+    }
+}
+
+.timemap-view {
+    .timeline-container{
+        position: relative;
+        height: 35%;
+        width: 100%;
+    }
+    .timeline{
+        font-size: 12px;
+        height: 100%;
+        width: 100%;
+        background: #CCCCCC;
+    }
+    .map-container {
+        width: 100%;
+        height: 65%;
+    }
+    .map {
+        width: 100%;
+        height: 100%;
+        background: #EEEEEE;
+    }
+}
+
+.timeline-controls {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    background: #ccc;
+    width: 25px;
+    height: 50px;
+    div {
+        width: 16px;
+        height: 16px;
+        margin: 5px;
+        background-color: #999;
+        background-repeat: none;
+        
+        &.on {
+            background-color: black;
+            cursor: pointer;
+        }
+        &.timeline-play {
+            background-image: url(images/play.png);
+        }
+        &.timeline-stop {
+            background-image: url(images/stop.png);
+        }
+    }
+}
+// place summary view
+.place-summary {
+    font-family: @serifFontFamily;
+    
+    p {
+        margin: 0 0 .5em 0;
+    }
+    h4 {
+        margin: 1.5em 0 .5em 0;
+    }
+    h3 {
+        margin: 0 0 .5em 0;
+    }
+}
+.place-references-view, .related-places-view, .book-refs-view {
+    h4 {
+        margin-top: 0;
+    }
+}
