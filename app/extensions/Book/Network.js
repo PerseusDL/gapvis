@@ -14,7 +14,8 @@ define(function() {
                 var collection = model[parameters.collection];
                 var completeCollection = model[parameters.collection];
 
-                if(typeof page !== "undefined") {
+                if(typeof page !== "undefined" && page !== undefined) {
+                    console.log("filtering collection")
                     var persons = model.pages.get(page).get(parameters.collection);
                     collection = _.map(persons, function(person) { return collection.get(person); })
                 }
@@ -40,15 +41,15 @@ define(function() {
                         }
                     });
                 });
-                console.log(index)
-                console.log(links)
+
                 links = _.map(links, function(link) {
                     link.source = index[link.source];
                     link.target = index[link.target];
                     return link
                 })
-                links = links.filter(function(link){ return (typeof link.target !== "undefined" && typeof link.source !== "undefined") }); ;
-
+                if(typeof page !== "undefined" && page !== undefined) {
+                    links = links.filter(function(link){ return (typeof link.target !== "undefined" && typeof link.source !== "undefined") }); ;
+                }
                 return {
                     nodes : nodes,
                     links : links

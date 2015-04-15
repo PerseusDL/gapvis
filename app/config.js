@@ -23,8 +23,9 @@ define({
             slots: {
                 '.navigation-view': 'views/NavigationView',
                 '.left-title': 'views/BookTitleView',
-                '.left-content': 'views/BookSummaryTextView',
-                '.right-content': 'views/PlaceFrequencyBarsView'
+                '.left-content': 'views/TimeMapView',
+                '.right-content': 'views/PlaceFrequencyBarsView',
+                '.right-content-2': 'views/SocialNetworkView'
             }
         },
         'social-network-view': {
@@ -61,7 +62,8 @@ define({
                         '.top-slot': 'views/TimeMapView',
                         '.bottom-slot': 'views/TimeMapLegendView'
                     }
-                }
+                },
+                '.right-content-2': 'views/SocialNetworkView'
             }
         },
         'place-view': {

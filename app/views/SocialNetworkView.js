@@ -19,7 +19,15 @@ function( gv, BookView, slide ) {
         initialize: function(){
             var view = this;
             view.bindState( 'change:pageid', view.render, view );
-            view.on( 'render', function() { view.viz(state.get( 'pageid' )) } );
+            view.on( 'render', 
+              function() {
+                if(gv.state.get('view') === "book-summary") {
+                  view.viz();
+                } else {
+                  view.viz(state.get( 'pageid' )) 
+                }
+             }
+            );
         },
         
         
@@ -33,8 +41,8 @@ function( gv, BookView, slide ) {
         },
         
         viz: function(page){
-          var w = 600,
-              h = 400,
+          var w = 500,
+              h = 300,
               r = 10;
           //We get the graph from the model function
           var view = this,

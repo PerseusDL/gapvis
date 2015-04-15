@@ -166,7 +166,8 @@ body {
   background-color: white;
 }
 .right-column > div {
-  margin: 5px 5px;
+  padding: 5px;
+  margin: 0px 5px 5px;
   background-color: white;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2);
 }

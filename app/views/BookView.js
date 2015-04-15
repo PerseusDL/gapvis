@@ -62,7 +62,7 @@ function(gv){
             if(view.lastBookStatus !== book.isFullyLoaded() && book.isFullyLoaded()) {
               view.lastBookStatus = true;
               if ( !state.get( 'pageid' ) ){
-                state.set({ pageid: book.firstId() });
+                state.set({ pageid: book.firstId()});
               }
               callback.call(view);
             }
