@@ -9,10 +9,17 @@ define(function() {
     return function(parameters) {
         var fnName = "network" + parameters.collection,
             dict = {};
-        dict[fnName] = function() {
-                var model = this,
-                    collection = model[parameters.collection],
-                    nodes = [],
+        dict[fnName] = function(page) {
+                var model = this;
+                var collection = model[parameters.collection];
+                var completeCollection = model[parameters.collection];
+
+                if(typeof page !== "undefined") {
+                    var persons = model.pages.get(page).get(parameters.collection);
+                    collection = _.map(persons, function(person) { return collection.get(person); })
+                }
+
+                var nodes = [],
                     links = [],
                     index = {},
                     already_in = []; // Holds index information for each collection.model.id
@@ -26,17 +33,22 @@ define(function() {
                                 source : bond.get("source"),
                                 target : bond.get("target"),
                                 type   : bond.get("type"),
+                                id   : bond.get("id"),
                                 value  : 1
                             });
                             already_in.push(id)
                         }
                     });
                 });
+                console.log(index)
+                console.log(links)
                 links = _.map(links, function(link) {
                     link.source = index[link.source];
                     link.target = index[link.target];
-                    return link;
+                    return link
                 })
+                links = links.filter(function(link){ return (typeof link.target !== "undefined" && typeof link.source !== "undefined") }); ;
+
                 return {
                     nodes : nodes,
                     links : links

@@ -48,14 +48,8 @@
 <body>
 
     <div id="container">
-        <header>
-            <h1><a href="#">GapVis</a> <span class="beta">BETA</span></h1>
-            <nav>
-                <a href="index.html">Home</a> &middot; <a href="http://googleancientplaces.wordpress.com/about/">About Us</a> &middot; <a href="http://googleancientplaces.wordpress.com/">Blog</a>
-            </nav>
-        </header>
         <div id="app-view" role="main" class="clearfix"></div>
-        <footer>
+        <footer style="display:none;">
             GapVis (c) 2011 <a href="http://www.nickrabinowitz.com">Nick Rabinowitz</a> / <a href="http://googleancientplaces.wordpress.com/">Google Ancient Places</a>. Hosting by <a href="http://alexandriaarchive.org/">AlexandriaArchive.org</a>. Funding by&nbsp;&nbsp;<img src="images/google_logo.png" alt="Google">.
         </footer>
     </div>
@@ -175,7 +169,6 @@
 		class="btn btn-small btn-primary" 
 		title="Summary View" 
 		data-view-id="book-summary">
-		<i class="glyphicon glyphicon-star glyphicon-white"></i> 
 		Summary View
 	</button>
 	
@@ -183,7 +176,6 @@
 		class="btn btn-small btn-primary" 
 		title="Reading View" 
 		data-view-id="reading-view">
-		<i class="glyphicon glyphicon-book glyphicon-white"></i> 
 		Reading View
 	</button>
 	
@@ -191,7 +183,6 @@
 		class="btn btn-small btn-primary" 
 		title="Place Detail" 
 		data-view-id="place-view">
-		<i class="glyphicon glyphicon-globe glyphicon-white"></i> 
 		Place Detail
 	</button>
 	
@@ -199,17 +190,30 @@
 		class="btn btn-small btn-primary" 
 		title="Social Network" 
 		data-view-id="social-network-view">
-		<i class="glyphicon glyphicon-globe glyphicon-white"></i> 
 		Social Network
 	</button>
-	
+    
+    <button 
+        class="btn btn-small btn-primary" 
+        title="Other Sources" 
+        data-view-id="social-network-view">
+        Other Sources
+    </button>
+    
+    <button 
+        class="btn btn-small btn-primary" 
+        title="Other Sources" 
+        data-view-id="social-network-view">
+        Annotators
+    </button>
+	<a 
+        class="permalink btn btn-primary" 
+        title="Permalink" href="#">
+        <i class="glyphicon glyphicon-bookmark glyphicon-white"></i>
+    </a>
 </nav>
 
-<a 
-	class="permalink btn btn-primary" 
-	title="Permalink" href="#">
-	<i class="glyphicon glyphicon-bookmark glyphicon-white"></i>
-</a></script><script type="text/template" id="page-control-template"><div class="nextprev">
+</script><script type="text/template" id="page-control-template"><div class="nextprev">
     <span class="prev control">&lt;&lt; previous</span>
     <input class="page-id" maxlength="8">
     <span class="next control">next &gt;&gt;</span>

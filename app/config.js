@@ -31,7 +31,10 @@ define({
         'social-network-view': {
             layout:  '#layout-book-2panel',
             className: 'social-network-view',
-            router: 'social-network/:bookid',
+            router: [
+                'book/:bookid/social-network',
+                'book/:bookid/social-network/:pageid',
+            ],
             slots: {
                 '.navigation-view': 'views/NavigationView',
                 '.book-title-view': 'views/BookTitleView',

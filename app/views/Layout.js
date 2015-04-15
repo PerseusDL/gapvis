@@ -15,6 +15,7 @@ define(['gv'], function(gv) {
         // default layout
         layout: function() {
             // fill screen
+            // 
             if (this.topLevel) {
                 this.$el
                     .width(this.topViewWidth())

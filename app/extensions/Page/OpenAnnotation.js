@@ -24,12 +24,15 @@ define(["util/regexpEscape"], function(RegExpEscape) {
                 text = text.replace(/\s+/g, " ")
                 _.each(attributeNames, function(attributeName, index) {
                     _.each(page.get(attributeName), function(annotation) {
+                        if(typeof annotation.selector === "undefined") {
+                            return;
+                        }
                         var suffix = suffixes[index],
                             prefix = prefixes[index],
-                            query  = new RegExp(RegExpEscape(annotation.selector.prefix) + "(\\s*" + RegExpEscape(annotation.selector.exact) + "\\s*)" + RegExpEscape(annotation.selector.suffix), "gm"),
+                            query  = new RegExp(RegExpEscape(annotation.selector.prefix) + "(\\s*)(" + RegExpEscape(annotation.selector.exact) + ")(\\s*)" + RegExpEscape(annotation.selector.suffix), "gm"),
                             prefix = (typeof prefix === "function") ? prefix(annotation.id) : prefix,
                             suffix = (typeof suffix === "function") ? suffix(annotation.id) : suffix;
-                        text = text.replace(query, annotation.selector.prefix + prefix + "$1" + suffix +  annotation.selector.suffix);
+                        text = text.replace(query, annotation.selector.prefix + "$1" + prefix + "$2" + suffix + "$3" + annotation.selector.suffix);
                     });
                 });
                 page.set("text", text);

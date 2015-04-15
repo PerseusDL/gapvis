@@ -8,6 +8,9 @@ define(function() {
      * @param  {function}               options.success Callback
      * @return {Object}  Return an updated/synced object passed as "this"
      */
+    var capitalize = function(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
     var PerseusNameMatcher = new RegExp("^http://data\.perseus\.org/people/smith:([a-zA-Z]+)")
     return function(options) {
         options = options || {};
@@ -44,13 +47,13 @@ define(function() {
                     _.each(annotation.hasBody["@graph"], function(body){
                         //If we have the source of the bond
                         if("snap:has-bond" in body) {
-                            var id = body["@id"],
+                            var id = body["@id"].toLowerCase(),
                                 bondId = body["snap:has-bond"]["@id"],
                                 direction = "source",
                                 type = false;
                         //If we have the direction of the bond
                         } else if ("snap:bond-with" in body) {
-                            var id = body["snap:bond-with"]["@id"],
+                            var id = body["snap:bond-with"]["@id"].toLowerCase(),
                                 bondId = body["@id"],
                                 direction = "target",
                                 type = body["@type"];
@@ -65,7 +68,7 @@ define(function() {
                         }
                         bonds[bondId][direction] = {
                             id : id,
-                            name : id.match(PerseusNameMatcher)[1]
+                            name : capitalize(id.match(PerseusNameMatcher)[1])
                         };
                         if(type !== false) {
                             bonds[bondId].type = type;
@@ -79,7 +82,8 @@ define(function() {
                         // Right now, the target is always what is recognized as the person
                         // Through, this should not be the case, we should have a way to tell what represents 
                         //  really the selected text
-                        var realTarget = bond.target.id;
+                        var realTarget = bond.target.id,
+                            otherTarget = bond.source.id;
                         // Now we register found bounds !
                         var target = collection.get(bond.target.id);
                         if (!target) {
@@ -105,6 +109,9 @@ define(function() {
                         pages[targetPage].push({
                             id : realTarget,
                             selector : annotation["hasTarget"]["hasSelector"]
+                        });
+                        pages[targetPage].push({
+                            id : otherTarget
                         });
                     });
                 });

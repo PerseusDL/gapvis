@@ -7,7 +7,6 @@ define([
 'util/slide'], 
 function( gv, BookView, slide ) {
     var state = gv.state;
-    
     // View: SocialNetworkView 
     
     return BookView.extend({
@@ -20,7 +19,7 @@ function( gv, BookView, slide ) {
         initialize: function(){
             var view = this;
             view.bindState( 'change:pageid', view.render, view );
-            view.on( 'render', view.viz );
+            view.on( 'render', function() { view.viz(state.get( 'pageid' )) } );
         },
         
         
@@ -29,17 +28,17 @@ function( gv, BookView, slide ) {
             var view = this;
             // render content and append to parent
             view.renderTemplate();
-            this.trigger( 'render' );
+            view.trigger( 'render' );
             return view;
         },
         
-        viz: function(){
+        viz: function(page){
           var w = 600,
               h = 400,
               r = 10;
           //We get the graph from the model function
           var view = this,
-              graph = view.model.networkpersons();
+              graph = view.model.networkpersons(page);
           //
           var color = d3.scale.category20();
           var force = d3.layout.force()
