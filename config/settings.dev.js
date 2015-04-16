@@ -57,7 +57,8 @@ SETTINGS_MODELS = {
         page  : CTS_ENDPOINT,
         places: function() { return API_ROOT + "/joth/places?urn="+this.book.id; },
         place: function() { return API_ROOT + "/joth/place?urn="+this.book.id; },
-        persons: function() { return API_ROOT + "/joth/persons?urn="+this.book.id; }
+        persons: function() { return API_ROOT + "/joth/persons?urn="+this.book.id; },
+        citations: function() { return API_ROOT + "/joth/occurrences?urn="+this.book.id; }
     },
     retrievers : {
         bookslist: "sync",
@@ -66,7 +67,8 @@ SETTINGS_MODELS = {
         page : "cts.page",
         places: "joth.places",
         place: "joth.place",
-        persons: "joth.persons"
+        persons: "joth.persons",
+        citations: "joth.citations"
     },
     options : {
         bookslist : {},
@@ -75,10 +77,11 @@ SETTINGS_MODELS = {
         page : {},
         places: {},
         place: {},
-        persons: {}
+        persons: {},
+        citations: {}
     },
     injections : {
-        book : ["pages", "places", "persons"]
+        book : ["pages", "places", "persons", "citations"]
     },
     extensions : {
         book : [

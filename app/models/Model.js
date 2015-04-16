@@ -21,7 +21,8 @@ define([
   var injectionsDict = {
     "pages" : "models/Pages",
     "places" : "models/Places",
-    "persons" : "models/Persons"
+    "persons" : "models/Persons",
+    "citations" : "models/Citations"
   }
     function stringifyId(item) {
             item.id = String(item.id);

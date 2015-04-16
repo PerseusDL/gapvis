@@ -8,7 +8,8 @@ define([
     'models/Places',
     'models/Pages',
     'models/Persons',
-    'models/Annotations'
+    'models/Annotations',
+    'models/Citations'
   ], 
   function(gv, Model, Places, Pages, Persons, Annotations) {
   

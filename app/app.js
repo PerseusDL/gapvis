@@ -26,7 +26,8 @@ require([
 'models/State', 
 'views/AppView', 
 'views/Layout', 
-'routers/Router' ], 
+'routers/Router'
+], 
 function( gv, config, Books ) {
 // change Backbone.sync to use JSON/JSONP
 	
