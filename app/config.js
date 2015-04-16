@@ -28,21 +28,6 @@ define({
                 '.right-content-2': 'views/SocialNetworkView'
             }
         },
-        'social-network-view': {
-            layout:  '#layout-joth',
-            className: 'social-network-view',
-            router: [
-                'book/:bookid/social-network',
-                'book/:bookid/social-network/:pageid',
-            ],
-            slots: {
-                '.navigation-view': 'views/NavigationView',
-                '.subnavigation-view': 'views/PageControlView',
-                '.left-title': 'views/BookTitleView',
-                '.left-content': 'views/PagesView',
-                '.right-content': 'views/SocialNetworkView'
-            }
-        },
         'reading-view': {
             layout: '#layout-joth',
             className: 'reading-view',

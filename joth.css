@@ -1,3 +1,4 @@
+/* Material */
 .node {
   stroke: #fff;
   stroke-width: 1.5px;
@@ -73,7 +74,7 @@ svg *:before {
   background-image: url(images/stop.png);
 }
 .place-summary {
-  font-family: "Georgia,\"Times New Roman\",Times,serif;";
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .place-summary p {
   margin: 0 0 .5em 0;
@@ -90,10 +91,10 @@ svg *:before {
   margin-top: 0;
 }
 .map {
-  min-height: 400px;
+  min-height: 300px;
 }
 .timemap-view {
-  min-height: 500px;
+  min-height: 400px;
 }
 .timeline-container {
   min-height: 100px;
@@ -103,7 +104,7 @@ svg *:before {
   clear: right;
   min-height: 40px;
   min-width: 40px;
-  background-color: #da532c;
+  background-color: #2196f3;
   color: #fff;
   margin: 0px;
   text-align: center;
@@ -158,8 +159,9 @@ svg *:before {
   text-align: right;
 }
 body {
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   font-family: 'Tinos', serif;
+  color: #212121;
 }
 .left-column {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2), 0 3px 0 #ffffff, 0 4px 0 rgba(0, 0, 0, 0.2), 0 6px 0 #ffffff, 0 7px 0 rgba(0, 0, 0, 0.2), 0 0 3px #ffffff, 0 0 4px rgba(0, 0, 0, 0.2), 0 0 6px #ffffff, 0 0 7px rgba(0, 0, 0, 0.2);
@@ -185,16 +187,13 @@ body {
   display: block;
 }
 .page-title {
-  font-family: 'Damion', cursive;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   padding: 5px;
   height: 40px;
   margin-bottom: 15px;
-  background-image: url('images/bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-opacity: 0.4;
+  background-color: #1976d2;
+  color: #ffffff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2);
   font-size: large;
 }
@@ -203,7 +202,20 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Tinos", serif;
+  font-family: 'Roboto', sans-serif;
+}
+.right-column h1,
+.right-column h2,
+.right-column h3,
+.right-column h4,
+.right-column h5 {
+  background-color: #2196f3;
+  color: #ffffff;
+  margin: -5px -5px 10px -5px;
+  padding-left: 10px;
+  line-height: 30px;
+  font-size: 16px;
+  height: 30px;
 }
 svg {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
