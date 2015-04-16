@@ -8,8 +8,8 @@ REPORT_URL = 'tests/api/flags/';
 // REPORT_BAD_TOKEN_URL = null;
 // //if present and not null, makes a direct link isntead of a form. Looks for {place-id}
 //REPORT_PROBLEM_PLACE_URL = 'http://gap2.alexandriaarchive.org/report/place-issues/{place-id}';
-CTS_API  = 'http://localhost:5000/cts/api';
-API_ROOT = 'http://localhost:5000';
+API_ROOT = '/prod';
+CTS_API  = API_ROOT + '/cts/api';
 // API_ROOT = 'http://localhost/gapvis';
 // REPORT_URL = 'http://gap2.alexandriaarchive.org/flags/';
 API_DATA_TYPE = 'xml';
@@ -42,7 +42,7 @@ PLACE_THEME = "frequency"; // Supported values are 'frequency' and 'feature'. If
 
 // We set up some endpoints to be sure we don't write them multiple times 
 CTS_ENDPOINT = function() { return new CTS.endpoint.XQ(CTS_API, "annotsrc"); } // Doing that so the loading of CTS is made...
-CTS_JOTH_ENDPOINT = function() { return new CTS.endpoint.XQ("http://localhost:5000/joth/books/reffs", "annotsrc"); } // Doing that so the loading of CTS is made...
+CTS_JOTH_ENDPOINT = function() { return new CTS.endpoint.XQ(API_ROOT + "/joth/books/reffs", "annotsrc"); } // Doing that so the loading of CTS is made...
 /**
  * The previous system depends only one kind of retriever, 
  * 	using simple ajax calls without dealing with multiple endpoints
@@ -55,9 +55,9 @@ SETTINGS_MODELS = {
         book  : CTS_ENDPOINT,
         pages : CTS_JOTH_ENDPOINT,
         page  : CTS_ENDPOINT,
-        places: function() { return "http://localhost:5000/joth/places?urn="+this.book.id; },
-        place: function() { return "http://localhost:5000/joth/place?urn="+this.book.id; },
-        persons: function() { return "http://localhost:5000/joth/persons?urn="+this.book.id; }
+        places: function() { return API_ROOT + "/joth/places?urn="+this.book.id; },
+        place: function() { return API_ROOT + "/joth/place?urn="+this.book.id; },
+        persons: function() { return API_ROOT + "/joth/persons?urn="+this.book.id; }
     },
     retrievers : {
         bookslist: "sync",

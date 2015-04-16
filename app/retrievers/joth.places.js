@@ -77,16 +77,18 @@ define(function() {
 
                 var placesId = placesId.join(",")
                 $.ajax(
-                    "http://localhost:5000/joth/pleiades?places=" + placesId,
+                    "/prod/joth/pleiades?places=" + placesId,
                     {
                         "success" : function(data) {
                             _.each(data.places, function(place, placeId) {
+                                var ll = (place.reprPoint) ? [place.reprPoint[1], place.reprPoint[0]] : [0,0];
                                 collection.get(placeId).set({
                                     title : place.title,
                                     description : place.description || "",
-                                    ll : place.reprPoint
+                                    ll : ll
                                 })
                             })
+
                             if(book._fetched["pages"] !== true) {
                                 book.on("ready.pages", function() {
                                     cb();
