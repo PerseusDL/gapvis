@@ -52,7 +52,7 @@ CTS_JOTH_ENDPOINT = function() { return new CTS.endpoint.XQ("http://localhost:50
 SETTINGS_MODELS = {
     endpoints : {
         bookslist : API_ROOT + '/joth/books',
-        book  : API_ROOT + '/joth/books',
+        book  : CTS_ENDPOINT,
         pages : CTS_JOTH_ENDPOINT,
         page  : CTS_ENDPOINT,
         places: function() { return "http://localhost:5000/joth/places?urn="+this.book.id; },
@@ -61,7 +61,7 @@ SETTINGS_MODELS = {
     },
     retrievers : {
         bookslist: "sync",
-        book: "sync",
+        book: "cts.book",
         pages : "cts.reff",
         page : "cts.page",
         places: "joth.places",

@@ -3,6 +3,7 @@ define(
         "retrievers/sync",
         "retrievers/cts.reff",
         "retrievers/cts.page",
+        "retrievers/cts.book",
         "retrievers/joth.places",
         "retrievers/joth.persons"
     ], 
@@ -10,6 +11,7 @@ define(
         sync,
         ctsReff,
         ctsPage,
+        ctsBook,
         jothPlaces,
         jothPersons
     ) {
@@ -20,6 +22,7 @@ define(
             "sync" : sync,
             "cts.reff" : ctsReff,
             "cts.page" : ctsPage,
+            "cts.book" : ctsBook,
             "joth.places" : jothPlaces,
             "joth.persons" : jothPersons
         }
