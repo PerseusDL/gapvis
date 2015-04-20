@@ -18,12 +18,15 @@ function( gv, BookView, slide ) {
       
         initialize: function(){
             var view = this;
-            view.bindState( 'change:pageid', view.render, view );
+            view.bindState( 'change:pageid', function() {
+              view.render.call(view)
+            });
             view.on( 'render', 
               function() {
                 if(gv.state.get('view') === "book-summary") {
                   view.viz();
                 } else {
+                  console.log(state.get( 'pageid' ), view.model)
                   view.viz(state.get( 'pageid' )) 
                 }
              }
@@ -41,7 +44,20 @@ function( gv, BookView, slide ) {
         },
         
         viz: function(page){
-          var w = 500,
+          $("body").on("click", "a[data-person-id]", function(e) {
+              e.preventDefault();
+              var person = $(this).attr("data-person-id"),
+                  labels = $("text.label"),
+                  target = $("text.label[data-person-id='"+ person + "']");
+
+              $("text.label").css("font-size", "");
+              target.css("font-size", "larger");
+              $('html, body').animate({
+                  scrollTop: target.offset().top
+              }, 2000);
+
+          });
+          var w = $(".right-column").width() - 20,
               h = 300,
               r = 10;
           //We get the graph from the model function
@@ -89,7 +105,8 @@ function( gv, BookView, slide ) {
                 .append("svg:text")
                 .attr("class", "label")
                 .attr("fill", "black")
-                .text(function(d) {  return d.name;  });
+                .text(function(d) {  return d.name;  })
+                .attr("data-person-id", function(d) {  return d["@id"];  });
    
           force.on("tick", function() {
             link.attr("x1", function(d) { return d.source.x; })

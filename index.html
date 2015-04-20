@@ -12,6 +12,7 @@
     <![endif]-->
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Tinos' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="./joth.css">
     
@@ -20,6 +21,8 @@
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
 </script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+</script>
+    <script type="text/javascript" src="lib/jquery/jquery-1.7.2.min.js">
 </script>
     <script type="text/javascript" src="lib/timeline-2.3.0.js">
 </script>
@@ -390,9 +393,10 @@
 <script type="text/template" id="page-template">
     <% _.each(texts, function(t){ %><div class="text<% if(t.lang){ %>-<%=t.lang%><%}%>" lang="<%= t.lang %>"><%= t.text %></div> <% }); %>
     <div class="img"><% if (image) { %><img src="<%= image %>"><% } else { %>(No image available)<% } %></div>
-    </script>
-    <script type="text/template" id="perseus-page-template"><div style="overflow-y: scroll; height: 100%">
-    <%= out %>
+</script>
+<script type="text/template" id="perseus-page-template">
+    <div style="overflow-y: scroll; height: 100%">
+        <%= out %>
     </div>
 </script>
 <script type="text/template" id="place-summary-template">
@@ -484,20 +488,33 @@
                 <div class="subnavigation-view">
                 </div>
             </div>
-            <div class="left-column col-md-5 full-height">
+            <div class="left-column col-md-6">
                 <div class="left-title">
                 </div>
                 <div class="left-content">
                 </div>
             </div>
-            <div class="right-column col-md-6 full-height" >
-                <div class="right-content">
-                </div>
-                <div class="right-content-2">
-                </div>
+            <div class="right-column col-md-5" >
             </div>
         </div>
     </div>
+</script>
+<script type="text/template" id="citations-template">
+    <% if(citations.length > 0) { %>
+    <div>
+        <h4>
+            Attestations
+        </h4>
+        <ul class="attestations-list">
+            <% _.each( citations, function( citation ){ %>
+                <li>
+                    <em><%= citation.title %></em>, <%= citation.author %><br />
+                    <div class="text"><%= citation.text %></div>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+    <% } %>
 </script>
 </body>
 </html>

@@ -13,7 +13,7 @@ define({
                 '.left-content': {
                     layout: 'views/BookListView'
                 },
-                '.right-content-1': '#index-overview-template'
+                '.right-column': ['#index-overview-template']
             }
         },
         'book-summary': {
@@ -24,8 +24,10 @@ define({
                 '.navigation-view': 'views/NavigationView',
                 '.left-title': 'views/BookTitleView',
                 '.left-content': 'views/TimeMapView',
-                '.right-content': 'views/PlaceFrequencyBarsView',
-                '.right-content-2': 'views/SocialNetworkView'
+                '.right-column': [
+                    'views/PlaceFrequencyBarsView',
+                    'views/SocialNetworkView'
+                ]
             }
         },
         'reading-view': {
@@ -41,14 +43,17 @@ define({
                 '.subnavigation-view': 'views/PageControlView',
                 '.left-title': 'views/BookTitleView',
                 '.left-content': 'views/PagesView',
-                '.right-content': {
-                    layout: '#layout-full-top',
-                    slots: {
-                        '.top-slot': 'views/TimeMapView',
-                        '.bottom-slot': 'views/TimeMapLegendView'
-                    }
-                },
-                '.right-content-2': 'views/SocialNetworkView'
+                '.right-column': [
+                    {
+                        layout: '#layout-full-top',
+                        slots: {
+                            '.top-slot': 'views/TimeMapView',
+                            '.bottom-slot': 'views/TimeMapLegendView'
+                        }
+                    },
+                    'views/SocialNetworkView',
+                    'views/CitationsView'
+                ]
             }
         },
         'place-view': {

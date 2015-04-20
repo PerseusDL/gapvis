@@ -137,7 +137,7 @@ define(function() {
                 /*
                 var personsId = personsId.join(",")
                 $.ajax(
-                    "http://localhost:5000/joth/persons?persons=" + personsId,
+                    collection.url(personsId),
                     {
                         "success" : function(data) {
                             _.each(data.persons, function(person, personId) {

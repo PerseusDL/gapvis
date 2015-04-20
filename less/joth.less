@@ -164,3 +164,28 @@ svg {
 svg:not(:root) {
   overflow: hidden;
 }
+
+/**
+ * Citation block 
+ */
+.citations-view {
+    h4 {
+        margin-bottom:0;
+    }
+}
+.attestations-list {
+    margin:0 -5px;
+    padding:0;
+    list-style-type:none;
+    > li {
+        padding: 10px 10px;
+        .text {
+            text-indent:7px;
+        }
+        border-bottom:1px solid @divider-color;
+
+        &:last-child {
+            border-bottom:0;
+        }
+    }
+}

@@ -57,8 +57,21 @@ SETTINGS_MODELS = {
         page  : CTS_ENDPOINT,
         places: function() { return API_ROOT + "/joth/places?urn="+this.book.id; },
         place: function() { return API_ROOT + "/joth/place?urn="+this.book.id; },
-        persons: function() { return API_ROOT + "/joth/persons?urn="+this.book.id; },
-        citations: function() { return API_ROOT + "/joth/occurrences?urn="+this.book.id; }
+        persons: function(arg) { 
+            if(typeof arg !== "undefined") {
+                return API_ROOT + "joth/persons?persons=" + arg;
+            } else {
+                return API_ROOT + "/joth/persons?urn="+this.book.id; 
+            }
+        },
+        citations: function(arg) { 
+
+            var endpoints = [
+                API_ROOT + "/joth/occurrences?urn="+this.book.id,
+                CTS_ENDPOINT()
+            ];
+            return (typeof arg !== "undefined") ? endpoints[arg] : endpoints[0];
+        }
     },
     retrievers : {
         bookslist: "sync",

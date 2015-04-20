@@ -70,19 +70,18 @@ define(["util/SparrowBuffer"], function(SparrowBuffer) {
                     buffer.append(function(callback) {
 
                         var self = collection.get(item.id),
-                            passage = new CTS.text.Passage(item.urn, new CTS.endpoint.XQ("/prod/cts/api", "annotsrc"));
+                            passage = new CTS.text.Passage(item.urn, collection.url(1));
                         passage.retrieve({
                             success : function(data) {
-                                self.set({text : passage.getXml("tei:text")});
-                                /**
-                                 * Solely purpose of our situation :
-                                 */
                                 self.set({
-                                    text : passage.getText(["note"])
+                                    text : passage.getText(null, true),
+                                    title : passage.Text.getTitle("eng"),
+                                    author : passage.Text.getTextgroup("eng")
                                 })
                                 callback();
                             },
-                            error : function() { var error = options.error || function() {}; error(); }
+                            error : function() { var error = options.error || function() {}; error(); },
+                            metadata : true
                         });
                     });
                 });

@@ -26,7 +26,7 @@ define(function() {
                     already_in = []; // Holds index information for each collection.model.id
                 collection.forEach(function(model) {
                     index[model.id] = nodes.length
-                    nodes.push({"name" : model.get("name")})
+                    nodes.push({"name" : model.get("name"), "@id" : model.get("id")})
                     model.get("bonds").forEach(function(bond) {
                         var id = bond.get("id");
                         if(already_in.indexOf(id) === -1) {

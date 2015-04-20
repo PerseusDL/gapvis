@@ -33,11 +33,9 @@ define(['gv', 'views/BookView'], function(gv, BookView) {
                 places.sort();
                 view.render();
             });
-            console.log(view.ready);
         },
         
         render: function() {
-            console.log(this, " is rendered (PlaceFrequencyBarsView")
             var view = this,
                 singlePlace = !!view.options.place,
                 book = view.model,
@@ -73,11 +71,11 @@ define(['gv', 'views/BookView'], function(gv, BookView) {
             }
 			
 			// Fix width and position for histogram list
-			var attrWidthValue = 500;
+			var attrWidthValue = "100%";
 			var attrTransformValue = '';
 			var shiftRightValue = 0;
             if (!singlePlace) {
-				attrWidthValue = 500;
+				attrWidthValue = "100%";
 				shiftRightValue = 120;
 				//attrTransformValue = 'translate(120,0)';
 			}

@@ -223,3 +223,24 @@ svg {
 svg:not(:root) {
   overflow: hidden;
 }
+/**
+ * Citation block 
+ */
+.citations-view h4 {
+  margin-bottom: 0;
+}
+.attestations-list {
+  margin: 0 -5px;
+  padding: 0;
+  list-style-type: none;
+}
+.attestations-list > li {
+  padding: 10px 10px;
+  border-bottom: 1px solid #b6b6b6;
+}
+.attestations-list > li .text {
+  text-indent: 7px;
+}
+.attestations-list > li:last-child {
+  border-bottom: 0;
+}
