@@ -213,6 +213,10 @@ body {
     display: inline-block;
   }
 }
+.book-title.control.on {
+  color: #337AB7;
+  cursor: pointer;
+}
 .page-title {
   font-family: 'Roboto', sans-serif;
   text-align: center;
