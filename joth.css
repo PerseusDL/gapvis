@@ -100,60 +100,80 @@ svg *:before {
   min-height: 100px;
 }
 .btn-nav {
-  display: block;
+  display: inline-block;
   clear: right;
-  min-height: 40px;
-  min-width: 40px;
+  min-height: 90px;
+  min-width: 90px;
   background-color: #2196f3;
   color: #fff;
   margin: 0px;
   text-align: center;
   border: 0;
-  float: right;
-  padding: 0;
-  transition: width 0.5s ease 0s;
+  padding: 5px;
 }
-.btn-nav .text {
-  display: none;
+@media (max-width: 767px) {
+  .navigation-view,
+  .subnavigation-view {
+    display: inline-block;
+  }
 }
-.btn-nav:hover {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-.btn-nav:hover > .square {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  color: white;
-}
-.btn-nav:hover .square-content {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-.btn-nav:hover .square-cell {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-.btn-nav:hover:before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-}
-.btn-nav:hover .text {
-  display: block;
-}
-.btn-nav .logo {
-  display: block;
-  text-align: center;
-}
-.btn-nav:after {
-  display: block;
-  clear: right;
+@media (min-width: 768px) {
+  .btn-nav {
+    display: block;
+    clear: right;
+    min-height: 40px;
+    min-width: 40px;
+    background-color: #2196f3;
+    color: #fff;
+    margin: 0px;
+    text-align: center;
+    border: 0;
+    float: right;
+    padding: 0;
+    transition: width 0.5s ease 0s;
+  }
+  .btn-nav .text {
+    display: none;
+  }
+  .btn-nav:hover {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .btn-nav:hover > .square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+  }
+  .btn-nav:hover .square-content {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-nav:hover .square-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .btn-nav:hover:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  .btn-nav:hover .text {
+    display: block;
+  }
+  .btn-nav .logo {
+    display: block;
+    text-align: center;
+  }
+  .btn-nav:after {
+    display: block;
+    clear: right;
+  }
 }
 .navigation-view {
   text-align: right;
@@ -183,8 +203,15 @@ body {
 .control.btn-nav {
   display: none;
 }
-.control.btn-nav.on {
-  display: block;
+@media (min-width: 768px) {
+  .control.btn-nav.on {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .control.btn-nav.on {
+    display: inline-block;
+  }
 }
 .page-title {
   font-family: 'Roboto', sans-serif;
