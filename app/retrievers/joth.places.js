@@ -1,4 +1,7 @@
-define(function() {
+define([
+        "util/addAnnotator"
+    ],
+    function(addAnnotator) {
     /**
      * Retrieve places reference and link using the cts identifier of a book
      *     Parse them as it need to
@@ -33,7 +36,8 @@ define(function() {
                 //For each annotation
                 _.each(resp.places, function(annotation) {
                     //For each annotation, we have a source !
-                    var target = annotation["hasTarget"]["hasSource"]["@id"];
+                    var target = annotation["hasTarget"]["hasSource"]["@id"],
+                        annotators = _.map(annotation.annotatedBy["foaf:member"], function(annotator) { return annotator["foaf:name"]; })
 
                     if(!pages[target]) { pages[target] = []; }
 
@@ -52,7 +56,8 @@ define(function() {
                         //We put the place into the list of annotation for one page.
                         pages[target].push({
                             id : item.id,
-                            selector : annotation["hasTarget"]["hasSelector"]
+                            selector : annotation["hasTarget"]["hasSelector"],
+                            annotators : annotators
                         });
                     });
                 });
@@ -71,6 +76,7 @@ define(function() {
                             "places" : _.map(pages[pageId], function(val) { return val.id; }),
                             "placesAnnotations" : pages[pageId]
                         });
+                        addAnnotator(book.pages.get(pageId), pages[pageId]);
                     });
                     if (success) success(collection, resp);
                 }

@@ -500,7 +500,6 @@
     </div>
 </script>
 <script type="text/template" id="citations-template">
-    <% if(citations.length > 0) { %>
     <div>
         <h4>
             Attestations
@@ -514,7 +513,16 @@
             <% }) %>
         </ul>
     </div>
-    <% } %>
+</script>
+<script type="text/template" id="annotators-template">
+    <div>
+        <h4>
+            Annotated by
+        </h4>
+        <ul class="attestations-list">
+            <li><%= annotators.join(", ") %></li>
+        </ul>
+    </div>
 </script>
 </body>
 </html>

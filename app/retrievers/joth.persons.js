@@ -1,4 +1,7 @@
-define(function() {
+define([
+        "util/addAnnotator"
+    ],
+    function(addAnnotator) {
     /**
      * Retrieve persons reference and link using the cts identifier of a book
      *     Parse them as it need to
@@ -37,7 +40,8 @@ define(function() {
                 _.each(resp.persons, function(annotation) {
                     //For each annotation, we have a source !
                     var targetPage = annotation["hasTarget"]["hasSource"]["@id"],
-                        bonds = {}
+                        bonds = {},
+                        annotators = _.map(annotation.annotatedBy["foaf:member"], function(annotator) { return annotator["foaf:name"]; })
 
                     if(!pages[targetPage]) { pages[targetPage] = []; }
 
@@ -108,7 +112,8 @@ define(function() {
                         //We put the person into the list of annotation for one page.
                         pages[targetPage].push({
                             id : realTarget,
-                            selector : annotation["hasTarget"]["hasSelector"]
+                            selector : annotation["hasTarget"]["hasSelector"],
+                            annotators : annotators
                         });
                         pages[targetPage].push({
                             id : otherTarget
@@ -130,6 +135,8 @@ define(function() {
                             "persons" : _.uniq(_.map(pages[pageId], function(val) { return val.id; })),
                             "personsAnnotations" : pages[pageId]
                         });
+                        addAnnotator(book.pages.get(pageId), pages[pageId])
+
                     });
                     if (success) success(collection, resp);
                 }

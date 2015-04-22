@@ -52,7 +52,8 @@ define({
                         }
                     },
                     'views/SocialNetworkView',
-                    'views/CitationsView'
+                    'views/CitationsView',
+                    'views/AnnotatorsView'
                 ]
             }
         },

@@ -1,4 +1,4 @@
-define(["util/SparrowBuffer"], function(SparrowBuffer) {
+define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addAnnotator) {
     /**
      * Retrieve places reference and link using the cts identifier of a book
      *     Parse them as it need to
@@ -39,7 +39,8 @@ define(["util/SparrowBuffer"], function(SparrowBuffer) {
                     var target = annotation["hasTarget"]["hasSource"]["@id"],
                         item = {
                             id : annotation["@id"]
-                        };
+                        },
+                        annotators = _.map(annotation.annotatedBy["foaf:member"], function(annotator) { return annotator["foaf:name"]; });
 
                     if(!pages[target]) { pages[target] = []; }
 
@@ -64,7 +65,8 @@ define(["util/SparrowBuffer"], function(SparrowBuffer) {
                     //We put the place into the list of annotation for one page.
                     pages[target].push({
                         id : item.id,
-                        selector : annotation["hasTarget"]["hasSelector"]
+                        selector : annotation["hasTarget"]["hasSelector"],
+                        annotators : annotators
                     });
 
                     buffer.append(function(callback) {
@@ -100,6 +102,7 @@ define(["util/SparrowBuffer"], function(SparrowBuffer) {
                             "citations" : _.map(pages[pageId], function(val) { return val.id; }),
                             "citationsAnnotations" : pages[pageId]
                         });
+                        addAnnotator(book.pages.get(pageId), pages[pageId])
                     });
                     if (success) success(collection, resp);
                 }
