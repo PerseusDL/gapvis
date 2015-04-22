@@ -15,7 +15,7 @@ define(function() {
                 var completeCollection = model[parameters.collection];
 
                 if(typeof page !== "undefined" && page !== undefined) {
-                    console.log("filtering collection")
+                    console.log("filtering collection on", page)
                     var persons = model.pages.get(page).get(parameters.collection);
                     collection = _.map(persons, function(person) { return collection.get(person); })
                 }

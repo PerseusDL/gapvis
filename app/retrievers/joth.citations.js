@@ -96,7 +96,7 @@ define(["util/SparrowBuffer"], function(SparrowBuffer) {
                 // First we setup a callback to avoid code repetition
                 var cb = function() {
                     _.each(Object.keys(pages), function(pageId) {
-                        book.pages.get(pageId).set({
+                        book.pages.getOrCreate(pageId).set({
                             "citations" : _.map(pages[pageId], function(val) { return val.id; }),
                             "citationsAnnotations" : pages[pageId]
                         });

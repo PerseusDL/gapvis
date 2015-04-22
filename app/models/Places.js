@@ -2,10 +2,9 @@
  * Place models
  */
 define([
-'gv', 
-'models/Model', 
-'models/Collection',
-'models/Annotations'
+	'gv', 
+	'models/Model', 
+	'models/Collection'
 ], 
 function( gv, Model, Collection ){
 	

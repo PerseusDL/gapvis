@@ -18,7 +18,10 @@ function( gv, BookView, slide ) {
       
         initialize: function(){
             var view = this;
-            view.bindState( 'change:pageid', function() {
+            view.bindState('change:pageid', function() {
+              view.render.call(view)
+            });
+            view.bindState('change:view', function() {
               view.render.call(view)
             });
             view.on( 'render', 
@@ -26,7 +29,6 @@ function( gv, BookView, slide ) {
                 if(gv.state.get('view') === "book-summary") {
                   view.viz();
                 } else {
-                  console.log(state.get( 'pageid' ), view.model)
                   view.viz(state.get( 'pageid' )) 
                 }
              }
@@ -44,6 +46,7 @@ function( gv, BookView, slide ) {
         },
         
         viz: function(page){
+          $(".social-network-view .graph svg").remove()
           $("body").on("click", "a[data-person-id]", function(e) {
               e.preventDefault();
               var person = $(this).attr("data-person-id"),
@@ -53,7 +56,7 @@ function( gv, BookView, slide ) {
               $("text.label").css("font-size", "");
               target.css("font-size", "larger");
               $('html, body').animate({
-                  scrollTop: target.offset().top
+                  scrollTop: target.parent().offset().top
               }, 2000);
 
           });
@@ -63,7 +66,12 @@ function( gv, BookView, slide ) {
           //We get the graph from the model function
           var view = this,
               graph = view.model.networkpersons(page);
-          //
+          if(graph.nodes.length === 0) {
+            view.$el.hide();
+            return;
+          } else {
+            view.$el.show();
+          }
           var color = d3.scale.category20();
           var force = d3.layout.force()
             .gravity( .05 )

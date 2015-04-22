@@ -67,7 +67,7 @@ define(function() {
                 // First we setup a callback to avoid code repetition
                 var cb = function() {
                     _.each(Object.keys(pages), function(pageId) {
-                        book.pages.get(pageId).set({
+                        book.pages.getOrCreate(pageId).set({
                             "places" : _.map(pages[pageId], function(val) { return val.id; }),
                             "placesAnnotations" : pages[pageId]
                         });

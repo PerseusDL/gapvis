@@ -1,7 +1,6 @@
 define([
     "models/Model",
-    "models/Collection",
-    "models/Annotations"
+    "models/Collection"
     ],
     function (Model, Collection, Annotations) {
 

@@ -48,8 +48,14 @@ function( gv, BookView, slide ) {
                 }
                 //return citation;
               });
-/*,
-*/
+
+              if(citations.length === 0) {
+                view.$el.hide();
+                return;
+              } else {
+                view.$el.show();
+              }
+
               citations.map(function(citation) { 
                 citation.text = citation.text.replace(citation.sourceSelector.current, "<b>" + citation.sourceSelector.current + "</b>")
                 return citation;

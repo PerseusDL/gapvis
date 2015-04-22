@@ -22,7 +22,8 @@ define([
     "pages" : "models/Pages",
     "places" : "models/Places",
     "persons" : "models/Persons",
-    "citations" : "models/Citations"
+    "citations" : "models/Citations",
+    "anotator" : "models/Annotator"
   }
     function stringifyId(item) {
             item.id = String(item.id);

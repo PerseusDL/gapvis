@@ -89,7 +89,7 @@ define(function() {
         mapStyle: mapStyle,
         scaleColors: scaleColors,
         colorThemes: colorThemes,
-		placeTypes: placeTypes,
+	    placeTypes: placeTypes,
 		themeByType: themeByType,
         /*
             Retrievers

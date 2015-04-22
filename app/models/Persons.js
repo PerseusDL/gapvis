@@ -3,8 +3,7 @@ define(
     [
         "models/Collection",
         "models/Model",
-        "models/Bonds",
-        "models/Annotations"
+        "models/Bonds"
     ],
     //Call
     function(Collection, Model, Bonds) {

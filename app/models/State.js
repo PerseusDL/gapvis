@@ -23,7 +23,7 @@ define(['gv'], function(gv) {
         defaults: {
             //pageview: 'text', // this may not be true
             barsort: 'ref',
-			placeTheme: 'feature', // can be 'feature' or 'frequency'
+			placeTheme: 'frequency', // can be 'feature' or 'frequency'
         },
         
         // clear all data relating to the current book
