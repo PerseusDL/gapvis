@@ -30,10 +30,10 @@ VIEW_ON_LINK = function( uri, page ){
 	// XXX This is an example for Perseus repository
 	// uri is something like http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126
 
-        // the joth endpoint isn't returning uris so we default
-        // to data.perseus.org/citations, which is a reasonable thing
-        // to do for all CTS URN identified texts
-        if (uri == null) {
+        // the joth endpoint isn't always returning uris but for
+        // CTS URNs the reasonable thing to do is to use
+        // data.perseus.org anyway 
+        if (uri == null || page.match(/urn:cts:/)) {
             return "http://data.perseus.org/citations/" + page;
         } else {
 	  if ( page.indexOf('.') != -1 ){
