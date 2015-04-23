@@ -29,13 +29,21 @@ VIEW_ON_LINK = function( uri, page ){
 	
 	// XXX This is an example for Perseus repository
 	// uri is something like http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126
-	if ( page.indexOf('.') != -1 ){
+
+        // the joth endpoint isn't returning uris so we default
+        // to data.perseus.org/citations, which is a reasonable thing
+        // to do for all CTS URN identified texts
+        if (uri == null) {
+            return "http://data.perseus.org/citations/" + page;
+        } else {
+	  if ( page.indexOf('.') != -1 ){
 		page = page.split('.');
 		return uri + ':entry=' + page[0];		
-	}
-	else {
+	  }
+	  else {
 		return uri;
-	}
+	  }
+        }
 };
 
 PLACE_THEME = "frequency"; // Supported values are 'frequency' and 'feature'. If the value is set to 'feature' then places should have a 'type' property set to one of the following values: "REGION", "SETTLEMENT", "NATURAL_FEATURE"
