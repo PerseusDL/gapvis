@@ -28,13 +28,17 @@ function(gv){
         
         if ( typeof gv.settings.viewOnLink == 'function' ){
           
-          // Current view?
+          // Current view? 
           
-          if ( gv.state.get('view') == 'reading-view' ){
+          if ( gv.state.get('view') == 'reading-view') {
+
             var page = gv.state.get( 'pageid' );
             if ( book.supportsSections() ){
               page = book.pageIdToRef( page ).label; // We set like 1.2
             }
+            context.viewonlink = gv.settings.viewOnLink( context.uri, page );         
+          // or no URI in context?
+          } else if (! context.uri) {
             context.viewonlink = gv.settings.viewOnLink( context.uri, page );         
           }
         }
