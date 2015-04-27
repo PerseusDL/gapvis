@@ -4,7 +4,7 @@
   "private": "true",
   "description": "GapVis extended to support 'Journeys of the Hero'",
   "dependencies": {
-    "capitains-sparrow": "1.0.9",
+    "capitains-sparrow": "1.0.11",
     "fs": "0.0.2",
     "grunt": "^0.4.5",
     "grunt-contrib-watch": "^0.6.1",
