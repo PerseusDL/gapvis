@@ -42,6 +42,18 @@ define(function() {
                     });
                 });
 
+                _.map(nodes, function(node) {
+                    var s = node["@id"].split("/"),
+                        n = s[s.length -1].split(":")[1].replace("#this", "").replace("-", "_"),
+                        n1 = "urn:cts:pdlrefwk:viaf88890045.003.perseus-eng1:" + n[0].toUpperCase() + "." + n.toLowerCase();
+                    console.log(n1)
+                    if(model.pages.get(n1)) {
+                        node.link = n1;
+                    }
+                });
+                console.log(nodes)
+
+
                 links = _.map(links, function(link) {
                     link.source = index[link.source];
                     link.target = index[link.target];

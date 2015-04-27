@@ -61,7 +61,7 @@ function( gv, BookView, slide ) {
 
           });
           var w = $(".right-column").width() - 20,
-              h = 300,
+              h = 400,
               r = 10;
           //We get the graph from the model function
           var view = this,
@@ -76,12 +76,22 @@ function( gv, BookView, slide ) {
           var force = d3.layout.force()
             .gravity( .05 )
             .charge( -200 )
-            .linkDistance( 60 )
+            .linkDistance( 150 )
             .size([w, h]);
           //
           var svg = d3.select(".graph").append("svg:svg")
             .attr("width", w)
-            .attr("height", h);
+            .attr("height", h)
+            .attr("pointer-events", "all")
+          .append('svg:g')
+            .call(d3.behavior.zoom().on("zoom", redraw))
+          .append('svg:g');
+
+          function redraw() {
+            svg.attr("transform",
+                "translate(" + d3.event.translate + ")"
+                + " scale(" + d3.event.scale + ")");
+          }
 
           //Now we start the graph !
           force
@@ -95,7 +105,22 @@ function( gv, BookView, slide ) {
               .enter()
               .append("svg:line")
               .attr("class", "link")
-              .style("stroke-width", function(d) { return Math.sqrt(d.value); });
+              .style("stroke-width", function(d) { return Math.sqrt(d.value); })
+              .attr("marker-end", "url(#end)");
+
+
+          svg.append("svg:defs").selectAll("marker")
+            .data(["end"])
+          .enter().append("svg:marker")
+            .attr("id", String)
+            .attr("viewBox", "0 -5 10 10")
+            .attr("refX", 15)
+            .attr("refY", -1.5)
+            .attr("markerWidth", 6)
+            .attr("markerHeight", 6)
+            .attr("orient", "auto")
+          .append("svg:path")
+            .attr("d", "M0,-5L10,0L0,5");
 
           var node = svg
               .selectAll(".node")
@@ -114,13 +139,45 @@ function( gv, BookView, slide ) {
                 .attr("class", "label")
                 .attr("fill", "black")
                 .text(function(d) {  return d.name;  })
-                .attr("data-person-id", function(d) {  return d["@id"];  });
+                .attr("data-person-id", function(d) {  return d["@id"];  })
+                .attr("data-page", function(d) {
+                  if(d.link) {
+                    return d.link;
+                  } else {
+                    return "#"
+                  }
+                })
+                .on("click", function(d) {
+                  if(d.link) {
+                    state.set({
+                      "pageid" : d.link,
+                      'view': 'reading-view'
+                    })
+                  }
+                });
    
+            var linktext = svg
+                .selectAll(".linkLabel")
+                .data(graph.links)
+                .enter()
+                .append("svg:g")
+                .attr("class", "linklabelholder")
+               .append("svg:text")
+               .attr("class", "linklabel")
+               .attr("dx", 1)
+               .attr("dy", ".35em")
+               .attr("text-anchor", "middle")
+               .text(function(d) { return d.type.split(":")[1]; });
+
           force.on("tick", function() {
             link.attr("x1", function(d) { return d.source.x; })
                 .attr("y1", function(d) { return d.source.y; })
                 .attr("x2", function(d) { return d.target.x; })
                 .attr("y2", function(d) { return d.target.y; });
+
+            linktext.attr("transform", function(d) {
+              return "translate(" + (d.source.x + d.target.x) / 2 + "," + (d.source.y + d.target.y) / 2 + ")"; 
+            });
 
             node.attr("cx", function(d) { return d.x; })
                 .attr("cy", function(d) { return d.y; });

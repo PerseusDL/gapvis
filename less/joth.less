@@ -232,3 +232,15 @@ svg:not(:root) {
         font-weight:bolder;
     }
 }
+
+.linklabel, .linkLabel {
+    font-size:smaller;
+}
+.label[data-page^='urn'] {
+    fill:@dark-primary-color;
+    text-decoration:underline;
+    &:hover {
+        cursor:pointer;
+        fill:@dark-primary-color;
+    }
+}

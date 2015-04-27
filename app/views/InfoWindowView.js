@@ -49,7 +49,6 @@ define(['gv', 'views/BookView', 'views/PlaceFrequencyBarsView'],
             }
             // get the place
             place = book.places.get(placeId);
-            console.log(place, "InfoWindowView")
             // if the place isn't fully loaded, do so
             //place.ready(function() {
                 // create content
@@ -137,7 +136,7 @@ define(['gv', 'views/BookView', 'views/PlaceFrequencyBarsView'],
         },
         
         uiGoToPlace: function() {
-            state.set({ 'view': 'place-view' });
+            //state.set({ 'view': 'place-view' });
         }
     });
     

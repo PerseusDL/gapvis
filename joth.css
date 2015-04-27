@@ -287,3 +287,15 @@ svg:not(:root) {
 .place .hi {
   font-weight: bolder;
 }
+.linklabel,
+.linkLabel {
+  font-size: smaller;
+}
+.label[data-page^='urn'] {
+  fill: #1976d2;
+  text-decoration: underline;
+}
+.label[data-page^='urn']:hover {
+  cursor: pointer;
+  fill: #1976d2;
+}
