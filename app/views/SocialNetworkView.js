@@ -169,6 +169,9 @@ function( gv, BookView, slide ) {
                .attr("text-anchor", "middle")
                .text(function(d) { return d.type.split(":")[1]; });
 
+          if(typeof page === "undefined") {
+            linktext.attr("visibility", "hidden")
+          }
           force.on("tick", function() {
             link.attr("x1", function(d) { return d.source.x; })
                 .attr("y1", function(d) { return d.source.y; })
