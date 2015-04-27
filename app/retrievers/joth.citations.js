@@ -48,6 +48,9 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                     _.each(annotation.hasBody["@graph"], function(body){
                         if(body["@type"] === "http://lawd.info/ontology/Citation") {
                             item.urn = body["@id"].match(UrnMatcher)[1];
+                            item.link = body["@id"];
+                            var s = item.urn.split(":");
+                            item.passage = s[s.length - 1];
                         } else if(typeof body["cnt:chars"] !== "undefined") {
                             item.sourceSelector = {
                                 prefix : "",

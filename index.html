@@ -507,7 +507,7 @@
         <ul class="attestations-list">
             <% _.each( citations, function( citation ){ %>
                 <li>
-                    <em><%= citation.title %></em>, <%= citation.author %><br />
+                    <a style="color:black;" href="<%=citation.link%>" alt="<%=citation.urn%>"><em><%= citation.title %></em> <%= citation.passage %>, <%= citation.author %></a><br />
                     <div class="text"><%= citation.text %></div>
                 </li>
             <% }) %>
