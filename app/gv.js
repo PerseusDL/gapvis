@@ -94,7 +94,8 @@ define(function() {
         /*
             Retrievers
          */
-        models : SETTINGS_MODELS
+        models : SETTINGS_MODELS,
+        relatedCount : 15 // Number of related top places to show ? (Can be undefined)
     });
     
     return gv;

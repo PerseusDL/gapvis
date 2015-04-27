@@ -275,3 +275,15 @@ svg:not(:root) {
 .attestations-list > li:last-child {
   border-bottom: 0;
 }
+/*
+    Place
+ */
+.place {
+  color: #337ab7;
+}
+.place:hover {
+  cursor: pointer;
+}
+.place .hi {
+  font-weight: bolder;
+}

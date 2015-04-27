@@ -111,6 +111,9 @@ define(['gv', 'views/BookView'], function(gv, BookView) {
                             view: 'reading-view'
                         });
                     }
+                    /*
+                     *  Disabled Place View
+                     *  
                     // label click
                     if ($(target).is('text.title')) {
 						if(DEBUG) console.log("Place Id", pdata.id);
@@ -118,7 +121,7 @@ define(['gv', 'views/BookView'], function(gv, BookView) {
                             placeid: pdata.id,
                             view: 'place-view'
                         });
-                    }
+                    }*/
                 })
                 // delegated handler: mouseover
                 .on('mouseover', function() {

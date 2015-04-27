@@ -19,6 +19,8 @@ define(['gv', 'views/BookView'], function(gv, BookView) {
             if (!placeId) return;
             // get the place
             place = book.places.get(placeId);
+
+            console.log("RelatedPlacesView" , place)
             place.ready(function() {
                 var related = place.related(book).slice(0, gv.settings.relatedCount);
                 // create content

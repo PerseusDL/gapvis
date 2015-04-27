@@ -25,7 +25,7 @@ define(['gv', 'views/BookView'], function(gv, BookView) {
             if (!placeId) return;
             // get the place
             place = book.places.get(placeId),
-            
+            console.log("BookPlaceMapView" , place)
             // load map when the place is ready 
             place.ready(function() {
                 var related = place.related(book).slice(0, settings.relatedCount),
