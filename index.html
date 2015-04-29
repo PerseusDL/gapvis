@@ -85,7 +85,7 @@
     <div id="container" class="container">
     <div class="row">
         <div class="page-title">
-            Journey of the Hero
+            <a href="http://www.perseids.org/sites/joth">Journey of the Hero</a>
         </div>
     </div>
     <div class="row">
@@ -166,6 +166,12 @@
     <p>
         <!-- Published <%= printed %>, <%= pages.length %> pages &middot; --> 
         <a href="<%= viewonlink %>" target="_blank"><%= viewon %></a>
+      <br/>
+      <span class="download">Download Annotations:
+        <a href="<%= datalinks['places'] %>" download="places.json">Places</a>, 
+        <a href="<%= datalinks['persons'] %>" download="persons.json">Persons</a>, 
+        <a href="<%= datalinks['citations'] %>" download="citations.json">Citations</a> 
+      </span>
     </p>
     <%= intro %>
 </script>

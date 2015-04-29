@@ -299,3 +299,17 @@ svg:not(:root) {
   cursor: pointer;
   fill: #1976d2;
 }
+
+.page-title a {
+  color: #ffffff;
+}
+
+.page-title a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.download {
+    font-size: smaller;
+    text-align: right;
+}

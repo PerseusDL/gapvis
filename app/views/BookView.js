@@ -42,6 +42,12 @@ function(gv){
             context.viewonlink = gv.settings.viewOnLink( context.uri, page );         
           }
         }
+
+        context.datalinks = {};
+        for (var i=0; i<gv.settings.models.injections.book.length; i++) {
+            var type = gv.settings.models.injections.book[i];
+            context.datalinks[type] = book[type].url();
+        }
         
         $( view.el ).html( template(context) );
       },
