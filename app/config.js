@@ -11,7 +11,11 @@ define({
             router: ['', 'index'],
             slots: {
                 '.left-content': {
-                    layout: 'views/BookListView'
+                    layout: '#layout-full-top',
+                    slots: { 
+                       '.top-slot': 'views/BookListView',
+                       '.bottom-slot': ['#index-summary-template']
+                    }
                 },
                 '.right-column': ['#index-overview-template']
             }
