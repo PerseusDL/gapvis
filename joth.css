@@ -313,3 +313,8 @@ svg:not(:root) {
     font-size: smaller;
     text-align: right;
 }
+
+footer {
+    margin-top: 2em;
+    border-top: 5px solid #2196f3;
+}
