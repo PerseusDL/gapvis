@@ -239,7 +239,8 @@ h5 {
 .right-column h2,
 .right-column h3,
 .right-column h4,
-.right-column h5 {
+.right-column h5,
+.index-summary-template h2 {
   background-color: #2196f3;
   color: #ffffff;
   margin: -5px -5px 10px -5px;
