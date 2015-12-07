@@ -57,7 +57,13 @@ function( gv, BookView, slide ) {
               }
 
               citations.map(function(citation) { 
-                citation.text = citation.text.replace(citation.sourceSelector.current, "<b>" + citation.sourceSelector.current + "</b>")
+                if (citation.text) {
+                  citation.text = citation.text.replace(citation.sourceSelector.current, "<b>" + citation.sourceSelector.current + "</b>")
+                  console.log(citation);
+                } else { 
+                  console.log(citation);
+                   citation.text = "Unable to retrieve " + citation.urn;
+                }
                 return citation;
               });
 
