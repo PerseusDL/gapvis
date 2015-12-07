@@ -43,14 +43,25 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                         annotators = _.map(annotation.annotatedBy["foaf:member"], function(annotator) { return annotator["foaf:name"]; });
 
                     if(!pages[target]) { pages[target] = []; }
+                    if (annotation.motivatedBy == "oa:describing") {
+                      item.type = "characterizes person";
+                    } else {
+                      item.type = "attests to relationship";
+                    }
 
                     // We have a body
+                    if (annotation.hasBody["@graph"]) {
                     _.each(annotation.hasBody["@graph"], function(body){
                         if(body["@type"] === "http://lawd.info/ontology/Citation") {
                             item.urn = body["@id"].match(UrnMatcher)[1];
                             item.link = body["@id"];
                             var s = item.urn.split(":");
                             item.passage = s[s.length - 1];
+                            item.sourceSelector = {
+                                prefix : annotation.hasTarget.hasSelector.prefix,
+                                suffix : annotation.hasTarget.hasSelector.suffix,
+                                current : annotation.hasTarget.hasSelector.exact
+                            }
                         } else if(typeof body["cnt:chars"] !== "undefined") {
                             item.sourceSelector = {
                                 prefix : "",
@@ -59,8 +70,25 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                             }
                         } else if(typeof body["http://lawd.info/ontology/hasAttestation"] !== "undefined") {
                             item.person = /*body["@id"].match(PerseusNameMatcher)[1] ||*/ body["@id"]
-                        }
-                    });
+                       }
+                      });
+                    } else {
+                      _.each(annotation.hasBody, function(body){
+                        if ( body["hasSource"].match(UrnMatcher)) {
+                            item.urn = body["hasSource"].match(UrnMatcher)[1];
+                            item.link = body["hasSource"];
+                            var s = item.urn.split(":");
+                            item.passage = s[s.length - 1];
+                            item.sourceSelector = {
+                                prefix : body["hasSelector"]["prefix"] || "",
+                                suffix : body["hasSelector"]["suffix"] || "",
+                                current : body["hasSelector"]["exact"]
+                            }
+                          } else {
+                            console.log("Failed to match " + body["hasSource"]);
+                          }
+                      });
+                    }
                     if (!collection.get(item.id)) {
                         collection.add(item, {silent:true});
                         placesId.push(item.id)
@@ -71,24 +99,36 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                         selector : annotation["hasTarget"]["hasSelector"],
                         annotators : annotators
                     });
+                    if (item.urn) {
 
                     buffer.append(function(callback) {
 
-                        var self = collection.get(item.id),
-                            passage = new CTS.text.Passage(item.urn, collection.url(1));
+                        var self = collection.get(item.id);
+                        self.set({urn: item.urn.split(":")[0],
+                                  text: item.sourceSelector["prefix"] + item.sourceSelector["current"] + item.sourceSelector["suffix"],
+                                  title: item.urn.replace(":" + item.passage,"")});
+                        console.log("Retrieving passage " + item.urn);
+                        var passage = new CTS.text.Passage(item.urn, collection.url(1));
                         passage.retrieve({
                             success : function(data) {
+                                try {
                                 self.set({
                                     text : passage.getText(null, true),
                                     title : passage.Text.getTitle("eng"),
                                     author : passage.Text.getTextgroup("eng")
                                 })
+                                } catch(e) {
+                                  console.log(e);
+                                }
                                 callback();
                             },
                             error : function() { var error = options.error || function() {}; error(); },
                             metadata : true
                         });
                     });
+
+                  }
+
                 });
 
                 // So now we have registered the places. 

@@ -83,7 +83,7 @@ define([
 
                 var placesId = placesId.join(",")
                 $.ajax(
-                    "/prod/joth/pleiades?places=" + placesId,
+                    "/apps-stage/joth/pleiades?places=" + placesId,
                     {
                         "success" : function(data) {
                             _.each(data.places, function(place, placeId) {

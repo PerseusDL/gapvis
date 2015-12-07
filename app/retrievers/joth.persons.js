@@ -47,14 +47,23 @@ define([
 
                     // We have a body
                     //The body has two elements normally, one being the source of the bond, the other
+                    if (targetPage.match(/selene/)) {
+                        //debugger;
+                    }
+                     
                     
                     _.each(annotation.hasBody["@graph"], function(body){
                         //If we have the source of the bond
                         if("snap:has-bond" in body) {
-                            var id = body["@id"].toLowerCase(),
-                                bondId = body["snap:has-bond"]["@id"],
-                                direction = "source",
-                                type = false;
+                            var id = body["@id"].toLowerCase();
+                            if  (["snap:has-bond"]["@id"]) {
+                              bondId = body["snap:has-bond"]["@id"];
+                            } else {
+                              bondId = body["snap:has-bond"][0];
+                            }
+                            
+                            direction = "source";
+                            type = false;
                         //If we have the direction of the bond
                         } else if ("snap:bond-with" in body) {
                             var id = body["snap:bond-with"]["@id"].toLowerCase(),
@@ -72,8 +81,13 @@ define([
                         }
                         bonds[bondId][direction] = {
                             id : id,
-                            name : capitalize(id.match(PerseusNameMatcher)[1])
+                            name : id.match(PerseusNameMatcher) ? capitalize(id.match(PerseusNameMatcher)[1]) : ''
                         };
+                        if (! id.match(PerseusNameMatcher)) {
+                            //console.log("No match on " + id);
+                        } else {
+                            //console.log("match on " + id);
+                        }
                         if(type !== false) {
                             bonds[bondId].type = type;
                             bonds[bondId].id = bondId;
@@ -86,6 +100,8 @@ define([
                         // Right now, the target is always what is recognized as the person
                         // Through, this should not be the case, we should have a way to tell what represents 
                         //  really the selected text
+                        // MYTH
+                        if (bond.target && bond.source) {
                         var realTarget = bond.target.id,
                             otherTarget = bond.source.id;
                         // Now we register found bounds !
@@ -118,6 +134,10 @@ define([
                         pages[targetPage].push({
                             id : otherTarget
                         });
+                      } else {
+                          //console.log("bond failed test ");
+                          //console.log(bond);
+                      }
                     });
                 });
 

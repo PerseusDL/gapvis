@@ -23,6 +23,11 @@ function( gv, BookView, slide ) {
             view.ready(function() {
                 view.render();
             });
+            view.on( 'render', 
+              function() {
+                  console.log("Rendered");
+             }
+            );
         },
         
         

@@ -43,11 +43,19 @@ define(function() {
                 });
 
                 _.map(nodes, function(node) {
-                    var s = node["@id"].split("/"),
-                        n = s[s.length -1].split(":")[1].replace("#this", "").replace("-", "_"),
-                        n1 = "urn:cts:pdlrefwk:viaf88890045.003.perseus-eng1:" + n[0].toUpperCase() + "." + n.toLowerCase();
+                    var s = node["@id"].split("/");
+                    var n =s[s.length -1].split(":");
+                    if (n.length > 1) {
+                      n = n[1].replace("#this", "").replace("-", "_");
+                      n1 = "urn:cts:pdlrefwk:viaf88890045.003.perseus-eng1:" + n[0].toUpperCase() + "." + n.toLowerCase();
+                      console.log("good node " + n)
+                    } else {
+                      n = n[0].trim() + "_1";
+                      n1 = "urn:cts:pdlrefwk:viaf88890045.003.perseus-eng1:" + n[0].toUpperCase() + "." + n.toLowerCase();
+                      console.log("Bod Node " + n);
+                    }   
                     if(model.pages.get(n1)) {
-                        node.link = n1;
+                      node.link = n1;
                     }
                 });
 

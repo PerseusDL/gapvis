@@ -48,13 +48,6 @@ define({
                 '.left-title': 'views/BookTitleView',
                 '.left-content': 'views/PagesView',
                 '.right-column': [
-                    {
-                        layout: '#layout-full-top',
-                        slots: {
-                            '.top-slot': 'views/TimeMapView',
-                            '.bottom-slot': 'views/TimeMapLegendView'
-                        }
-                    },
                     'views/SocialNetworkView',
                     'views/CitationsView',
                     'views/AnnotatorsView'
