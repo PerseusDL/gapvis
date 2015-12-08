@@ -35,6 +35,7 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                 var buffer = new SparrowBuffer();
 
                 _.each(resp.occurrences, function(annotation) {
+                    var items = [];
                     //For each annotation, we have a source !
                     var target = annotation["hasTarget"]["hasSource"]["@id"],
                         item = {
@@ -44,7 +45,7 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
 
                     if(!pages[target]) { pages[target] = []; }
                     if (annotation.motivatedBy == "oa:describing") {
-                      item.type = "characterizes person";
+                      item.type = "characterizes person as ";
                     } else {
                       item.type = "attests to relationship";
                     }
@@ -71,44 +72,53 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                         } else if(typeof body["http://lawd.info/ontology/hasAttestation"] !== "undefined") {
                             item.person = /*body["@id"].match(PerseusNameMatcher)[1] ||*/ body["@id"]
                        }
+                       items.push(item);
                       });
                     } else {
+                      var num = 1;
                       _.each(annotation.hasBody, function(body){
+                        var it = jQuery.extend(true, {}, item);
                         if ( body["hasSource"].match(UrnMatcher)) {
-                            item.urn = body["hasSource"].match(UrnMatcher)[1];
-                            item.link = body["hasSource"];
-                            var s = item.urn.split(":");
-                            item.passage = s[s.length - 1];
-                            item.sourceSelector = {
+                            it.id = it.id + "-" + num++;
+                            it.urn = body["hasSource"].match(UrnMatcher)[1];
+                            it.link = body["hasSource"];
+                            var s = it.urn.split(":");
+                            it.passage = s[s.length - 1];
+                            it.sourceSelector = {
                                 prefix : body["hasSelector"]["prefix"] || "",
                                 suffix : body["hasSelector"]["suffix"] || "",
                                 current : body["hasSelector"]["exact"]
                             }
+                            // TODO need ot figure out why the callback
+                            // isn't being called to retrieve the text 
+                            // it's added to the buffer but never run
+                            it.text = it.sourceSelector["prefix"] + it.sourceSelector["current"] + it.sourceSelector["suffix"],
+                            items.push(it);
                           } else {
                             console.log("Failed to match " + body["hasSource"]);
                           }
                       });
                     }
-                    if (!collection.get(item.id)) {
-                        collection.add(item, {silent:true});
-                        placesId.push(item.id)
-                    }
-                    //We put the place into the list of annotation for one page.
-                    pages[target].push({
-                        id : item.id,
+                    for (var i=0; i<items.length; i++) {
+                      var this_item = items[i]
+                      if (!collection.get(this_item.id)) {
+                          collection.add(this_item, {silent:true});
+                          placesId.push(this_item.id)
+                      }
+                      //We put the place into the list of annotation for one page.
+                      pages[target].push({
+                        id : this_item.id,
                         selector : annotation["hasTarget"]["hasSelector"],
                         annotators : annotators
-                    });
-                    if (item.urn) {
+                      });
+                      if (this_item.urn) {
+                      var this_cb = function(callback) {
 
-                    buffer.append(function(callback) {
-
-                        var self = collection.get(item.id);
-                        self.set({urn: item.urn.split(":")[0],
-                                  text: item.sourceSelector["prefix"] + item.sourceSelector["current"] + item.sourceSelector["suffix"],
-                                  title: item.urn.replace(":" + item.passage,"")});
-                        console.log("Retrieving passage " + item.urn);
-                        var passage = new CTS.text.Passage(item.urn, collection.url(1));
+                        var self = collection.get(this_item.id);
+                        self.set({urn: this_item.urn.split(":")[0],
+                                  text: this_item.sourceSelector["prefix"] + this_item.sourceSelector["current"] + this_item.sourceSelector["suffix"],
+                                  title: this_item.urn.replace(":" + this_item.passage,"")});
+                        var passage = new CTS.text.Passage(this_item.urn, collection.url(1));
                         passage.retrieve({
                             success : function(data) {
                                 try {
@@ -125,7 +135,9 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                             error : function() { var error = options.error || function() {}; error(); },
                             metadata : true
                         });
-                    });
+                      };
+                      buffer.append(this_cb);
+                   }
 
                   }
 

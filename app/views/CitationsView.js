@@ -25,7 +25,24 @@ function( gv, BookView, slide ) {
             });
             view.on( 'render', 
               function() {
-                  console.log("Rendered");
+                  $(".citetomap").each(
+                    function() {
+                      var elem = this;
+                      var urn = $(this).attr("href");
+                      $.ajax({
+                        url: "http://services.perseids.org/cite_mapper/find_cite?cite=" + urn
+                      }).done(function (data) {
+                         console.log(data);
+                         if (data.author && data.work)  {
+                             if (data.edition) {
+                                 data.edition = "(" + data.edition + ")";
+                             }
+                             var str = [data.author, data.work, data.section, data.edition].join(" ");
+                             $(".citetoreplace",elem).html(str);
+                         }
+                      });
+                    }
+                  );
              }
             );
         },
