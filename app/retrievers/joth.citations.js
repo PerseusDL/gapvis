@@ -72,9 +72,9 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                       if (!item.sourceSelector) {
                         item.sourceSelector = {
                           prefix : annotation.hasTarget.hasSelector.prefix,
-                                suffix : annotation.hasTarget.hasSelector.suffix,
-                                current : annotation.hasTarget.hasSelector.exact
-                          }
+                          suffix : annotation.hasTarget.hasSelector.suffix,
+                          current : annotation.hasTarget.hasSelector.exact
+                        }
                       }
                       items.push(item);
                     } else {
