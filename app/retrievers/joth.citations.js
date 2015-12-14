@@ -89,9 +89,10 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                                 suffix : body["hasSelector"]["suffix"] || "",
                                 current : body["hasSelector"]["exact"]
                             }
-                            // TODO need ot figure out why the callback
-                            // isn't being called to retrieve the text 
-                            // it's added to the buffer but never run
+                            // preload the default text into the object so that if the CTS call fails we can still display 
+                            // the user-supplied text
+                            // TODO verify that the callback is indeed called - it seemed not to be but this 
+                            // was maybe do to caching
                             it.text = it.sourceSelector["prefix"] + it.sourceSelector["current"] + it.sourceSelector["suffix"],
                             items.push(it);
                           } else {
