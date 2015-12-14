@@ -14,7 +14,7 @@ define([
     var capitalize = function(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
-    var PerseusNameMatcher = new RegExp("^http://data\.perseus\.org/people/smith:([a-zA-Z]+)")
+    var PerseusNameMatcher = new RegExp("^http://data\.perseus\.org/people/smith:([a-zA-Z]+)");
     return function(options) {
         options = options || {};
         var collection = this,
@@ -47,16 +47,12 @@ define([
 
                     // We have a body
                     //The body has two elements normally, one being the source of the bond, the other
-                    if (targetPage.match(/selene/)) {
-                        //debugger;
-                    }
-                     
                     
                     _.each(annotation.hasBody["@graph"], function(body){
                         //If we have the source of the bond
                         if("snap:has-bond" in body) {
                             var id = body["@id"].toLowerCase();
-                            if  (["snap:has-bond"]["@id"]) {
+                            if  (body["snap:has-bond"]["@id"]) {
                               bondId = body["snap:has-bond"]["@id"];
                             } else {
                               bondId = body["snap:has-bond"][0];
@@ -83,11 +79,6 @@ define([
                             id : id,
                             name : id.match(PerseusNameMatcher) ? capitalize(id.match(PerseusNameMatcher)[1]) : ''
                         };
-                        if (! id.match(PerseusNameMatcher)) {
-                            //console.log("No match on " + id);
-                        } else {
-                            //console.log("match on " + id);
-                        }
                         if(type !== false) {
                             bonds[bondId].type = type;
                             bonds[bondId].id = bondId;
@@ -100,44 +91,40 @@ define([
                         // Right now, the target is always what is recognized as the person
                         // Through, this should not be the case, we should have a way to tell what represents 
                         //  really the selected text
-                        // MYTH
                         if (bond.target && bond.source) {
-                        var realTarget = bond.target.id,
-                            otherTarget = bond.source.id;
-                        // Now we register found bounds !
-                        var target = collection.get(bond.target.id);
-                        if (!target) {
+                          var realTarget = bond.target.id,
+                              otherTarget = bond.source.id;
+                          // Now we register found bounds !
+                          var target = collection.get(bond.target.id);
+                          if (!target) {
                             collection.add(bond.target, {silent:true});
                             personsId.push(bond.target.id);
                             var target = collection.get(bond.target.id);
-                        }
-                        var source = collection.get(bond.source.id);
-                        if (!source) {
+                          }
+                          var source = collection.get(bond.source.id);
+                          if (!source) {
                             collection.add(bond.source, {silent:true});
                             personsId.push(bond.source.id);
                             var source = collection.get(bond.source.id);
-                        }
-                        var smallBond = {
+                          }
+                          var smallBond = {
                             type : bond.type,
                             id : bond.id,
                             target : bond.target.id,
                             source : bond.source.id
-                        };
-                        target.bondsWith(smallBond);
-                        source.bondsWith(smallBond);
-                        //We put the person into the list of annotation for one page.
-                        pages[targetPage].push({
+                          };
+                          target.bondsWith(smallBond);
+                          source.bondsWith(smallBond);
+                          //We put the person into the list of annotation for one page.
+                          pages[targetPage].push({
                             id : realTarget,
                             selector : annotation["hasTarget"]["hasSelector"],
                             annotators : annotators
-                        });
-                        pages[targetPage].push({
+                          });
+                          pages[targetPage].push({
                             id : otherTarget
-                        });
-                      } else {
-                          //console.log("bond failed test ");
-                          //console.log(bond);
-                      }
+                          });
+                      } 
                     });
                 });
 

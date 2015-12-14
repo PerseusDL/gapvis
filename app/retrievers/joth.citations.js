@@ -44,6 +44,7 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                         annotators = _.map(annotation.annotatedBy["foaf:member"], function(annotator) { return annotator["foaf:name"]; });
 
                     if(!pages[target]) { pages[target] = []; }
+                    // this is a hack -- ideally we should sort these into different widgets
                     if (annotation.motivatedBy == "oa:describing") {
                       item.type = "characterizes person as ";
                     } else {
@@ -58,11 +59,6 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                             item.link = body["@id"];
                             var s = item.urn.split(":");
                             item.passage = s[s.length - 1];
-                            item.sourceSelector = {
-                                prefix : annotation.hasTarget.hasSelector.prefix,
-                                suffix : annotation.hasTarget.hasSelector.suffix,
-                                current : annotation.hasTarget.hasSelector.exact
-                            }
                         } else if(typeof body["cnt:chars"] !== "undefined") {
                             item.sourceSelector = {
                                 prefix : "",
@@ -72,8 +68,15 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                         } else if(typeof body["http://lawd.info/ontology/hasAttestation"] !== "undefined") {
                             item.person = /*body["@id"].match(PerseusNameMatcher)[1] ||*/ body["@id"]
                        }
-                       items.push(item);
                       });
+                      if (!item.sourceSelector) {
+                        item.sourceSelector = {
+                          prefix : annotation.hasTarget.hasSelector.prefix,
+                                suffix : annotation.hasTarget.hasSelector.suffix,
+                                current : annotation.hasTarget.hasSelector.exact
+                          }
+                      }
+                      items.push(item);
                     } else {
                       var num = 1;
                       _.each(annotation.hasBody, function(body){
@@ -95,7 +98,7 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                             // was maybe do to caching
                             it.text = it.sourceSelector["prefix"] + it.sourceSelector["current"] + it.sourceSelector["suffix"],
                             items.push(it);
-                          } else {
+                          } else if(DEBUG) {
                             console.log("Failed to match " + body["hasSource"]);
                           }
                       });
