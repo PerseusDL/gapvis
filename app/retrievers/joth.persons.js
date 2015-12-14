@@ -14,7 +14,7 @@ define([
     var capitalize = function(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
-    var PerseusNameMatcher = new RegExp("^http://data\.perseus\.org/people/smith:([a-zA-Z]+)")
+    var PerseusNameMatcher = new RegExp("^http://data\.perseus\.org/people/smith:([a-zA-Z]+)");
     return function(options) {
         options = options || {};
         var collection = this,
@@ -51,10 +51,15 @@ define([
                     _.each(annotation.hasBody["@graph"], function(body){
                         //If we have the source of the bond
                         if("snap:has-bond" in body) {
-                            var id = body["@id"].toLowerCase(),
-                                bondId = body["snap:has-bond"]["@id"],
-                                direction = "source",
-                                type = false;
+                            var id = body["@id"].toLowerCase();
+                            if  (body["snap:has-bond"]["@id"]) {
+                              bondId = body["snap:has-bond"]["@id"];
+                            } else {
+                              bondId = body["snap:has-bond"][0];
+                            }
+                            
+                            direction = "source";
+                            type = false;
                         //If we have the direction of the bond
                         } else if ("snap:bond-with" in body) {
                             var id = body["snap:bond-with"]["@id"].toLowerCase(),
@@ -72,7 +77,7 @@ define([
                         }
                         bonds[bondId][direction] = {
                             id : id,
-                            name : capitalize(id.match(PerseusNameMatcher)[1])
+                            name : id.match(PerseusNameMatcher) ? capitalize(id.match(PerseusNameMatcher)[1]) : ''
                         };
                         if(type !== false) {
                             bonds[bondId].type = type;
@@ -86,38 +91,40 @@ define([
                         // Right now, the target is always what is recognized as the person
                         // Through, this should not be the case, we should have a way to tell what represents 
                         //  really the selected text
-                        var realTarget = bond.target.id,
-                            otherTarget = bond.source.id;
-                        // Now we register found bounds !
-                        var target = collection.get(bond.target.id);
-                        if (!target) {
+                        if (bond.target && bond.source) {
+                          var realTarget = bond.target.id,
+                              otherTarget = bond.source.id;
+                          // Now we register found bounds !
+                          var target = collection.get(bond.target.id);
+                          if (!target) {
                             collection.add(bond.target, {silent:true});
                             personsId.push(bond.target.id);
                             var target = collection.get(bond.target.id);
-                        }
-                        var source = collection.get(bond.source.id);
-                        if (!source) {
+                          }
+                          var source = collection.get(bond.source.id);
+                          if (!source) {
                             collection.add(bond.source, {silent:true});
                             personsId.push(bond.source.id);
                             var source = collection.get(bond.source.id);
-                        }
-                        var smallBond = {
+                          }
+                          var smallBond = {
                             type : bond.type,
                             id : bond.id,
                             target : bond.target.id,
                             source : bond.source.id
-                        };
-                        target.bondsWith(smallBond);
-                        source.bondsWith(smallBond);
-                        //We put the person into the list of annotation for one page.
-                        pages[targetPage].push({
+                          };
+                          target.bondsWith(smallBond);
+                          source.bondsWith(smallBond);
+                          //We put the person into the list of annotation for one page.
+                          pages[targetPage].push({
                             id : realTarget,
                             selector : annotation["hasTarget"]["hasSelector"],
                             annotators : annotators
-                        });
-                        pages[targetPage].push({
+                          });
+                          pages[targetPage].push({
                             id : otherTarget
-                        });
+                          });
+                      } 
                     });
                 });
 

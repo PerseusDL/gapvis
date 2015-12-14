@@ -23,6 +23,28 @@ function( gv, BookView, slide ) {
             view.ready(function() {
                 view.render();
             });
+            view.on( 'render', 
+              function() {
+                  $(".citetomap").each(
+                    function() {
+                      var elem = this;
+                      var urn = $(this).attr("href");
+                      $.ajax({
+                        url: "http://services.perseids.org/cite_mapper/find_cite?cite=" + urn
+                      }).done(function (data) {
+                         console.log(data);
+                         if (data.author && data.work)  {
+                             if (data.edition) {
+                                 data.edition = "(" + data.edition + ")";
+                             }
+                             var str = [data.author, data.work, data.section, data.edition].join(" ");
+                             $(".citetoreplace",elem).html(str);
+                         }
+                      });
+                    }
+                  );
+             }
+            );
         },
         
         
@@ -57,7 +79,13 @@ function( gv, BookView, slide ) {
               }
 
               citations.map(function(citation) { 
-                citation.text = citation.text.replace(citation.sourceSelector.current, "<b>" + citation.sourceSelector.current + "</b>")
+                if (citation.text) {
+                  citation.text = citation.text.replace(citation.sourceSelector.current, "<b>" + citation.sourceSelector.current + "</b>")
+                  console.log(citation);
+                } else { 
+                  console.log(citation);
+                   citation.text = "Unable to retrieve " + citation.urn;
+                }
                 return citation;
               });
 

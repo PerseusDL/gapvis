@@ -35,6 +35,7 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                 var buffer = new SparrowBuffer();
 
                 _.each(resp.occurrences, function(annotation) {
+                    var items = [];
                     //For each annotation, we have a source !
                     var target = annotation["hasTarget"]["hasSource"]["@id"],
                         item = {
@@ -43,8 +44,15 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                         annotators = _.map(annotation.annotatedBy["foaf:member"], function(annotator) { return annotator["foaf:name"]; });
 
                     if(!pages[target]) { pages[target] = []; }
+                    // this is a hack -- ideally we should sort these into different widgets
+                    if (annotation.motivatedBy == "oa:describing") {
+                      item.type = "characterizes person as ";
+                    } else {
+                      item.type = "attests to relationship";
+                    }
 
                     // We have a body
+                    if (annotation.hasBody["@graph"]) {
                     _.each(annotation.hasBody["@graph"], function(body){
                         if(body["@type"] === "http://lawd.info/ontology/Citation") {
                             item.urn = body["@id"].match(UrnMatcher)[1];
@@ -59,36 +67,84 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                             }
                         } else if(typeof body["http://lawd.info/ontology/hasAttestation"] !== "undefined") {
                             item.person = /*body["@id"].match(PerseusNameMatcher)[1] ||*/ body["@id"]
+                       }
+                      });
+                      if (!item.sourceSelector) {
+                        item.sourceSelector = {
+                          prefix : annotation.hasTarget.hasSelector.prefix,
+                          suffix : annotation.hasTarget.hasSelector.suffix,
+                          current : annotation.hasTarget.hasSelector.exact
                         }
-                    });
-                    if (!collection.get(item.id)) {
-                        collection.add(item, {silent:true});
-                        placesId.push(item.id)
+                      }
+                      items.push(item);
+                    } else {
+                      var num = 1;
+                      _.each(annotation.hasBody, function(body){
+                        var it = jQuery.extend(true, {}, item);
+                        if ( body["hasSource"].match(UrnMatcher)) {
+                            it.id = it.id + "-" + num++;
+                            it.urn = body["hasSource"].match(UrnMatcher)[1];
+                            it.link = body["hasSource"];
+                            var s = it.urn.split(":");
+                            it.passage = s[s.length - 1];
+                            it.sourceSelector = {
+                                prefix : body["hasSelector"]["prefix"] || "",
+                                suffix : body["hasSelector"]["suffix"] || "",
+                                current : body["hasSelector"]["exact"]
+                            }
+                            // preload the default text into the object so that if the CTS call fails we can still display 
+                            // the user-supplied text
+                            // TODO verify that the callback is indeed called - it seemed not to be but this 
+                            // was maybe do to caching
+                            it.text = it.sourceSelector["prefix"] + it.sourceSelector["current"] + it.sourceSelector["suffix"],
+                            items.push(it);
+                          } else if(DEBUG) {
+                            console.log("Failed to match " + body["hasSource"]);
+                          }
+                      });
                     }
-                    //We put the place into the list of annotation for one page.
-                    pages[target].push({
-                        id : item.id,
+                    for (var i=0; i<items.length; i++) {
+                      var this_item = items[i]
+                      if (!collection.get(this_item.id)) {
+                          collection.add(this_item, {silent:true});
+                          placesId.push(this_item.id)
+                      }
+                      //We put the place into the list of annotation for one page.
+                      pages[target].push({
+                        id : this_item.id,
                         selector : annotation["hasTarget"]["hasSelector"],
                         annotators : annotators
-                    });
+                      });
+                      if (this_item.urn) {
+                      var this_cb = function(callback) {
 
-                    buffer.append(function(callback) {
-
-                        var self = collection.get(item.id),
-                            passage = new CTS.text.Passage(item.urn, collection.url(1));
+                        var self = collection.get(this_item.id);
+                        self.set({urn: this_item.urn.split(":")[0],
+                                  text: this_item.sourceSelector["prefix"] + this_item.sourceSelector["current"] + this_item.sourceSelector["suffix"],
+                                  title: this_item.urn.replace(":" + this_item.passage,"")});
+                        var passage = new CTS.text.Passage(this_item.urn, collection.url(1));
                         passage.retrieve({
                             success : function(data) {
+                                try {
                                 self.set({
                                     text : passage.getText(null, true),
                                     title : passage.Text.getTitle("eng"),
                                     author : passage.Text.getTextgroup("eng")
                                 })
+                                } catch(e) {
+                                  console.log(e);
+                                }
                                 callback();
                             },
                             error : function() { var error = options.error || function() {}; error(); },
                             metadata : true
                         });
-                    });
+                      };
+                      buffer.append(this_cb);
+                   }
+
+                  }
+
                 });
 
                 // So now we have registered the places. 
