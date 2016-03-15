@@ -9,7 +9,7 @@ REPORT_URL = 'tests/api/flags/';
 // //if present and not null, makes a direct link isntead of a form. Looks for {place-id}
 //REPORT_PROBLEM_PLACE_URL = 'http://gap2.alexandriaarchive.org/report/place-issues/{place-id}';
 API_ROOT = 'http://www.perseids.org/apps-stage';
-CTS_API  = 'http://services2.perseids.org/exist/rest/db/repository/CTS.xq'
+CTS_API  = 'http://services2.perseids.org/exist/restxq/cts'
 // API_ROOT = 'http://localhost/gapvis';
 // REPORT_URL = 'http://gap2.alexandriaarchive.org/flags/';
 API_DATA_TYPE = 'xml';
