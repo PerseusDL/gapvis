@@ -85,7 +85,7 @@
     <div id="container" class="container">
     <div class="row">
         <div class="page-title">
-            <a href="http://www.perseids.org/sites/myth">Tufts Mythology Class Annotations (Work in Progress)</a>
+            <a href="http://www.perseids.org/sites/joth">Journey of the Hero</a>
         </div>
     </div>
     <div class="row">
@@ -201,20 +201,12 @@
       <img src="images/thumb4.jpg" alt="Map view">
       <img src="images/thumb3.jpg" alt="Network view">
     </div>
-    <p>This is an ongoing effort to aggregate annotations done by students in Marie-Claire Beaulieu’s Mythology classes at <a target="_blank" href="http://tufts.edu">Tufts University</a>. Students are annotating entries in William Smith’s Dictionary of Greek and Roman biography and mythology.</p>
-
-<p>See also the alternate experimental visualization in <a href="http://www.perseids.org/tools/arethusa-demo/app/#/snapdrgn_review?chunk=1&doc=myth">Arethusa</a> (best viewed in Chrome)</p>
-
-<p>Data and presentation are still undergoing review and revision.  Software development by Bridget Almas and Thibault Clérice has been made possible through a collaboration between the <a href="http://sites.tufts.edu/perseids" target="_blank">Perseids Project</a>, funded by the <a href="http://www.mellon.org/" target="_blank">Andrew W. Mellon Foundation</a>, and <a target="_blank" href="http://www.dh.uni-leipzig.de/wo/">the Humboldt Chair of Digital Humanities at Leipzig</a>.</p>
+    <p>Students in Marie-Claire Beaulieu’s 2015 Journey of the Hero class at <a target="_blank" href="http://tufts.edu">Tufts University</a>, mentored by Teaching Assistants Anna Krohn and Michal Sagal, annotated entries in William Smith’s Dictionary of Greek and Roman biography and mythology. Software development by Bridget Almas and Thibault Clérice was made possible through a collaboration between the <a href="http://sites.tufts.edu/perseids" target="_blank">Perseids Project</a>, funded by the <a href="http://www.mellon.org/" target="_blank">Andrew W. Mellon Foundation</a>, and <a target="_blank" href="http://www.dh.uni-leipzig.de/wo/">the Humboldt Chair of Digital Humanities at Leipzig</a>.</p>
 <p>The objectives of the project were twofold. First, students explored the stories linked to a particular ancient hero or heroine in detail; second, they produced a set of assertions describing the social network of their hero or heroine and the ancient places to which they are connected.  When aggregated together and visualized in context, the data produced by the students offers a powerful research tool to explore Greek mythology. We can now understand how social networks intersect in the geographical space of the ancient world, thus connecting specific sets of stories with others to create meaning. Further layers will be added in future iterations of the class, such as attestations in ancient texts that support the information given in the publication. 
 </p>
-<p>A primary goal of Perseids is to encourage and enable reuse of tools, texts and data. We leveraged a number of existing projects to make the annotation workflow and publication of this data possible. Students used the open source <a href="https://hypothes.is" target="_blank">Hypothes.is</a> browser plugin to annotate the text of Smith's Dictionary on Perseus. We developed a prototype <a href="https://github.com/PerseusDL/hypothesis-client" target="_blank">data transformation module</a> for the Perseids platform to ingest and transform these annotations, allowing them to go through a review workflow. The transformation adds stable identifiers and applies controlled vocabulary terms from the <a href="http://snapdrgn.net/" target="_blank">SNAP</a> and <a href="http://lawd.info" target="_blank">LAWD</a> ontologies. The annotations are stored in a versioned repository and serialized as data adhering to the <a target="_blank" href="http://www.openannotation.org/">Open Annotation</a> data model.</p>
-<p>This interface in which the annotations are presented is a reuse of the <a href="https://github.com/enridaga/gapvis" target="_blank">GapVis</a> interface for exploring and reading texts that reference ancient places. GapVis was originally developed by the <a href="https://googleancientplaces.wordpress.com/" target="_blank">Google Ancient Places</a> project (See also the full list of <a href="https://googleancientplaces.wordpress.com/the-team/" target="_blank">GapVis team members</a>.) We extended GapVis to add support for Open Annotations and for ingesting text from a <a target="_blank" href="http://www.homermultitext.org/hmt-docs/specifications/cts/specification.html">Canonical Text Services</a> endpoint. 
-</p>
+<p>A primary goal of Perseids is to encourage and enable reuse of tools, texts and data. We leveraged a number of existing projects to make the annotation workflow and publication of this data possible. Students used the open source <a href="https://hypothes.is" target="_blank">Hypothes.is</a> browser plugin to annotate the text of Smith's Dictionary on Perseus. We developed a data transformation module for the Perseids platform to ingest and transform these annotations, allowing them to go through a review workflow. The transformation adds stable identifiers and applies controlled vocabulary terms from the <a href="http://snapdrgn.net/" target="_blank">SNAP</a> and <a href="http://lawd.info" target="_blank">LAWD</a> ontologies. The annotations are stored in a versioned repository and serialized as data adhering to the <a target="_blank" href="http://www.openannotation.org/">Open Annotation</a> data model.</p>
+<p>This interface in which the annotations are presented is a reuse of the GapVis interface for exploring and reading texts that reference ancient places. GapVis was originally developed by the <a href="https://googleancientplaces.wordpress.com/" target="_blank">Google Ancient Places</a> project (See also the full list of <a href="https://googleancientplaces.wordpress.com/the-team/" target="_blank">GapVis team members</a>.) We extended GapVis to add support for Open Annotations and for ingesting text from a <a target="_blank" href="http://www.homermultitext.org/hmt-docs/specifications/cts/specification.html">Canonical Text Services</a> endpoint. 
 <p>
-We expect to continue to add to this data set in future classroom projects at Tufts. We will be working with the GapVis team to merge <a href="https://github.com/PerseusDL/gapvis/tree/joth" target="blank">our modifications to the GapVis code</a> back into the master code base</a> and hope to work with the <a href="http://pelagios-project.blogspot.com/" target="_blank">Pelagios</a> and SNAP projects to make the place and person annotations available there as well.
-</p>
-
 <!--[if lt IE 9]>
 <p class="warning">
     To use all features of this application, we strongly recommend using a modern browser, such as IE9, Chrome, or Firefox.
@@ -519,12 +511,12 @@ We expect to continue to add to this data set in future classroom projects at Tu
 <script type="text/template" id="citations-template">
     <div>
         <h4>
-            Attestations and Characterizations
+            Attestations
         </h4>
         <ul class="attestations-list">
             <% _.each( citations, function( citation ){ %>
                 <li>
-                    <a class="citetomap" style="color:black;" href="<%=citation.link%>" alt="<%=citation.urn%>"><span class="citetoreplace"><em><%= citation.title %></em> <%= citation.passage %>, <%= citation.author %></a></span> <em><%= citation.type %></em><br />
+                    <a style="color:black;" href="<%=citation.link%>" alt="<%=citation.urn%>"><em><%= citation.title %></em> <%= citation.passage %>, <%= citation.author %></a><br />
                     <div class="text"><%= citation.text %></div>
                 </li>
             <% }) %>
@@ -543,3 +535,4 @@ We expect to continue to add to this data set in future classroom projects at Tu
 </script>
 </body>
 </html>
+
