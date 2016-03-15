@@ -136,7 +136,7 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                                 }
                                 callback();
                             },
-                            error : function() { var error = options.error || function() {}; error(); },
+                            error : function() { var error = options.error || function() {}; error(); callback();},
                             metadata : true
                         });
                       };
