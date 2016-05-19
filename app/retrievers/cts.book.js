@@ -19,7 +19,17 @@ define(function() {
                 if (!options.silent) self.trigger('reset', self, options);
                 self.trigger("ready", self);
             },
-            error : function() { var error = options.error || function() {}; error(); }
+            error : function() { 
+                var error = options.error || function() {}; 
+                error(); 
+                self.set({
+                    title  : "Dictionary of Greek and Roman Geography",
+                    author : "W-Smith"
+                });
+                if (options.success) options.success(self);
+                if (!options.silent) self.trigger('reset', self, options);
+                self.trigger("ready", self);
+            }
         });
     }
 });
