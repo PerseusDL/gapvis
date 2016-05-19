@@ -126,11 +126,20 @@ define(["util/SparrowBuffer", "util/addAnnotator"], function(SparrowBuffer, addA
                         passage.retrieve({
                             success : function(data) {
                                 try {
+                                    // Nemo/Nautilus endpoint is returning
+                                    // different error codes so check
+                                    // to be sure we don't have error text
+                                    // before setting it
+                                    var text = passage.getText(null, true);
+                                    if (! text.match("error")) {
                                 self.set({
-                                    text : passage.getText(null, true),
-                                    title : passage.Text.getTitle("eng"),
-                                    author : passage.Text.getTextgroup("eng")
+                                    text : passage.getText(null, true)
+                                    // title and author aren't present
+                                    // in the Nemo/Nautilus response?
+                                    //title : passage.Text.getTitle("eng"),
+                                    //author : passage.Text.getTextgroup("eng")
                                 })
+                                }
                                 } catch(e) {
                                   console.log(e);
                                 }
